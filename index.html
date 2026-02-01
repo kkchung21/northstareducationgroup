@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northstar Education Group | Guiding Korean Families to World-Class Education</title>
+  <meta name="description" content="Northstar Education Group supports Korean families with guardianship, education consulting, and hockey programs. Guardianship, prep school and college admissions, and Jr. Pre, Pre, and Club hockey pathways." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            northstar: {
+              50: '#eef9ff',
+              100: '#d9f1ff',
+              200: '#bce7ff',
+              300: '#8ed9ff',
+              400: '#59c2ff',
+              500: '#33a6ff',
+              600: '#1a87f5',
+              700: '#136ee1',
+              800: '#1658b6',
+              900: '#184b8f',
+              950: '#142f57',
+            },
+            ice: '#f0f9ff',
+          },
+          fontFamily: {
+            sans: ['Outfit', 'system-ui', 'sans-serif'],
+            display: ['Bebas Neue', 'Impact', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    [data-lang="ko"] { display: none !important; }
+    body.lang-ko [data-lang="en"] { display: none !important; }
+    body.lang-ko [data-lang="ko"] { display: revert !important; }
+    .lang-toggle button.active { color: #1a87f5; font-weight: 600; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="#" class="font-display text-xl md:text-2xl tracking-wide text-northstar-800">NORTHSTAR EDUCATION GROUP</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-gray-600 hover:text-northstar-600 font-medium transition"><span data-lang="en">Services</span><span data-lang="ko">서비스</span></a>
+          <a href="#about" class="text-gray-600 hover:text-northstar-600 font-medium transition"><span data-lang="en">About</span><span data-lang="ko">소개</span></a>
+          <a href="#contact" class="text-gray-600 hover:text-northstar-600 font-medium transition"><span data-lang="en">Contact</span><span data-lang="ko">연락처</span></a>
+          <a href="#contact" class="inline-flex items-center px-4 py-2 bg-northstar-600 text-white font-semibold rounded-lg hover:bg-northstar-700 transition"><span data-lang="en">Get Started</span><span data-lang="ko">시작하기</span></a>
+          <div class="lang-toggle flex items-center gap-1 text-sm font-medium text-gray-500">
+            <button type="button" data-lang-set="en" class="hover:text-northstar-600 transition px-1" aria-label="English">EN</button>
+            <span class="text-gray-300">|</span>
+            <button type="button" data-lang-set="ko" class="hover:text-northstar-600 transition px-1" aria-label="한국어">한국어</button>
+          </div>
+        </div>
+        <button type="button" class="md:hidden p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100">
+        <a href="#services" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Services</span><span data-lang="ko">서비스</span></a>
+        <a href="#about" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">About</span><span data-lang="ko">소개</span></a>
+        <a href="#contact" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Contact</span><span data-lang="ko">연락처</span></a>
+        <a href="#contact" class="block py-2 text-northstar-600 font-semibold"><span data-lang="en">Get Started</span><span data-lang="ko">시작하기</span></a>
+        <div class="lang-toggle flex items-center gap-2 pt-2 border-t border-gray-100 mt-2">
+          <button type="button" data-lang-set="en" class="text-gray-600 hover:text-northstar-600 font-medium">EN</button>
+          <span class="text-gray-300">|</span>
+          <button type="button" data-lang-set="ko" class="text-gray-600 hover:text-northstar-600 font-medium">한국어</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-northstar-950 via-northstar-900 to-northstar-800 text-white">
+    <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="max-w-2xl">
+        <p class="text-northstar-300 font-medium uppercase tracking-widest text-sm mb-4"><span data-lang="en">Northstar Education Group</span><span data-lang="ko">노스스타 에듀케이션 그룹</span></p>
+        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-wide leading-tight mb-6">
+          <span data-lang="en">Guiding Korean families to <span class="text-northstar-300">world-class education</span> and opportunities.</span><span data-lang="ko">한국 가정을 <span class="text-northstar-300">세계 수준의 교육</span>과 기회로 이끕니다.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+          <span data-lang="en">Guardianship, education consulting, and hockey pathways—from trusted student care to prep school and college admissions, and Jr. Pre, Pre, and Club hockey programs.</span><span data-lang="ko">가디언십, 교육 컨설팅, 하키 진로—신뢰할 수 있는 학생 케어부터 프랩·대학 입시, Jr. Pre·Pre·Club 하키 프로그램까지.</span>
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#services" class="inline-flex items-center px-6 py-3 bg-white text-northstar-800 font-semibold rounded-lg hover:bg-gray-100 transition"><span data-lang="en">Our Services</span><span data-lang="ko">서비스 보기</span></a>
+          <a href="#contact" class="inline-flex items-center px-6 py-3 border-2 border-white/60 text-white font-semibold rounded-lg hover:bg-white/10 transition"><span data-lang="en">Contact Us</span><span data-lang="ko">문의하기</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t to-white"></div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-4"><span data-lang="en">Our Services</span><span data-lang="ko">서비스 소개</span></h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg"><span data-lang="en">Full support for Korean families: guardianship, education consulting, and hockey pathways.</span><span data-lang="ko">한국 가정을 위한 종합 지원: 가디언십, 교육 컨설팅, 하키 진로.</span></p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
+            <span class="font-display text-xl">1</span>
+          </div>
+          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Guardianship</span><span data-lang="ko">가디언십</span></h3>
+          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Trusted local support for international students in the U.S.: emergency coverage, airport transfers, regular check-ins, academic liaison, and personal support so parents have peace of mind and students thrive.</span><span data-lang="ko">미국 유학생을 위한 신뢰할 수 있는 현지 지원: 비상 대응, 공항 픽업, 정기 체크인, 학업 연락, 개인 지원으로 학부모는 안심하고 학생은 성장합니다.</span></p>
+        </article>
+        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
+            <span class="font-display text-xl">2</span>
+          </div>
+          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Education Consulting</span><span data-lang="ko">교육 컨설팅</span></h3>
+          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Prep school and college admissions guidance. We specialize in athletes and outlier talents—shaping unique stories into compelling applications for Ivy League and other top universities.</span><span data-lang="ko">프랩 스쿨·대학 입시 컨설팅. 운동선수와 특기생 전문—아이비리그 및 명문 대학 지원을 위한 스토리와 지원서 구성.</span></p>
+        </article>
+        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
+            <span class="font-display text-xl">3</span>
+          </div>
+          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Hockey Programs</span><span data-lang="ko">하키 프로그램</span></h3>
+          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Jr. Pre, Pre, and Club hockey team pathways in the U.S. and Vancouver. Development, tryout readiness, and placement into competitive North American hockey.</span><span data-lang="ko">미국·밴쿠버의 Jr. Pre, Pre, Club 하키 팀 진로. 개발, 트라이아웃 준비, 북미 경쟁 하키 입단 지원.</span></p>
+        </article>
+        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
+            <span class="font-display text-xl">4</span>
+          </div>
+          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">À La Carte &amp; Summer Storage</span><span data-lang="ko">알라카트 &amp; 여름 보관</span></h3>
+          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Flexible services for day-to-day student needs and summer storage to simplify transitions between school years.</span><span data-lang="ko">일상적인 학생 필요에 맞춘 유연한 서비스와 학년 간 이전을 쉽게 하는 여름 보관.</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 bg-ice">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-10 text-center"><span data-lang="en">About Our Company</span><span data-lang="ko">회사 소개</span></h2>
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-16">
+        <div>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            <span data-lang="en">At NorthStar Education Consulting, we offer a full range of services designed to support Korean families and their children studying in the United States. From trusted guardianship to personalized education consulting, we provide peace of mind for parents and the guidance students need to succeed.</span><span data-lang="ko">노스스타 에듀케이션 컨설팅은 미국에서 공부하는 한국 가정과 자녀를 지원하기 위한 다양한 서비스를 제공합니다. 신뢰할 수 있는 가디언십부터 맞춤 교육 컨설팅까지, 학부모에게는 안심을, 학생에게는 성공에 필요한 지도를 제공합니다.</span>
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            <span data-lang="en">Our services are built around two pillars: guardianship and education consulting. Through our Guardianship Plans, we ensure international students have trusted, local support—from emergency coverage and airport transfers to regular check-ins, academic liaison, and personal support. Our Education Consulting services help students stand out in prep school and college admissions, with a specialty in guiding athletes and outlier talents into Ivy League and other top universities.</span><span data-lang="ko">서비스는 가디언십과 교육 컨설팅 두 축으로 구성됩니다. 가디언십 플랜을 통해 유학생에게 비상 대응, 공항 픽업, 정기 체크인, 학업 연락, 개인 지원 등 신뢰할 수 있는 현지 지원을 제공합니다. 교육 컨설팅은 프랩 스쿨·대학 입시에서 학생이 돋보이도록 돕고, 운동선수와 특기생을 아이비리그 및 명문 대학으로 이끄는 데 특화되어 있습니다.</span>
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            <span data-lang="en">Our mission is simple: to support the whole student—academically, personally, and athletically—while providing families with the trust and care they deserve.</span><span data-lang="ko">미션은 단순합니다. 학생 전체—학업, 개인, 운동—를 지원하고, 가정에 그들이 받을 자격이 있는 신뢰와 케어를 제공하는 것입니다.</span>
+          </p>
+        </div>
+        <div class="rounded-2xl bg-northstar-800 text-white p-8 md:p-10">
+          <h3 class="font-display text-2xl tracking-wide mb-6"><span data-lang="en">Why Korean Families</span><span data-lang="ko">한국 가정을 위한 이유</span></h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="text-northstar-400 mt-0.5">✓</span>
+              <span><span data-lang="en">Trusted guardianship and local support in the U.S.</span><span data-lang="ko">미국 현지의 신뢰할 수 있는 가디언십과 지원.</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-northstar-400 mt-0.5">✓</span>
+              <span><span data-lang="en">Prep school and college admissions expertise, including athletes.</span><span data-lang="ko">운동선수 포함 프랩·대학 입시 전문성.</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-northstar-400 mt-0.5">✓</span>
+              <span><span data-lang="en">Hockey pathways: Jr. Pre, Pre, and Club programs.</span><span data-lang="ko">하키 진로: Jr. Pre, Pre, Club 프로그램.</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-northstar-400 mt-0.5">✓</span>
+              <span><span data-lang="en">Deep insight into both Western and Korean expectations.</span><span data-lang="ko">서양과 한국 기대에 대한 깊은 이해.</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- About the Owner -->
+      <div class="rounded-2xl border-2 border-gray-200 bg-white p-8 md:p-10">
+        <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-6"><span data-lang="en">About the Owner</span><span data-lang="ko">대표 소개</span></h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          <span data-lang="en"><strong>Kenneth Chung</strong> brings a unique blend of experience in education consulting and youth mentorship. Before founding NorthStar Education Consulting, he worked as a Product Manager for a global technology company.</span><span data-lang="ko"><strong>케네스 정(Kenneth Chung)</strong>은 교육 컨설팅과 청소년 멘토십 경험을 겸비하고 있습니다. 노스스타 에듀케이션 컨설팅을 설립하기 전에는 글로벌 기술 기업에서 제품 매니저로 근무했습니다.</span>
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          <span data-lang="en">Earlier in his career, he served as a law enforcement officer in Wisconsin, where he was recognized as Law Enforcement Officer of the Year for the state and School Resource Officer of the Year nationally (1 of only 10 selected in the U.S.). In this role, he built strong relationships with students, parents, educators, and administrators—skills that directly translate into the guardianship work he does today. He also mentored students through the sport of Brazilian Jiu Jitsu.</span><span data-lang="ko">그 전에는 위스콘신에서 법 집행관으로 근무하며 주 법 집행관 of the Year, 전국 School Resource Officer of the Year(미국에서 10명만 선정)로 선정되었습니다. 이 역할에서 학생, 학부모, 교사, 행정가와의 관계를 쌓았으며, 이는 오늘날 가디언십 업무에 직접 이어집니다. 브라질 유도 멘토로서도 학생들을 지도했습니다.</span>
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          <span data-lang="en">He spent six years in Korea and a year in Shanghai working in strategic consulting and uhak (study abroad) consulting, helping many of Korea's top students gain admission to leading universities in the U.S. and U.K. He lives in the Boston area with his wife and two boys, was born in San Francisco, grew up in Northern California, and is a native English speaker who is also proficient in Korean.</span><span data-lang="ko">한국에서 6년, 상하이에서 1년 동안 전략 컨설팅 및 유학 컨설팅으로 일하며 한국 최고 학생 다수가 미국·영국 명문 대학에 합격하도록 도왔습니다. 현재 부인과 두 아들과 보스턴 지역에 거주하며, 샌프란시스코 출생, 북부 캘리포니아 성장, 영어 원어민이자 한국어에도 능통합니다.</span>
+        </p>
+        <p class="text-gray-700 font-semibold mb-1"><span data-lang="en">Education</span><span data-lang="ko">학력</span></p>
+        <ul class="text-gray-600 space-y-1 list-disc list-inside">
+          <li><span data-lang="en">J.D. and M.A. in International Public Affairs — University of Wisconsin</span><span data-lang="ko">J.D. 및 국제 공공정책 M.A. — 위스콘신 대학교</span></li>
+          <li><span data-lang="en">B.A. — University of California, Irvine</span><span data-lang="ko">B.A. — 캘리포니아 대학교 어바인</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-4"><span data-lang="en">Get in Touch</span><span data-lang="ko">연락하기</span></h2>
+        <p class="text-gray-600 text-lg mb-10"><span data-lang="en">Ready to take the next step? Reach out to learn about guardianship, education consulting, hockey programs, and how we can support your family.</span><span data-lang="ko">다음 단계를 준비하고 계신가요? 가디언십, 교육 컨설팅, 하키 프로그램과 가정 지원에 대해 문의해 주세요.</span></p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="mailto:kenneth@northstareducationgroup.com" class="inline-flex items-center justify-center px-6 py-3 bg-northstar-600 text-white font-semibold rounded-lg hover:bg-northstar-700 transition"><span data-lang="en">Email Us</span><span data-lang="ko">이메일 보내기</span></a>
+          <a href="#" class="inline-flex items-center justify-center px-6 py-3 border-2 border-northstar-600 text-northstar-600 font-semibold rounded-lg hover:bg-northstar-50 transition"><span data-lang="en">Schedule a Call</span><span data-lang="ko">상담 예약</span></a>
+        </div>
+        <p class="mt-8 text-gray-500 text-sm"><span data-lang="en">Northstar Education Group — Guiding Korean families to world-class education and opportunities.</span><span data-lang="ko">Northstar Education Group — 한국 가정을 세계 수준의 교육과 기회로 이끕니다.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-northstar-950 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <span class="font-display text-lg md:text-xl text-white">NORTHSTAR EDUCATION GROUP</span>
+        <div class="flex gap-8">
+          <a href="#services" class="hover:text-white transition"><span data-lang="en">Services</span><span data-lang="ko">서비스</span></a>
+          <a href="#about" class="hover:text-white transition"><span data-lang="en">About</span><span data-lang="ko">소개</span></a>
+          <a href="#contact" class="hover:text-white transition"><span data-lang="en">Contact</span><span data-lang="ko">연락처</span></a>
+        </div>
+      </div>
+      <p class="mt-6 text-center md:text-left text-sm">© Northstar Education Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = 'northstar-lang';
+      var TITLES = { en: 'Northstar Education Group | Guiding Korean Families to World-Class Education', ko: 'Northstar Education Group | 한국 가정을 세계 수준의 교육으로' };
+
+      function getLang() {
+        var params = new URLSearchParams(location.search);
+        if (params.get('lang') === 'ko' || params.get('lang') === 'en') return params.get('lang');
+        try { return localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) { return 'en'; }
+      }
+
+      function setLang(lang) {
+        document.body.classList.toggle('lang-ko', lang === 'ko');
+        document.documentElement.lang = lang;
+        document.title = TITLES[lang] || TITLES.en;
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+        var url = new URL(location.href);
+        url.searchParams.set('lang', lang);
+        history.replaceState(null, '', url);
+        document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-lang-set') === lang);
+        });
+      }
+
+      document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
+        btn.addEventListener('click', function () { setLang(btn.getAttribute('data-lang-set')); });
+      });
+
+      var lang = getLang();
+      setLang(lang);
+
+      document.getElementById('menu-btn').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    })();
+  </script>
+</body>
+</html>
