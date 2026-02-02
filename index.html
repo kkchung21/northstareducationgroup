@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northstar Education Group | Guiding Korean Families to World-Class Education</title>
-  <meta name="description" content="Northstar Education Group supports Korean families with guardianship, education consulting, and hockey programs. Guardianship, prep school and college admissions, and Jr. Pre, Pre, and Club hockey pathways." />
+  <title>Northstar Education Group | Hockey-First Pathway from Korea to Massachusetts</title>
+  <meta name="description" content="NorthStar Education Group bridges elite Korean hockey players to Junior Prep, Prep School, and Junior programs in Massachusetts and New England. Evaluation, development, and intentional placement—from Korea to the ice." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -42,6 +42,16 @@
     body.lang-ko [data-lang="en"] { display: none !important; }
     body.lang-ko [data-lang="ko"] { display: revert !important; }
     .lang-toggle button.active { color: #1a87f5; font-weight: 600; }
+    .service-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease-out; }
+    .service-content.is-open { max-height: 3200px; }
+    .service-accordion .accordion-chevron { transition: transform 0.25s ease; }
+    .service-accordion.is-open .accordion-chevron { transform: rotate(180deg); }
+    .about-blurb-extra { max-height: 0; overflow: hidden; transition: max-height 0.35s ease-out; }
+    .about-blurb-extra.is-open { max-height: 2000px; }
+    .profile-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease-out; }
+    .profile-content.is-open { max-height: 4000px; }
+    .profile-accordion .profile-chevron { transition: transform 0.25s ease; }
+    .profile-accordion.is-open .profile-chevron { transform: rotate(180deg); }
   </style>
 </head>
 <body class="font-sans text-gray-800 antialiased">
@@ -86,10 +96,10 @@
       <div class="max-w-2xl">
         <p class="text-northstar-300 font-medium uppercase tracking-widest text-sm mb-4"><span data-lang="en">Northstar Education Group</span><span data-lang="ko">노스스타 에듀케이션 그룹</span></p>
         <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-wide leading-tight mb-6">
-          <span data-lang="en">Guiding Korean families to <span class="text-northstar-300">world-class education</span> and opportunities.</span><span data-lang="ko">한국 가정을 <span class="text-northstar-300">세계 수준의 교육</span>과 기회로 이끕니다.</span>
+          <span data-lang="en">From Korea to <span class="text-northstar-300">Massachusetts.</span></span><span data-lang="ko">한국에서 <span class="text-northstar-300">매사추세츠로.</span></span>
         </h1>
         <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-          <span data-lang="en">Guardianship, education consulting, and hockey pathways—from trusted student care to prep school and college admissions, and Jr. Pre, Pre, and Club hockey programs.</span><span data-lang="ko">가디언십, 교육 컨설팅, 하키 진로—신뢰할 수 있는 학생 케어부터 프랩·대학 입시, Jr. Pre·Pre·Club 하키 프로그램까지.</span>
+          <span data-lang="en">A hockey-first pathway for elite Korean players—evaluation, development, and placement into top Junior Prep, Prep School, and Junior programs in New England.</span><span data-lang="ko">엘리트 한국 하키 선수를 위한 하키 중심 경로—평가, 개발, 그리고 뉴잉글랜드 최상위 주니어 프랩·프랩 스쿨·주니어 프로그램 입단.</span>
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="#services" class="inline-flex items-center px-6 py-3 bg-white text-northstar-800 font-semibold rounded-lg hover:bg-gray-100 transition"><span data-lang="en">Our Services</span><span data-lang="ko">서비스 보기</span></a>
@@ -102,39 +112,142 @@
 
   <!-- Services -->
   <section id="services" class="py-16 md:py-24 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-4"><span data-lang="en">Our Services</span><span data-lang="ko">서비스 소개</span></h2>
-        <p class="text-gray-600 max-w-2xl mx-auto text-lg"><span data-lang="en">Full support for Korean families: guardianship, education consulting, and hockey pathways.</span><span data-lang="ko">한국 가정을 위한 종합 지원: 가디언십, 교육 컨설팅, 하키 진로.</span></p>
+        <p class="text-gray-600 max-w-2xl mx-auto"><span data-lang="en">Click a service to expand details.</span><span data-lang="ko">서비스를 클릭하면 상세 내용을 볼 수 있습니다.</span></p>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
-          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
-            <span class="font-display text-xl">1</span>
+      <div class="space-y-3">
+        <!-- Summit Advisory -->
+        <article class="service-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="service-summit-content" id="service-summit-trigger">
+            <div class="min-w-0">
+              <h3 class="font-display text-xl text-northstar-900 tracking-wide"><span data-lang="en">Summit</span><span data-lang="ko">Summit</span></h3>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5 truncate"><span data-lang="en">Hockey &amp; Academic Placement for Jr. Prep and Prep Schools</span><span data-lang="ko">Jr. Prep·프랩 스쿨 하키·학업 입학 지원</span></p>
+            </div>
+            <span class="accordion-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="service-summit-content" class="service-content" role="region" aria-labelledby="service-summit-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-4 pt-4"><span data-lang="en">Summit is our flagship advisory service for student-athletes who are serious about pursuing elite hockey while remaining on a strong academic trajectory. Families retain us to evaluate both hockey ability and academic readiness, then strategically place the athlete in the <em>right</em> Junior Prep or Prep School and on an appropriately aligned U.S. club hockey team.</span><span data-lang="ko">Summit은 엘리트 하키를 추구하면서도 탄탄한 학업 궤도를 유지하려는 학생선수를 위한 플래그십 컨설팅 서비스입니다. 하키 역량과 학업 준비도를 평가한 뒤, 적합한 Jr. Prep 또는 프랩 스쿨과 미국 클럽 하키 팀에 전략적으로 입단시키는 것을 목표로 합니다.</span></p>
+              <p class="text-gray-600 leading-relaxed mb-6"><span data-lang="en">We take a holistic view of the athlete—skill level, physical maturity, hockey IQ, academic profile, and long-term development trajectory. Our objective is to align school, team, and training environment so the athlete is positioned to succeed on and off the ice.</span><span data-lang="ko">기술 수준, 신체 성숙도, 하키 IQ, 학업 프로필, 장기 개발 궤도를 종합적으로 평가합니다. 학교, 팀, 훈련 환경이 맞물려 선수가 아이스 위·밖에서 성공할 수 있도록 합니다.</span></p>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Best suited for</span><span data-lang="ko">대상</span></p>
+              <p class="text-gray-600 mb-2"><span data-lang="en">Grades 6–9</span><span data-lang="ko">6–9학년</span></p>
+              <p class="text-gray-500 text-sm mb-4"><span data-lang="en">(Junior Prep 9th graders should expect to reclassify and enter Prep School as a 9th grader)</span><span data-lang="ko">(Jr. Prep 9학년은 재분반 후 프랩 스쿨 9학년으로 입학하는 것을 전제로 합니다)</span></p>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">This service includes</span><span data-lang="ko">포함 내용</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside mb-6">
+                <li><span data-lang="en">Comprehensive hockey skills assessment (Korea-based evaluations included)</span><span data-lang="ko">종합 하키 기술 평가(한국 현지 평가 포함)</span></li>
+                <li><span data-lang="en">Pre-acceptance and readiness evaluation</span><span data-lang="ko">입학 전·준비도 평가</span></li>
+                <li><span data-lang="en">Strategic placement on a U.S. club hockey team aligned with the athlete’s development plan</span><span data-lang="ko">선수 개발 계획에 맞춘 미국 클럽 하키 팀 전략적 입단</span></li>
+                <li><span data-lang="en">Hockey program and team fit analysis (school + club coordination)</span><span data-lang="ko">하키 프로그램·팀 적합성 분석(학교·클럽 연계)</span></li>
+                <li><span data-lang="en">End-to-end school application support</span><span data-lang="ko">학교 지원 전 과정 지원</span></li>
+                <li><span data-lang="en">Limited guardianship coverage for disciplinary or medical emergencies</span><span data-lang="ko">징계·의료 비상 시 제한적 가디언십</span></li>
+              </ul>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Optional enhancements</span><span data-lang="ko">선택 추가</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside">
+                <li><span data-lang="en">In-country U.S. mentoring and supervision</span><span data-lang="ko">미국 현지 멘토링·감독</span></li>
+                <li><span data-lang="en">On-ice private training with Freddy Meyer</span><span data-lang="ko">Freddy Meyer 아이스 개인 훈련</span></li>
+                <li><span data-lang="en">Shooting and stick-handling private sessions</span><span data-lang="ko">슈팅·스틱 핸들링 개인 세션</span></li>
+                <li><span data-lang="en">Strength &amp; conditioning support through Bando Performance, focused on movement quality, power development, and injury prevention aligned with North American hockey standards</span><span data-lang="ko">Bando Performance를 통한 스트렝스·컨디셔닝(동작 품질, 파워 개발, 북미 하키 기준 부상 예방)</span></li>
+              </ul>
+            </div>
           </div>
-          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Guardianship</span><span data-lang="ko">가디언십</span></h3>
-          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Trusted local support for international students in the U.S.: emergency coverage, airport transfers, regular check-ins, academic liaison, and personal support so parents have peace of mind and students thrive.</span><span data-lang="ko">미국 유학생을 위한 신뢰할 수 있는 현지 지원: 비상 대응, 공항 픽업, 정기 체크인, 학업 연락, 개인 지원으로 학부모는 안심하고 학생은 성장합니다.</span></p>
         </article>
-        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
-          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
-            <span class="font-display text-xl">2</span>
+
+        <!-- Foundation Program -->
+        <article class="service-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="service-foundation-content" id="service-foundation-trigger">
+            <div class="min-w-0">
+              <h3 class="font-display text-xl text-northstar-900 tracking-wide"><span data-lang="en">Foundation</span><span data-lang="ko">Foundation</span></h3>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5 truncate"><span data-lang="en">Development-First Pathway for Emerging Players</span><span data-lang="ko">성장기 선수를 위한 개발 우선 경로</span></p>
+            </div>
+            <span class="accordion-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="service-foundation-content" class="service-content" role="region" aria-labelledby="service-foundation-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-4 pt-4"><span data-lang="en">Foundation is designed for players who show promise but require additional time, structure, and intentional development before pursuing U.S. Junior Prep, Prep School, or broader North American placement. This program prioritizes building the athlete correctly first—mechanics, habits, hockey IQ, and game understanding—before advancing to placement decisions.</span><span data-lang="ko">Foundation은 가능성이 있으나 미국 Jr. Prep·프랩 스쿨·북미 입단 전에 더 많은 시간, 구조, 의도적 개발이 필요한 선수를 위한 프로그램입니다. 입단 결정에 앞서 메카닉, 습관, 하키 IQ, 경기 이해를 바르게 쌓는 것을 우선합니다.</span></p>
+              <p class="text-gray-600 leading-relaxed mb-4"><span data-lang="en">All on-ice development in Korea is conducted exclusively through Lee Yuwon and his organization, Golden Owls. Coach Lee and Golden Owls serve as our sole Korean development partner, selected after evaluating multiple programs across Korea for their proven ability to prepare athletes for North American hockey standards and expectations.</span><span data-lang="ko">한국 내 모든 온아이스 개발은 이유원 감독과 Golden Owls만을 통해 진행됩니다. Coach Lee와 Golden Owls는 북미 하키 기준과 기대에 맞춰 선수를 준비시키는 검증된 역량으로 선정된 우리의 유일한 한국 개발 파트너입니다.</span></p>
+              <p class="text-gray-600 leading-relaxed mb-6"><span data-lang="en">Our North American coaching team works in alignment with Coach Lee to define development priorities, monitor progress, and ensure execution is focused on North American readiness, not just local competition success.</span><span data-lang="ko">북미 코칭 팀은 Coach Lee와 협력해 개발 우선순위를 정하고 진행 상황을 점검하며, 지역 대회 성적이 아닌 북미 준비도에 맞춘 실행을 보장합니다.</span></p>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">This service includes</span><span data-lang="ko">포함 내용</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside mb-6">
+                <li><span data-lang="en">One-week hockey skills assessment camp in Korea</span><span data-lang="ko">한국 1주 하키 기술 평가 캠프</span></li>
+                <li><span data-lang="en">Individualized hockey development strategy built for North American pathways</span><span data-lang="ko">북미 진로에 맞춘 맞춤 하키 개발 전략</span></li>
+                <li><span data-lang="en">Quarterly progress check-ins with U.S.-based coaches</span><span data-lang="ko">미국 코치와의 분기별 진행 점검</span></li>
+                <li><span data-lang="en">Ongoing on-ice development executed exclusively with Coach Lee Yuwon and the Golden Owls organization (additional on-ice lessons billed separately)</span><span data-lang="ko">Coach Lee Yuwon 및 Golden Owls만을 통한 지속 온아이스 개발(추가 레슨 별도 청구)</span></li>
+              </ul>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Optional enhancements</span><span data-lang="ko">선택 추가</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside mb-6">
+                <li><span data-lang="en">Strength &amp; conditioning programming through Bando Performance, designed to complement on-ice development and support long-term athletic progression</span><span data-lang="ko">Bando Performance 스트렝스·컨디셔닝(온아이스 개발 보완 및 장기 운동 성장 지원)</span></li>
+              </ul>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Progression pathway</span><span data-lang="ko">진행 경로</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside">
+                <li><span data-lang="en">Players who need more time may continue structured development with quarterly North American oversight</span><span data-lang="ko">추가 시간이 필요한 선수는 분기별 북미 감독 하 구조화된 개발을 이어갈 수 있습니다.</span></li>
+                <li><span data-lang="en">Players who demonstrate readiness may transition seamlessly into the Summit pathway, with prior Foundation participation recognized</span><span data-lang="ko">준비가 갖춰진 선수는 Foundation 참여가 인정된 상태로 Summit 경로로 자연스럽게 전환할 수 있습니다.</span></li>
+              </ul>
+            </div>
           </div>
-          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Education Consulting</span><span data-lang="ko">교육 컨설팅</span></h3>
-          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Prep school and college admissions guidance. We specialize in athletes and outlier talents—shaping unique stories into compelling applications for Ivy League and other top universities.</span><span data-lang="ko">프랩 스쿨·대학 입시 컨설팅. 운동선수와 특기생 전문—아이비리그 및 명문 대학 지원을 위한 스토리와 지원서 구성.</span></p>
         </article>
-        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
-          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
-            <span class="font-display text-xl">3</span>
+
+        <!-- Junior League Placement -->
+        <article class="service-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="service-junior-content" id="service-junior-trigger">
+            <div class="min-w-0">
+              <h3 class="font-display text-xl text-northstar-900 tracking-wide"><span data-lang="en">Junior League Placement</span><span data-lang="ko">Junior League Placement</span></h3>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5 truncate"><span data-lang="en">For Players Ready for Juniors Without the Prep School Track</span><span data-lang="ko">프랩 스쿨 경로 없이 주니어 준비가 된 선수용</span></p>
+            </div>
+            <span class="accordion-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="service-junior-content" class="service-content" role="region" aria-labelledby="service-junior-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-6 pt-4"><span data-lang="en">This service is designed for players who have the hockey skill level to compete in junior leagues but are not positioned—academically or strategically—for U.S. Prep School placement. The focus is strictly on hockey evaluation and junior-level readiness, without the academic admissions component.</span><span data-lang="ko">주니어 리그 경쟁이 가능한 하키 수준은 있으나 학업·전략적으로 미국 프랩 스쿨 입학을 목표로 하지 않는 선수를 위한 서비스입니다. 학업 입학이 아닌 하키 평가와 주니어 수준 준비도에만 집중합니다.</span></p>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Best suited for</span><span data-lang="ko">대상</span></p>
+              <p class="text-gray-600 mb-6"><span data-lang="en">Grades 10–12</span><span data-lang="ko">10–12학년</span></p>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">This service includes</span><span data-lang="ko">포함 내용</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside mb-6">
+                <li><span data-lang="en">Boston-based on-ice and off-ice hockey assessment</span><span data-lang="ko">보스턴 현지 온·오프아이스 하키 평가</span></li>
+                <li><span data-lang="en">Junior hockey readiness evaluation</span><span data-lang="ko">주니어 하키 준비도 평가</span></li>
+                <li><span data-lang="en">Strategic guidance on appropriate junior-level opportunities and next steps</span><span data-lang="ko">적절한 주니어 수준 기회 및 다음 단계에 대한 전략적 안내</span></li>
+              </ul>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Optional enhancements</span><span data-lang="ko">선택 추가</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside">
+                <li><span data-lang="en">Targeted strength &amp; conditioning consultation with Bando Performance to support junior-level physical demands and transition readiness</span><span data-lang="ko">Bando Performance 스트렝스·컨디셔닝 컨설팅(주니어 수준 체력 요구·전환 준비 지원)</span></li>
+              </ul>
+            </div>
           </div>
-          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Hockey Programs</span><span data-lang="ko">하키 프로그램</span></h3>
-          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Jr. Pre, Pre, and Club hockey team pathways in the U.S. and Vancouver. Development, tryout readiness, and placement into competitive North American hockey.</span><span data-lang="ko">미국·밴쿠버의 Jr. Pre, Pre, Club 하키 팀 진로. 개발, 트라이아웃 준비, 북미 경쟁 하키 입단 지원.</span></p>
         </article>
-        <article class="group rounded-2xl border-2 border-gray-100 p-8 hover:border-northstar-200 hover:shadow-lg hover:shadow-northstar-100/50 transition">
-          <div class="w-12 h-12 rounded-xl bg-northstar-100 text-northstar-600 flex items-center justify-center mb-6 group-hover:bg-northstar-200 transition">
-            <span class="font-display text-xl">4</span>
+
+        <!-- Dream Big Hockey Clinic -->
+        <article class="service-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="service-dreambig-content" id="service-dreambig-trigger">
+            <div class="min-w-0">
+              <h3 class="font-display text-xl text-northstar-900 tracking-wide"><span data-lang="en">Dream Big Hockey Clinic</span><span data-lang="ko">Dream Big Hockey Clinic</span></h3>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5 truncate"><span data-lang="en">One-Week Skill &amp; Hockey IQ Development Intensive</span><span data-lang="ko">1주 기술·하키 IQ 집중 개발</span></p>
+            </div>
+            <span class="accordion-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="service-dreambig-content" class="service-content" role="region" aria-labelledby="service-dreambig-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-6 pt-4"><span data-lang="en">Dream Big is a development-focused clinic—not an assessment. It is designed for motivated players who want to improve hockey IQ, refine technical skills, and accelerate their overall development in a high-standard training environment. The clinic emphasizes modern hockey concepts, decision-making, and confidence, helping players take meaningful steps forward regardless of their current pathway.</span><span data-lang="ko">Dream Big는 평가가 아닌 개발 중심 클리닉입니다. 하키 IQ 향상, 기술 다듬기, 높은 수준의 훈련 환경에서 전반적 성장을 원하는 동기 부여된 선수를 위한 프로그램입니다. 현대 하키 개념, 의사결정, 자신감을 강조해 현재 경로와 관계없이 의미 있는 성장을 돕습니다.</span></p>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">This clinic includes</span><span data-lang="ko">포함 내용</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside mb-6">
+                <li><span data-lang="en">High-tempo on-ice skill sessions</span><span data-lang="ko">고강도 온아이스 기술 세션</span></li>
+                <li><span data-lang="en">Hockey IQ and situational awareness development</span><span data-lang="ko">하키 IQ·상황 인식 개발</span></li>
+                <li><span data-lang="en">Competitive, growth-oriented training environment</span><span data-lang="ko">경쟁적·성장 지향 훈련 환경</span></li>
+              </ul>
+              <p class="text-gray-700 font-semibold mb-2"><span data-lang="en">Optional enhancements</span><span data-lang="ko">선택 추가</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside">
+                <li><span data-lang="en">Optional off-ice performance sessions led by Bando Performance, emphasizing movement efficiency, coordination, and athletic foundations for hockey players</span><span data-lang="ko">Bando Performance 오프아이스 퍼포먼스 세션(동작 효율, 협응, 하키 선수 기초)</span></li>
+              </ul>
+            </div>
           </div>
-          <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">À La Carte &amp; Summer Storage</span><span data-lang="ko">알라카트 &amp; 여름 보관</span></h3>
-          <p class="text-gray-600 leading-relaxed text-sm"><span data-lang="en">Flexible services for day-to-day student needs and summer storage to simplify transitions between school years.</span><span data-lang="ko">일상적인 학생 필요에 맞춘 유연한 서비스와 학년 간 이전을 쉽게 하는 여름 보관.</span></p>
         </article>
       </div>
     </div>
@@ -143,58 +256,162 @@
   <!-- About -->
   <section id="about" class="py-16 md:py-24 bg-ice">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-10 text-center"><span data-lang="en">About Our Company</span><span data-lang="ko">회사 소개</span></h2>
-      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-16">
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-10 text-center"><span data-lang="en">About Us</span><span data-lang="ko">소개</span></h2>
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-12">
         <div>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            <span data-lang="en">At NorthStar Education Consulting, we offer a full range of services designed to support Korean families and their children studying in the United States. From trusted guardianship to personalized education consulting, we provide peace of mind for parents and the guidance students need to succeed.</span><span data-lang="ko">노스스타 에듀케이션 컨설팅은 미국에서 공부하는 한국 가정과 자녀를 지원하기 위한 다양한 서비스를 제공합니다. 신뢰할 수 있는 가디언십부터 맞춤 교육 컨설팅까지, 학부모에게는 안심을, 학생에게는 성공에 필요한 지도를 제공합니다.</span>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4">
+            <span data-lang="en"><strong>NorthStar Education Group</strong> is a hockey-first athlete development and placement organization built to bridge elite Korean players to the most competitive hockey environments in Massachusetts and the greater New England region.</span><span data-lang="ko"><strong>노스스타 에듀케이션 그룹</strong>은 엘리트 한국 선수를 매사추세츠와 뉴잉글랜드 최상위 하키 환경으로 이어주는 하키 중심 선수 개발·입단 지원 기관입니다.</span>
           </p>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            <span data-lang="en">Our services are built around two pillars: guardianship and education consulting. Through our Guardianship Plans, we ensure international students have trusted, local support—from emergency coverage and airport transfers to regular check-ins, academic liaison, and personal support. Our Education Consulting services help students stand out in prep school and college admissions, with a specialty in guiding athletes and outlier talents into Ivy League and other top universities.</span><span data-lang="ko">서비스는 가디언십과 교육 컨설팅 두 축으로 구성됩니다. 가디언십 플랜을 통해 유학생에게 비상 대응, 공항 픽업, 정기 체크인, 학업 연락, 개인 지원 등 신뢰할 수 있는 현지 지원을 제공합니다. 교육 컨설팅은 프랩 스쿨·대학 입시에서 학생이 돋보이도록 돕고, 운동선수와 특기생을 아이비리그 및 명문 대학으로 이끄는 데 특화되어 있습니다.</span>
-          </p>
-          <p class="text-gray-600 text-lg leading-relaxed">
-            <span data-lang="en">Our mission is simple: to support the whole student—academically, personally, and athletically—while providing families with the trust and care they deserve.</span><span data-lang="ko">미션은 단순합니다. 학생 전체—학업, 개인, 운동—를 지원하고, 가정에 그들이 받을 자격이 있는 신뢰와 케어를 제공하는 것입니다.</span>
-          </p>
+          <div class="about-blurb-extra" id="about-blurb-extra" aria-hidden="true">
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              <span data-lang="en">We specialize in identifying, assessing, and developing high-potential hockey athletes in Korea, then preparing them—technically, physically, tactically, and culturally—to hit the ground running with top Junior Prep, Prep School, and Junior hockey programs in the U.S.</span><span data-lang="ko">한국에서 잠재력 있는 하키 선수를 발굴·평가·육성하고, 기술·체력·전술·문화적으로 준비시켜 미국 최상위 주니어 프랩, 프랩 스쿨, 주니어 하키 프로그램에서 바로 경쟁할 수 있도록 합니다.</span>
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              <span data-lang="en">Our process begins on the ice in Korea. Clinics and assessments there are run by the Golden Owl Organization under Coach Lee—and we work exclusively with Coach Lee to identify athletes who have the potential to develop and succeed in North American hockey. Through in-person evaluations, skill development, and game-based assessments, we build a clear, honest profile of each athlete’s current level, ceiling, and best-fit pathway. From there, we design a targeted development plan so players arrive in Massachusetts ready to compete—not catch up.</span><span data-lang="ko">프로세스는 한국에서 아이스 위에서 시작합니다. 현지 클리닉과 평가는 Golden Owl Organization의 Coach Lee 감독 아래 진행되며, 노스스타는 Coach Lee와만 협력해 북미 하키에서 성장·성공할 잠재력이 있는 선수를 발굴합니다. 직접 평가, 기술 개발, 경기 기반 평가를 통해 각 선수의 현재 수준, 성장 가능성, 최적 경로에 대한 명확하고 솔직한 프로필을 만든 뒤, 그에 맞춘 개발 계획을 설계해 선수들이 매사추세츠에 도착했을 때 따라잡기가 아니라 경쟁할 준비가 되어 있도록 합니다.</span>
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              <span data-lang="en">What sets NorthStar apart is our deep, on-the-ground integration with the New England hockey ecosystem. We work closely with coaches, programs, and advisors across Massachusetts to ensure every placement is intentional—aligned with the athlete’s age, position, competitiveness, academic readiness, and long-term goals.</span><span data-lang="ko">노스스타가 다른 점은 뉴잉글랜드 하키 생태계와의 깊은 현지 연계입니다. 매사추세츠 전역의 코치, 프로그램, 어드바이저와 긴밀히 협력해 모든 입단이 선수의 나이, 포지션, 경쟁력, 학업 준비도, 장기 목표에 맞춰 의도적으로 이루어지도록 합니다.</span>
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              <span data-lang="en">This is not recruiting hype or one-off showcases. It is a structured pipeline built for serious hockey families who want clarity, accountability, and results.</span><span data-lang="ko">리크루팅 과장이나 일회성 쇼케이스가 아닙니다. 명확함, 책임, 결과를 원하는 진지한 하키 가정을 위한 체계적인 파이프라인입니다.</span>
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              <span data-lang="en">From Korea to Massachusetts, NorthStar exists to turn potential into performance—and opportunity into reality.</span><span data-lang="ko">한국에서 매사추세츠까지, 노스스타는 잠재력을 퍼포먼스로, 기회를 현실로 바꾸기 위해 존재합니다.</span>
+            </p>
+          </div>
+          <button type="button" class="about-blurb-toggle text-northstar-600 font-semibold hover:text-northstar-700 transition mt-2" id="about-blurb-toggle" aria-expanded="false" aria-controls="about-blurb-extra">
+            <span class="read-more"><span data-lang="en">Read more</span><span data-lang="ko">더 보기</span></span>
+            <span class="read-less hidden"><span data-lang="en">Read less</span><span data-lang="ko">접기</span></span>
+          </button>
         </div>
         <div class="rounded-2xl bg-northstar-800 text-white p-8 md:p-10">
-          <h3 class="font-display text-2xl tracking-wide mb-6"><span data-lang="en">Why Korean Families</span><span data-lang="ko">한국 가정을 위한 이유</span></h3>
+          <h3 class="font-display text-2xl tracking-wide mb-6"><span data-lang="en">What Sets NorthStar Apart</span><span data-lang="ko">노스스타가 다른 이유</span></h3>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
               <span class="text-northstar-400 mt-0.5">✓</span>
-              <span><span data-lang="en">Trusted guardianship and local support in the U.S.</span><span data-lang="ko">미국 현지의 신뢰할 수 있는 가디언십과 지원.</span></span>
+              <span><span data-lang="en">Evaluation and development that starts on the ice in Korea.</span><span data-lang="ko">한국에서 아이스 위에서 시작하는 평가와 개발.</span></span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-northstar-400 mt-0.5">✓</span>
-              <span><span data-lang="en">Prep school and college admissions expertise, including athletes.</span><span data-lang="ko">운동선수 포함 프랩·대학 입시 전문성.</span></span>
+              <span><span data-lang="en">Pathway to Junior Prep, Prep School, and Junior programs in MA and New England.</span><span data-lang="ko">매사추세츠·뉴잉글랜드 주니어 프랩, 프랩 스쿨, 주니어 프로그램 진로.</span></span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-northstar-400 mt-0.5">✓</span>
-              <span><span data-lang="en">Hockey pathways: Jr. Pre, Pre, and Club programs.</span><span data-lang="ko">하키 진로: Jr. Pre, Pre, Club 프로그램.</span></span>
+              <span><span data-lang="en">Deep integration with coaches, programs, and advisors across Massachusetts.</span><span data-lang="ko">매사추세츠 전역 코치·프로그램·어드바이저와의 깊은 연계.</span></span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-northstar-400 mt-0.5">✓</span>
-              <span><span data-lang="en">Deep insight into both Western and Korean expectations.</span><span data-lang="ko">서양과 한국 기대에 대한 깊은 이해.</span></span>
+              <span><span data-lang="en">Intentional placement—aligned with age, position, competitiveness, and goals.</span><span data-lang="ko">나이, 포지션, 경쟁력, 목표에 맞춘 의도적인 입단.</span></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-northstar-400 mt-0.5">✓</span>
+              <span><span data-lang="en">Structured pipeline—clarity, accountability, results.</span><span data-lang="ko">체계적인 파이프라인—명확함, 책임, 결과.</span></span>
             </li>
           </ul>
         </div>
       </div>
-      <!-- About the Owner -->
-      <div class="rounded-2xl border-2 border-gray-200 bg-white p-8 md:p-10">
-        <h3 class="font-display text-2xl text-northstar-900 tracking-wide mb-6"><span data-lang="en">About the Owner</span><span data-lang="ko">대표 소개</span></h3>
-        <p class="text-gray-600 leading-relaxed mb-4">
-          <span data-lang="en"><strong>Kenneth Chung</strong> brings a unique blend of experience in education consulting and youth mentorship. Before founding NorthStar Education Consulting, he worked as a Product Manager for a global technology company.</span><span data-lang="ko"><strong>케네스 정(Kenneth Chung)</strong>은 교육 컨설팅과 청소년 멘토십 경험을 겸비하고 있습니다. 노스스타 에듀케이션 컨설팅을 설립하기 전에는 글로벌 기술 기업에서 제품 매니저로 근무했습니다.</span>
-        </p>
-        <p class="text-gray-600 leading-relaxed mb-4">
-          <span data-lang="en">Earlier in his career, he served as a law enforcement officer in Wisconsin, where he was recognized as Law Enforcement Officer of the Year for the state and School Resource Officer of the Year nationally (1 of only 10 selected in the U.S.). In this role, he built strong relationships with students, parents, educators, and administrators—skills that directly translate into the guardianship work he does today. He also mentored students through the sport of Brazilian Jiu Jitsu.</span><span data-lang="ko">그 전에는 위스콘신에서 법 집행관으로 근무하며 주 법 집행관 of the Year, 전국 School Resource Officer of the Year(미국에서 10명만 선정)로 선정되었습니다. 이 역할에서 학생, 학부모, 교사, 행정가와의 관계를 쌓았으며, 이는 오늘날 가디언십 업무에 직접 이어집니다. 브라질 유도 멘토로서도 학생들을 지도했습니다.</span>
-        </p>
-        <p class="text-gray-600 leading-relaxed mb-6">
-          <span data-lang="en">He spent six years in Korea and a year in Shanghai working in strategic consulting and uhak (study abroad) consulting, helping many of Korea's top students gain admission to leading universities in the U.S. and U.K. He lives in the Boston area with his wife and two boys, was born in San Francisco, grew up in Northern California, and is a native English speaker who is also proficient in Korean.</span><span data-lang="ko">한국에서 6년, 상하이에서 1년 동안 전략 컨설팅 및 유학 컨설팅으로 일하며 한국 최고 학생 다수가 미국·영국 명문 대학에 합격하도록 도왔습니다. 현재 부인과 두 아들과 보스턴 지역에 거주하며, 샌프란시스코 출생, 북부 캘리포니아 성장, 영어 원어민이자 한국어에도 능통합니다.</span>
-        </p>
-        <p class="text-gray-700 font-semibold mb-1"><span data-lang="en">Education</span><span data-lang="ko">학력</span></p>
-        <ul class="text-gray-600 space-y-1 list-disc list-inside">
-          <li><span data-lang="en">J.D. and M.A. in International Public Affairs — University of Wisconsin</span><span data-lang="ko">J.D. 및 국제 공공정책 M.A. — 위스콘신 대학교</span></li>
-          <li><span data-lang="en">B.A. — University of California, Irvine</span><span data-lang="ko">B.A. — 캘리포니아 대학교 어바인</span></li>
-        </ul>
+      <!-- Our Team -->
+      <h3 id="team" class="font-display text-2xl text-northstar-900 tracking-wide mb-4"><span data-lang="en">Our Team</span><span data-lang="ko">팀 소개</span></h3>
+      <p class="text-gray-600 mb-6"><span data-lang="en">Click a profile to expand.</span><span data-lang="ko">프로필을 클릭하면 자세한 내용을 볼 수 있습니다.</span></p>
+      <div class="space-y-3">
+        <!-- Kenneth Chung -->
+        <article class="profile-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="profile-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="profile-kenneth-content" id="profile-kenneth-trigger">
+            <div class="min-w-0">
+              <h4 class="font-display text-xl text-northstar-900 tracking-wide">Kenneth Chung</h4>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5"><span data-lang="en">Founder</span><span data-lang="ko">설립자</span></p>
+            </div>
+            <span class="profile-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="profile-kenneth-content" class="profile-content" role="region" aria-labelledby="profile-kenneth-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-4 pt-4">
+                <span data-lang="en"><strong>Kenneth Chung</strong> brings a unique blend of experience in education consulting and youth mentorship. Before founding NorthStar Education Consulting, he worked as a Product Manager for a global technology company.</span><span data-lang="ko"><strong>케네스 정(Kenneth Chung)</strong>은 교육 컨설팅과 청소년 멘토십 경험을 겸비하고 있습니다. 노스스타 에듀케이션 컨설팅을 설립하기 전에는 글로벌 기술 기업에서 제품 매니저로 근무했습니다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                <span data-lang="en">Earlier in his career, he served as a law enforcement officer in Wisconsin, where he was recognized as Law Enforcement Officer of the Year for the state and School Resource Officer of the Year nationally (1 of only 10 selected in the U.S.). In this role, he built strong relationships with students, parents, educators, and administrators—skills that directly translate into the guardianship work he does today. He also mentored students through the sport of Brazilian Jiu Jitsu.</span><span data-lang="ko">그 전에는 위스콘신에서 법 집행관으로 근무하며 주 법 집행관 of the Year, 전국 School Resource Officer of the Year(미국에서 10명만 선정)로 선정되었습니다. 이 역할에서 학생, 학부모, 교사, 행정가와의 관계를 쌓았으며, 이는 오늘날 가디언십 업무에 직접 이어집니다. 브라질 유도 멘토로서도 학생들을 지도했습니다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                <span data-lang="en">He spent six years in Korea and a year in Shanghai working in strategic consulting and uhak (study abroad) consulting, helping many of Korea's top students gain admission to leading universities in the U.S. and U.K. He lives in the Boston area with his wife and two boys, was born in San Francisco, grew up in Northern California, and is a native English speaker who is also proficient in Korean.</span><span data-lang="ko">한국에서 6년, 상하이에서 1년 동안 전략 컨설팅 및 유학 컨설팅으로 일하며 한국 최고 학생 다수가 미국·영국 명문 대학에 합격하도록 도왔습니다. 현재 부인과 두 아들과 보스턴 지역에 거주하며, 샌프란시스코 출생, 북부 캘리포니아 성장, 영어 원어민이자 한국어에도 능통합니다.</span>
+              </p>
+              <p class="text-gray-700 font-semibold mb-1"><span data-lang="en">Education</span><span data-lang="ko">학력</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside">
+                <li><span data-lang="en">J.D. and M.A. in International Public Affairs — University of Wisconsin</span><span data-lang="ko">J.D. 및 국제 공공정책 M.A. — 위스콘신 대학교</span></li>
+                <li><span data-lang="en">B.A. — University of California, Irvine</span><span data-lang="ko">B.A. — 캘리포니아 대학교 어바인</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <!-- Freddy Meyer -->
+        <article id="freddy-meyer" class="profile-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="profile-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="profile-freddy-content" id="profile-freddy-trigger">
+            <div class="min-w-0">
+              <h4 class="font-display text-xl text-northstar-900 tracking-wide"><span data-lang="en">Freddy Meyer, Partner</span><span data-lang="ko">Freddy Meyer, 파트너</span></h4>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5"><span data-lang="en">NHL veteran · Head Coach, The Rivers School · Dream Big Hockey</span><span data-lang="ko">NHL 베테랑 · The Rivers School 헤드 코치 · Dream Big Hockey</span></p>
+            </div>
+            <span class="profile-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="profile-freddy-content" class="profile-content" role="region" aria-labelledby="profile-freddy-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-4 pt-4">
+                <span data-lang="en"><strong>Freddy Meyer</strong> played seven seasons in the NHL as a defenseman, appearing in 281 games with Philadelphia, the New York Islanders, Phoenix, and Atlanta. At Boston University he was team captain and an NCAA East First All-American before turning pro in 2003; he closed his playing career in Sweden.</span><span data-lang="ko"><strong>Freddy Meyer</strong>는 NHL에서 7시즌 동안 디펜스맨으로 281경기를 뛰었으며, 필라델피아, 뉴욕 아일랜더스, 피닉스, 애틀랜타에서 활약했습니다. 2003년 프로 전향 전 보스턴 대학교 주장이자 NCAA 이스트 퍼스트 올아메리칸이었고, 선수 생활을 스웨덴에서 마쳤습니다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                <span data-lang="en">As a coach, he spent two years as an assistant with the Manchester Monarchs (AHL) and later led the East Coast Wizards as head coach and general manager in the Eastern Hockey League, winning a South Division title. Since 2020 he has been head coach of boys hockey at The Rivers School in Weston, Massachusetts, where he emphasizes player development and skill-building at the prep level.</span><span data-lang="ko">코치로서 맨체스터 모나크스(AHL)에서 2년간 어시스턴트 코치를 했고, 이후 이스턴 하키 리그 이스트 코스트 위저즈의 헤드 코치 겸 GM으로 남부 디비전 우승을 이끌었습니다. 2020년부터 매사추세츠 웨스턴 The Rivers School 남자 하키 헤드 코치를 맡으며, 프랩 단계 선수 개발과 기술 향상에 중점을 두고 있습니다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                <span data-lang="en">That same development focus drives his work with Northstar Education Group’s hockey pathways for Korean athletes. In 2025, only three players from Massachusetts earned a spot at USA Hockey’s National Team Development Program in Michigan—all three trained and continue to train with Freddy.</span><span data-lang="ko">이와 같은 선수 개발 철학을 노스스타 에듀케이션 그룹의 한국 선수 하키 진로에도 적용합니다. 2025년 매사추세츠에서 미시간 USA 하키 국가대표 개발 프로그램(NDTP)에 선발된 선수는 단 세 명이었으며, 그 세 명 모두 Freddy와 훈련했고 지금도 계속 훈련하고 있습니다.</span>
+              </p>
+              <p class="text-gray-700 font-semibold mb-1"><span data-lang="en">Education</span><span data-lang="ko">학력</span></p>
+              <ul class="text-gray-600 space-y-1 list-disc list-inside mb-4">
+                <li><span data-lang="en">Boston University — NCAA East First All-American, team captain</span><span data-lang="ko">보스턴 대학교 — NCAA 이스트 퍼스트 올아메리칸, 주장</span></li>
+              </ul>
+              <p class="text-gray-600 text-sm"><span data-lang="en">Freddy runs <strong>Dream Big Hockey</strong>, a youth development organization.</span><span data-lang="ko">Freddy는 청소년 개발 기관 <strong>Dream Big Hockey</strong>를 운영합니다.</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- Coach Lee Yuwon -->
+        <article id="coach-lee" class="profile-accordion rounded-2xl border-2 border-gray-200 bg-white overflow-hidden hover:border-northstar-200 transition-colors">
+          <button type="button" class="profile-trigger w-full flex items-center justify-between gap-4 p-6 text-left font-sans" aria-expanded="false" aria-controls="profile-coachlee-content" id="profile-coachlee-trigger">
+            <div class="min-w-0">
+              <h4 class="font-display text-xl text-northstar-900 tracking-wide"><span data-lang="en">Coach Lee Yuwon</span><span data-lang="ko">Coach Lee Yuwon</span></h4>
+              <p class="text-northstar-700 font-medium text-sm mt-0.5"><span data-lang="en">Golden Owls Hockey · Korea development partner</span><span data-lang="ko">Golden Owls Hockey · 한국 개발 파트너</span></p>
+            </div>
+            <span class="profile-chevron flex-shrink-0 text-northstar-600" aria-hidden="true">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </span>
+          </button>
+          <div id="profile-coachlee-content" class="profile-content" role="region" aria-labelledby="profile-coachlee-trigger">
+            <div class="px-6 pb-6 pt-0 border-t border-gray-100">
+              <p class="text-gray-600 leading-relaxed mb-4 pt-4">
+                <span data-lang="en">Our work in Korea is led exclusively by Lee Yuwon, founder and head coach of Golden Owls.</span><span data-lang="ko">한국에서의 우리 업무는 Golden Owls 설립자이자 헤드 코치인 이유원(Lee Yuwon)이 전담합니다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                <span data-lang="en">Coach Lee is a former elite player with a strong academic and professional hockey background, having competed at Yonsei University and at the Korean professional level. Beyond his playing résumé, what distinguishes Coach Lee is his proven ability to develop Korean athletes for success in North America—not just technically, but culturally and strategically.</span><span data-lang="ko">Coach Lee는 연세대학교 및 한국 프로 수준에서 활약한 전 엘리트 선수로, 학업과 프로 하키 경력을 갖추고 있습니다. 선수 경력 이상으로, Coach Lee를 돋보이게 하는 것은 기술뿐 아니라 문화·전략적으로 한국 선수를 북미 성공에 맞춰 키우는 검증된 역량입니다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                <span data-lang="en">We work exclusively with Coach Lee and the Golden Owls organization after an extensive evaluation of multiple top coaches and programs across Korea. Our decision was driven by direct input from Freddy Meyer and our North American coaching team, who independently identified Coach Lee as the coach best equipped to bridge the gap between Korean development systems and North American hockey standards.</span><span data-lang="ko">한국 전역의 다수 최상위 코치·프로그램을 광범위히 평가한 뒤 Coach Lee와 Golden Owls만을 협력 파트너로 선정했습니다. Freddy Meyer와 북미 코칭 팀의 직접적인 의견이 이 결정을 이끌었으며, 한국 개발 시스템과 북미 하키 기준 사이의 간극을 메우기에 가장 적합한 코치로 Coach Lee를 독립적으로 지목했습니다.</span>
+              </p>
+              <p class="text-gray-700 font-semibold mb-3"><span data-lang="en">Why we chose Coach Lee</span><span data-lang="ko">Coach Lee를 선택한 이유</span></p>
+              <ul class="text-gray-600 space-y-2 list-disc list-inside mb-6">
+                <li><span data-lang="en">Exceptional ability to teach elite skating mechanics and skill efficiency</span><span data-lang="ko">엘리트 스케이팅 메카닉과 기술 효율을 가르치는 탁월한 역량</span></li>
+                <li><span data-lang="en">Strong emphasis on hockey IQ, decision-making, and pace of play</span><span data-lang="ko">하키 IQ, 의사결정, 경기 템포에 대한 강한 강조</span></li>
+                <li><span data-lang="en">Clear understanding of North American expectations, systems, and evaluation criteria</span><span data-lang="ko">북미 기대, 시스템, 평가 기준에 대한 명확한 이해</span></li>
+                <li><span data-lang="en">Proven track record preparing Korean athletes for U.S. and Canadian pathways</span><span data-lang="ko">한국 선수를 미국·캐나다 진로에 맞춰 준비시키는 검증된 실적</span></li>
+              </ul>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                <span data-lang="en">Coach Lee’s athletes consistently demonstrate improved mechanics, higher game intelligence, and smoother transitions into North American environments. His development philosophy aligns directly with ours: prepare athletes the right way, at the right time, for the right level.</span><span data-lang="ko">Coach Lee의 선수들은 일관되게 개선된 메카닉, 높은 경기 지능, 북미 환경으로의 원활한 전환을 보여줍니다. 그의 개발 철학은 우리와 직결됩니다: 올바른 방식으로, 올바른 시기에, 올바른 수준에 맞춰 선수를 준비시킨다.</span>
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                <span data-lang="en">For families in Korea, Coach Lee and Golden Owls serve as our trusted, on-the-ground development partner—ensuring athletes are truly ready before pursuing Junior Prep, Prep School, or North American opportunities.</span><span data-lang="ko">한국 가정에게 Coach Lee와 Golden Owls는 신뢰할 수 있는 현지 개발 파트너로서, 선수들이 Jr. Prep, 프랩 스쿨, 북미 기회를 추구하기 전에 진정으로 준비되도록 합니다.</span>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -204,12 +421,11 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-northstar-900 tracking-wide mb-4"><span data-lang="en">Get in Touch</span><span data-lang="ko">연락하기</span></h2>
-        <p class="text-gray-600 text-lg mb-10"><span data-lang="en">Ready to take the next step? Reach out to learn about guardianship, education consulting, hockey programs, and how we can support your family.</span><span data-lang="ko">다음 단계를 준비하고 계신가요? 가디언십, 교육 컨설팅, 하키 프로그램과 가정 지원에 대해 문의해 주세요.</span></p>
+        <p class="text-gray-600 text-lg mb-10"><span data-lang="en">Ready to take the next step? Reach out to learn about our evaluation process, development pathway, and placement into Junior Prep, Prep School, and Junior programs in Massachusetts and New England.</span><span data-lang="ko">다음 단계를 준비하고 계신가요? 평가 프로세스, 개발 경로, 매사추세츠·뉴잉글랜드 주니어 프랩·프랩 스쿨·주니어 프로그램 입단에 대해 문의해 주세요.</span></p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="mailto:kenneth@northstareducationgroup.com" class="inline-flex items-center justify-center px-6 py-3 bg-northstar-600 text-white font-semibold rounded-lg hover:bg-northstar-700 transition"><span data-lang="en">Email Us</span><span data-lang="ko">이메일 보내기</span></a>
-          <a href="#" class="inline-flex items-center justify-center px-6 py-3 border-2 border-northstar-600 text-northstar-600 font-semibold rounded-lg hover:bg-northstar-50 transition"><span data-lang="en">Schedule a Call</span><span data-lang="ko">상담 예약</span></a>
         </div>
-        <p class="mt-8 text-gray-500 text-sm"><span data-lang="en">Northstar Education Group — Guiding Korean families to world-class education and opportunities.</span><span data-lang="ko">Northstar Education Group — 한국 가정을 세계 수준의 교육과 기회로 이끕니다.</span></p>
+        <p class="mt-8 text-gray-500 text-sm"><span data-lang="en">Northstar Education Group — From Korea to Massachusetts. Potential into performance.</span><span data-lang="ko">Northstar Education Group — 한국에서 매사추세츠로. 잠재력을 퍼포먼스로.</span></p>
       </div>
     </div>
   </section>
@@ -232,7 +448,7 @@
   <script>
     (function () {
       var STORAGE_KEY = 'northstar-lang';
-      var TITLES = { en: 'Northstar Education Group | Guiding Korean Families to World-Class Education', ko: 'Northstar Education Group | 한국 가정을 세계 수준의 교육으로' };
+      var TITLES = { en: 'Northstar Education Group | Hockey-First Pathway from Korea to Massachusetts', ko: 'Northstar Education Group | 한국에서 매사추세츠로, 하키 중심 경로' };
 
       function getLang() {
         var params = new URLSearchParams(location.search);
@@ -259,6 +475,53 @@
 
       var lang = getLang();
       setLang(lang);
+
+      // Services accordion: one open at a time, toggle on trigger click
+      document.querySelectorAll('.accordion-trigger').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var article = btn.closest('.service-accordion');
+          var content = article.querySelector('.service-content');
+          var isOpen = content.classList.contains('is-open');
+          document.querySelectorAll('.service-content.is-open').forEach(function (c) { c.classList.remove('is-open'); });
+          document.querySelectorAll('.service-accordion.is-open').forEach(function (a) { a.classList.remove('is-open'); });
+          document.querySelectorAll('.accordion-trigger[aria-expanded="true"]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+          if (!isOpen) {
+            content.classList.add('is-open');
+            article.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // About blurb: Read more / Read less
+      var blurbToggle = document.getElementById('about-blurb-toggle');
+      var blurbExtra = document.getElementById('about-blurb-extra');
+      if (blurbToggle && blurbExtra) {
+        blurbToggle.addEventListener('click', function () {
+          var isOpen = blurbExtra.classList.toggle('is-open');
+          blurbToggle.setAttribute('aria-expanded', isOpen);
+          blurbExtra.setAttribute('aria-hidden', !isOpen);
+          blurbToggle.querySelector('.read-more').classList.toggle('hidden', isOpen);
+          blurbToggle.querySelector('.read-less').classList.toggle('hidden', !isOpen);
+        });
+      }
+
+      // About profile accordions: one open at a time
+      document.querySelectorAll('.profile-trigger').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var article = btn.closest('.profile-accordion');
+          var content = article.querySelector('.profile-content');
+          var isOpen = content.classList.contains('is-open');
+          document.querySelectorAll('.profile-content.is-open').forEach(function (c) { c.classList.remove('is-open'); });
+          document.querySelectorAll('.profile-accordion.is-open').forEach(function (a) { a.classList.remove('is-open'); });
+          document.querySelectorAll('.profile-trigger[aria-expanded="true"]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+          if (!isOpen) {
+            content.classList.add('is-open');
+            article.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
 
       document.getElementById('menu-btn').addEventListener('click', function () {
         document.getElementById('mobile-menu').classList.toggle('hidden');
