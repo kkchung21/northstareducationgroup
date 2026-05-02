@@ -4,8 +4,20 @@ Informational website for **Northstar Education**, a hockey company that helps K
 
 ## Tech
 
-- **Tailwind CSS** (via CDN) for layout and styling
-- Single-page HTML with responsive design
+- **Tailwind CSS** (via CDN) for layout and styling  
+- Marketing **homepage** (`index.html`) plus multi-page **Pathway guides** under `/pathway/`
+
+## Pathway guides (multi-page)
+
+Long-form guides live under `/pathway/` with sources in `pathway/content/*.md`.
+
+After editing markdown, regenerate HTML:
+
+```bash
+node scripts/build-pathway.mjs
+```
+
+Articles use per-page **EN / 한국어** toggle; Korean full-text translation is staged separately (see notices on article pages).
 
 ## Run locally
 
@@ -19,11 +31,12 @@ Then open the URL shown (e.g. http://localhost:3000).
 
 ## Sections
 
-- **Hero** — Headline and intro
+- **Hero** — Headline and intro (includes link to Pathway guides)
 - **Programs** — Jr. Pre, Pre, Club
 - **About** — Northstar mission and “Why Korean Athletes”
 - **Contact** — Email and call-to-action
 - **Footer** — Links and copyright
+- **Pathway guides** — `/pathway/` multi-article hub + deep dives (markdown sources in `pathway/content/`)
 
 ## Customization
 
