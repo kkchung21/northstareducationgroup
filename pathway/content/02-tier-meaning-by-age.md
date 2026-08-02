@@ -20,7 +20,7 @@ The families who succeed in Massachusetts hockey are the ones who understand tha
 
 ## What "Tier" Actually Means in Massachusetts
 
-This section is where we save Korean families hundreds of hours of confusion. Massachusetts youth hockey tiering is genuinely complicated — most American parents don't fully understand it either. Here is the honest version.
+This section is where we save Korean families hundreds of hours of confusion. Massachusetts youth hockey tiering is genuinely complicated — most American parents don't fully understand it either. Here is the clear version.
 
 ### USA Hockey's formal designation
 
@@ -63,7 +63,7 @@ Boston Hockey Academy, North Shore Hockey Academy, and American Hockey Academy a
 
 ### The truth about "AAA / Tier 1" marketing in New England
 
-EHF Elite and E9 both market themselves as peak AAA/Tier 1 products. Honest realities:
+EHF Elite and E9 both market themselves as peak AAA/Tier 1 products. Practical realities:
 
 - **The leagues don't play each other enough** for clean head-to-head proof; schedules rarely overlap enough for rankings sites to compare apples-to-apples.
 - **Most teams labeled AAA/Elite in New England are not nationally competitive at true AAA.** Programs such as Boston Advantage (E9 + T1EHL) and Boston Americans are common benchmarks families use when asking what "real" national AAA looks like in-region.
@@ -80,7 +80,7 @@ What this means for Korean families:
 - **Don't trust reputation alone.** Respect for a club name does not guarantee it's the best option for your child's birth year **right now**.
 - **Look at current-season MyHockeyRankings for the specific team**, not last year's trophy case.
 - **Use league parity/placement signals** where available — marketing labels are not roster truth.
-- **Talk to current-team families** about coaching culture, ice allocation, and development honesty — that's ground truth.
+- **Talk to current-team families** about coaching culture, ice allocation, and development track record — that's ground truth.
 
 ### The coaching-quality issue
 

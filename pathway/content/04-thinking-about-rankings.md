@@ -8,7 +8,7 @@ This article will explain why that instinct is leading you in the wrong directio
 
 ## Why Korean Families Are Drawn to Rankings
 
-Let's start with the cultural honesty. Korean society places a strong emphasis on visible, rankable, comparable achievement. SAT scores, university rankings, company prestige, apartment building tiers — Korea organizes itself around clear hierarchies in a way that American culture often does not. This is not a criticism. It is a fact about the system you grew up in, and it shapes the way Korean parents intuitively approach decisions in the United States.
+Let's start with the cultural context. Korean society places a strong emphasis on visible, rankable, comparable achievement. SAT scores, university rankings, company prestige, apartment building tiers — Korea organizes itself around clear hierarchies in a way that American culture often does not. This is not a criticism. It is a fact about the system you grew up in, and it shapes the way Korean parents intuitively approach decisions in the United States.
 
 Hockey rankings feel like the right kind of data. They appear precise. They allow direct comparison. They reduce a complicated decision to a single number. They feel objective.
 

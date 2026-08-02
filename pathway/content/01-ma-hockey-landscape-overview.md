@@ -6,7 +6,7 @@ But that density is also what makes it confusing. Tier 1, Tier 2, E9, NEPSAC, IS
 
 This guide is the foundation. It will give you the map. The other articles on this site will go deeper into each piece.
 
-## What This Guide Will Tell You Honestly
+## What This Guide Will Make Clear
 
 Before we go further, a commitment we make to every family we work with: we will tell you the truth, even when it's uncomfortable.
 
@@ -30,7 +30,7 @@ Think of the Massachusetts hockey landscape as three connected layers:
 
 ### 1. Youth Club Hockey (Ages 8–14, sometimes through 18)
 
-This is the entry point — and often the first place Korean families confront how confusing New England youth hockey can be. The system confuses American parents too. Here is an honest map.
+This is the entry point — and often the first place Korean families confront how confusing New England youth hockey can be. The system confuses American parents too. Here is a clear map.
 
 The dominant league structure is the **Eastern Hockey Federation (EHF)** — commonly called **“The Fed”** — which operates from Mites through Midgets. It is organized into divisions roughly **Elite/National → Platinum → Upper Gold → Gold**. Major EHF organizations include Boston Jr. Eagles, Boston Jr. Terriers, Middlesex Islanders, South Shore Kings, Top Gun, Minuteman Flames, Bay State Breakers, and others.
 
@@ -90,4 +90,4 @@ Read in order if you're new to the system. Jump to specific articles if you have
 
 ---
 
-*Northstar Education Group helps Korean families navigate the Massachusetts youth hockey, prep school, and junior hockey pathways. We provide honest guidance, not sales pitches. The goal is to put your child in the right environment for their development and your family's investment — wherever that pathway ultimately leads.*
+*Northstar Education Group helps Korean families navigate the Massachusetts youth hockey, prep school, and junior hockey pathways. We provide practical guidance, not sales pitches. The goal is to put your child in the right environment for their development and your family's investment — wherever that pathway ultimately leads.*

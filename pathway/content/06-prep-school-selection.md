@@ -68,13 +68,13 @@ For a Korean student who arrives without strong English fluency, prioritizing sc
 
 ### 4. Hockey Roster Depth and Playing Time Realism
 
-This factor is often underweighted by families chasing prestige. The honest question: **at the prep schools you're considering, will your child actually play meaningful minutes?**
+This factor is often underweighted by families chasing prestige. The direct question: **at the prep schools you're considering, will your child actually play meaningful minutes?**
 
 A top-line player at Williston who plays 18+ minutes per game will be more visible to college recruiters than a fourth-line player at Kimball Union who plays 6 minutes per game. This is the prep school version of the same principle we apply throughout this content: ice time matters more than program prestige.
 
 Some prep schools at the top of the Elite 8 routinely carry 12+ players who are already committed to D1 programs by junior year. A new arrival in 9th or 10th grade entering that environment may struggle to crack the top two lines for years. Other strong programs are more developmental — they actively bring in players at 9th or 10th grade and grow them through the program.
 
-**The practical step:** When evaluating a school, ask the head coach honest questions about roster composition: How many players currently committed? How many returning starters at your child's position? What's the realistic line your child would compete for in their first year?
+**The practical step:** When evaluating a school, ask the head coach direct questions about roster composition: How many players currently committed? How many returning starters at your child's position? What's the realistic line your child would compete for in their first year?
 
 ### 5. Cost, Financial Aid, and Total Investment
 

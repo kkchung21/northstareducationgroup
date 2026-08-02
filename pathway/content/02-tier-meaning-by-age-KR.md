@@ -20,7 +20,7 @@
 
 ## 매사추세츠에서 "Tier"가 실제로 의미하는 것 (미국 부모에게도 헷갈린다)
 
-이 섹션은 한국 가정이 헛걸음할 시간을 줄여 주는 부분입니다. 매사추세츠 Youth Tier 구조는 진짜로 복잡하며 대부분의 미국 부모도 완전히 이해하지 못합니다. 솔직한 버전입니다.
+이 섹션은 한국 가정이 헛걸음할 시간을 줄여 주는 부분입니다. 매사추세츠 Youth Tier 구조는 진짜로 복잡하며 대부분의 미국 부모도 완전히 이해하지 못합니다. 명확한 버전입니다.
 
 ### USA Hockey의 공식 지정
 
@@ -63,7 +63,7 @@ Boston Hockey Academy, North Shore Hockey Academy, American Hockey Academy 등�
 
 ### New England에서 "AAA / Tier 1" 마케팅의 진실
 
-EHF Elite와 E9는 둘 다 자신을 최상위 AAA/Tier 1 제품으로 포지셔닝합니다. 솔직한 현실은 다음과 같습니다.
+EHF Elite와 E9는 둘 다 자신을 최상위 AAA/Tier 1 제품으로 포지셔닝합니다. 실질적인 현실은 다음과 같습니다.
 
 - **두 리그가 서로 충분히 맞대결하지 않아** 깔끔한 정면 대결 증거가 부족합니다. 일정이 잘 겹치지 않아 랭킹 사이트가 사과와 사과를 비교하기 어렵습니다.
 - **New England에서 AAA/Elite라 불리는 대부분의 팀은 진짜 전국 AAA 경쟁력이 없습니다.** 지역 안에서 “진짜 전국 AAA가 어떻게 보이는지” 물을 때 흔한 벤치마크가 Boston Advantage(E9 + T1EHL)와 Boston Americans입니다.

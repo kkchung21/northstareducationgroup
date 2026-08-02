@@ -10,7 +10,7 @@
 
 본격적인 내용에 앞서, 우리가 모든 가정에 드리는 약속이 있습니다. **불편한 진실이라도 사실대로 말씀드립니다.**
 
-Youth Hockey에서 NCAA Division 1로 가는 길은 좁습니다. NHL로 가는 길은 더 좁습니다. 한국 가정들은 종종 매사추세츠에 도착하면서 재능과 노력만 있으면 충분할 거라 생각합니다. 둘 다 필수 조건이지만, 충분 조건은 아닙니다. 올바른 환경, 올바른 타이밍, 올바른 발전 결정 — 그리고 솔직히 말해 어느 정도의 운까지 — 모두 중요합니다.
+Youth Hockey에서 NCAA Division 1로 가는 길은 좁습니다. NHL로 가는 길은 더 좁습니다. 한국 가정들은 종종 매사추세츠에 도착하면서 재능과 노력만 있으면 충분할 거라 생각합니다. 둘 다 필수 조건이지만, 충분 조건은 아닙니다. 올바른 환경, 올바른 타이밍, 올바른 발전 결정 — 그리고 현실적으로 어느 정도의 운까지 — 모두 중요합니다.
 
 저희가 하는 일은 시스템을 명확히 이해하실 수 있도록 도와드리는 겁니다. 그래야 자녀의 가능성과 가족의 투자를 모두 극대화하는 결정을 내릴 수 있고, 결과가 어떻게 나오든 후회 없는 선택이 됩니다.
 
@@ -30,7 +30,7 @@ Youth Hockey에서 NCAA Division 1로 가는 길은 좁습니다. NHL로 가는 
 
 ### 1. Youth Club Hockey (8~14세, 일부는 18세까지)
 
-시작점이며, 한국 가정이 New England Youth Hockey의 복잡함을 처음 마주하는 곳이기도 합니다. 이 시스템은 미국 부모님들에게도 헷갈립니다. 솔직한 지도를 그려드리겠습니다.
+시작점이며, 한국 가정이 New England Youth Hockey의 복잡함을 처음 마주하는 곳이기도 합니다. 이 시스템은 미국 부모님들에게도 헷갈립니다. 명확한 지도를 그려드리겠습니다.
 
 지배적인 리그 구조는 **Eastern Hockey Federation (EHF)** — 보통 **"The Fed"** 라고 불립니다 — 이며, Mites부터 Midgets까지 운영합니다. 대략 **Elite/National → Platinum → Upper Gold → Gold** 디비전으로 조직되어 있습니다. 주요 EHF 조직에는 Boston Jr. Eagles, Boston Jr. Terriers, Middlesex Islanders, South Shore Kings, Top Gun, Minuteman Flames, Bay State Breakers 등이 포함됩니다.
 

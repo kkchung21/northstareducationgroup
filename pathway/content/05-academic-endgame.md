@@ -6,7 +6,7 @@ If you've read the rest of this guide, you understand the Massachusetts hockey l
 
 **What does this entire investment actually buy my child in terms of college outcomes?**
 
-The honest answer is more nuanced — and more encouraging — than most families realize. Hockey, played seriously through prep school and possibly junior hockey, opens doors to elite universities in three distinct ways. Most families fixate on only the first one. The second and third are where many Korean families will actually find their best outcomes.
+The realistic answer is more nuanced — and more encouraging — than most families realize. Hockey, played seriously through prep school and possibly junior hockey, opens doors to elite universities in three distinct ways. Most families fixate on only the first one. The second and third are where many Korean families will actually find their best outcomes.
 
 Let's walk through all four tiers of the academic endgame.
 
@@ -32,7 +32,7 @@ Here is the four-tier framework.
 
 **What the path looks like:** Strong prep school performance (typically at one of the top NEPSAC programs), a year or two in the USHL or BCHL, and a recruitment relationship with one of the six Ivy hockey coaches. The Ivy hockey programs use what's called the Academic Index, which means recruits must clear specific GPA and test score thresholds. Strong grades and test scores are non-negotiable even with hockey ability.
 
-**Honest reality:** Of the roughly 28 roster spots at each Ivy hockey program, most are filled by Canadian and American players. International players make Ivy hockey rosters but it's rare. A Korean player with the academic profile and hockey ability to be a serious Ivy hockey recruit is exceptional. This should be a goal, not a plan. Plan for the other tiers; aim for this one if the opportunity emerges.
+**Practical reality:** Of the roughly 28 roster spots at each Ivy hockey program, most are filled by Canadian and American players. International players make Ivy hockey rosters but it's rare. A Korean player with the academic profile and hockey ability to be a serious Ivy hockey recruit is exceptional. This should be a goal, not a plan. Plan for the other tiers; aim for this one if the opportunity emerges.
 
 ## Tier 2: Elite D1 Hockey at High-Academic Programs
 
@@ -68,7 +68,7 @@ This is not a trick. This is a real and meaningful difference between two academ
 
 **What the path looks like:** Students maintain strong prep academics while playing meaningful roles on their prep school's varsity hockey team. An optional junior season (USHL, NAHL, BCHL, or NCDC) sharpens the spike — it shows they competed seriously at a level few applicants reach. They then apply through the traditional admissions process to selective colleges without varsity hockey, presenting hockey as their distinguishing extracurricular.
 
-**The honest framing of this strategy:** Korean families should understand this directly. The American elite admissions process is one in which academic credentials are necessary but increasingly insufficient for differentiation, especially for Korean and Korean-American applicants. Universities use holistic admissions partly because purely academic competition produces an applicant pool too uniform to choose from.
+**The practical framing of this strategy:** Korean families should understand this directly. The American elite admissions process is one in which academic credentials are necessary but increasingly insufficient for differentiation, especially for Korean and Korean-American applicants. Universities use holistic admissions partly because purely academic competition produces an applicant pool too uniform to choose from.
 
 In that environment, having a "hook" — a distinctive narrative, a notable accomplishment, a story that makes the applicant memorable — is what moves an academically-qualified applicant from the rejected pile to the admitted pile. Serious hockey is one of the most effective spikes available, especially for international students whose academic competitors do not generally have it.
 

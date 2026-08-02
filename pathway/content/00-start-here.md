@@ -8,7 +8,7 @@ This page is short on purpose. It tells you where to go next based on where you 
 
 We built this content for one specific kind of family: Korean families whose child plays competitive hockey, who are seriously considering or already pursuing the New England prep school and NCAA pathway. The advice here is direct, sometimes uncomfortable, and based on years of working with families in this exact situation.
 
-If you want generic encouragement, this isn't that. If you want the honest version — what works, what doesn't, what other Korean families wish they had known earlier — read on.
+If you want generic encouragement, this isn't that. If you want the practical version — what works, what doesn't, what other Korean families wish they had known earlier — read on.
 
 ## Where Are You in the Journey?
 
@@ -86,7 +86,7 @@ What we offer through Northstar Education Group:
 - Direct guidance through prep school selection and applications
 - Active support during the transition from Korea to Massachusetts (or from one stage to the next)
 - Connections into the New England hockey ecosystem — coaches, scouts, families, schools
-- Honest assessment of your child's actual pathway options, not optimistic generalities
+- Clear assessment of your child's actual pathway options, not optimistic generalities
 
 If the content here resonates with how you want to think about your child's pathway, [we're glad to talk](mailto:kenneth@northstareducationgroup.com).
 
