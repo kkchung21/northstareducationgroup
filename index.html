@@ -534,9 +534,21 @@
         });
       });
 
-      document.getElementById('menu-btn').addEventListener('click', function () {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-      });
+      var menuButton = document.getElementById('menu-btn');
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+        window.addEventListener('pageshow', function () {
+          mobileMenu.classList.add('hidden');
+        });
+      }
     })();
   </script>
 </body>
