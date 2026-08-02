@@ -215,6 +215,7 @@ function headerHtml ({ activePath }) {
           <a href="/#services" class="text-gray-600 hover:text-northstar-600 font-medium transition">Services</a>
           <a href="/#about" class="text-gray-600 hover:text-northstar-600 font-medium transition">About</a>
           <a href="/pathway/" class="font-medium transition ${pathwayActive || articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Resources</a>
+          <a href="/map/" class="text-gray-600 hover:text-northstar-600 font-medium transition">Map</a>
           <a href="/#contact" class="text-gray-600 hover:text-northstar-600 font-medium transition">Contact</a>
         </div>
         <button type="button" class="md:hidden p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
@@ -225,6 +226,7 @@ function headerHtml ({ activePath }) {
         <a href="/#services" class="block py-2 text-gray-600 hover:text-northstar-600">Services</a>
         <a href="/#about" class="block py-2 text-gray-600 hover:text-northstar-600">About</a>
         <a href="/pathway/" class="block py-2 font-medium ${pathwayActive || articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Resources</a>
+        <a href="/map/" class="block py-2 text-gray-600 hover:text-northstar-600">Map</a>
         <a href="/#contact" class="block py-2 text-gray-600 hover:text-northstar-600">Contact</a>
       </div>
     </nav>
@@ -238,6 +240,7 @@ function footerHtml () {
         <a href="/" class="font-display text-lg md:text-xl text-white hover:text-gray-200 transition">NORTHSTAR EDUCATION GROUP</a>
         <div class="flex gap-8">
           <a href="/pathway/" class="hover:text-white transition">Resources</a>
+          <a href="/map/" class="hover:text-white transition">Map</a>
           <a href="/#services" class="hover:text-white transition">Services</a>
           <a href="/#contact" class="hover:text-white transition">Contact</a>
         </div>
