@@ -211,18 +211,21 @@ function headerHtml ({ activePath }) {
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 md:h-20">
         <a href="/" class="font-display text-xl md:text-2xl tracking-wide text-northstar-800">NORTHSTAR EDUCATION GROUP</a>
-        <div class="hidden md:flex items-center gap-6 lg:gap-8">
+        <div class="hidden lg:flex items-center gap-6 lg:gap-8">
           <a href="/#services" class="text-gray-600 hover:text-northstar-600 font-medium transition">Services</a>
           <a href="/#about" class="text-gray-600 hover:text-northstar-600 font-medium transition">About</a>
           <a href="/pathway/" class="font-medium transition ${pathwayActive || articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Resources</a>
           <a href="/map/" class="text-gray-600 hover:text-northstar-600 font-medium transition">Map</a>
           <a href="/#contact" class="text-gray-600 hover:text-northstar-600 font-medium transition">Contact</a>
         </div>
-        <button type="button" class="md:hidden p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+        <div class="lg:hidden flex items-center gap-2">
+          <a href="/map/" class="px-2 py-1 text-sm font-semibold text-northstar-700 hover:text-northstar-900 transition">Map</a>
+          <button type="button" class="p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100">
+      <div id="mobile-menu" class="hidden lg:hidden pb-4 border-t border-gray-100">
         <a href="/#services" class="block py-2 text-gray-600 hover:text-northstar-600">Services</a>
         <a href="/#about" class="block py-2 text-gray-600 hover:text-northstar-600">About</a>
         <a href="/pathway/" class="block py-2 font-medium ${pathwayActive || articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Resources</a>
