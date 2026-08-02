@@ -129,10 +129,10 @@
       line-height: 1.45;
       margin: 14px;
       max-height: min(520px, calc(100vh - 220px));
-      min-width: 280px;
+      min-width: 300px;
       overflow-y: auto;
       padding-right: 4px;
-      width: 300px;
+      width: 324px;
     }
     .leaflet-popup-tip-container {
       height: 20px;
@@ -188,9 +188,24 @@
     .pin-college { background: #c2410c; }
     .score-bar { background: #dbeafe; border-radius: 999px; height: 8px; overflow: hidden; }
     .score-bar span { background: #1a87f5; display: block; height: 100%; }
-    .fact-list { display: grid; gap: 6px; margin: 0 0 12px; padding: 0; }
-    .fact-list li { align-items: flex-start; display: grid; gap: 8px; grid-template-columns: 7px 1fr; line-height: 1.35; list-style: none; }
-    .fact-list li::before { background: #1a87f5; border-radius: 999px; content: ""; height: 7px; margin-top: 6px; width: 7px; }
+    .fact-list { display: grid; gap: 8px; margin: 0 0 14px; padding: 0; }
+    .fact-list li {
+      align-items: flex-start;
+      column-gap: 9px;
+      display: grid;
+      grid-template-columns: 8px minmax(0, 1fr);
+      line-height: 1.4;
+      list-style: none;
+    }
+    .fact-dot {
+      background: #1a87f5;
+      border-radius: 999px;
+      height: 7px;
+      margin-top: 7px;
+      width: 7px;
+    }
+    .fact-text { min-width: 0; overflow-wrap: anywhere; }
+    .fact-text strong { color: #334155; font-weight: 700; }
     .filter-box {
       accent-color: #136ee1;
       height: 16px;
@@ -210,7 +225,7 @@
       .map-shell { min-height: 560px; }
       .leaflet-popup-content {
         max-height: min(460px, calc(100vh - 180px));
-        min-width: 250px;
+        min-width: 260px;
         width: 280px;
       }
     }
@@ -429,7 +444,7 @@
 
       function factList(facts) {
         return '<ul class="fact-list text-sm text-gray-700">' + facts.map(function (fact) {
-          return '<li>' + fact + '</li>';
+          return '<li><span class="fact-dot" aria-hidden="true"></span><span class="fact-text">' + fact + '</span></li>';
         }).join('') + '</ul>';
       }
 
@@ -454,7 +469,7 @@
 
       function collegeFacts(item) {
         var facts = [
-          '<strong>Status:</strong> ' + item.status,
+          '<strong>Status:</strong> NCAA Division I men',
           '<strong>Conference:</strong> ' + item.conference,
           '<strong>Location:</strong> ' + item.city + ', ' + item.state,
           "<strong>Map category:</strong> NCAA Division I men's hockey"
@@ -560,13 +575,40 @@
           button.addEventListener('click', function () {
             var marker = markers.find(function (entry) { return entry.item.id === button.getAttribute('data-id'); });
             if (!marker) return;
+            var mapShell = document.querySelector('.map-shell');
+            var shellTop = mapShell.getBoundingClientRect().top;
+            var needsScroll = shellTop < 0 || shellTop > 80;
             map.setView([marker.item.lat, marker.item.lng], marker.item.kind === 'school' ? 9 : marker.item.kind === 'college' ? 8 : 7);
-            marker.marker.openPopup();
-            if (window.matchMedia('(max-width: 1279px)').matches) {
-              document.querySelector('.map-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            if (needsScroll) mapShell.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(function () {
+              map.invalidateSize();
+              marker.marker.openPopup();
+              keepPopupReadable();
+            }, needsScroll ? 360 : 0);
           });
         });
+      }
+
+      function keepPopupReadable() {
+        setTimeout(function () {
+          var popupEl = document.querySelector('.leaflet-popup');
+          if (!popupEl) return;
+
+          var padding = 18;
+          var popupRect = popupEl.getBoundingClientRect();
+          var mapRect = map.getContainer().getBoundingClientRect();
+          var dx = 0;
+          var dy = 0;
+
+          if (popupRect.left < mapRect.left + padding) dx = popupRect.left - (mapRect.left + padding);
+          if (popupRect.right > mapRect.right - padding) dx = popupRect.right - (mapRect.right - padding);
+          if (popupRect.top < mapRect.top + padding) dy = popupRect.top - (mapRect.top + padding);
+          if (popupRect.bottom > mapRect.bottom - padding) dy = popupRect.bottom - (mapRect.bottom - padding);
+
+          if (dx || dy) {
+            map.panBy([dx, dy], { animate: false });
+          }
+        }, 0);
       }
 
       function render() {
@@ -606,6 +648,11 @@
           map.setView(defaultCenter, defaultZoom);
         }
       }
+
+      map.on('popupopen', function () {
+        keepPopupReadable();
+        setTimeout(keepPopupReadable, 180);
+      });
 
       document.getElementById('search-map').addEventListener('click', function () {
         render();
