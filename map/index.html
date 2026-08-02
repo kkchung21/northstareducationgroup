@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northstar Hockey Pathway Map | Schools and Junior Programs</title>
-  <meta name="description" content="Interactive Northstar map of curated New England Jr. Prep and Prep schools plus USHL, OHL, QMJHL, and Eastern Canada Junior A hockey programs." />
+  <title>Northstar Hockey Pathway Map | Schools, Junior Programs, and NCAA D1</title>
+  <meta name="description" content="Interactive Northstar map of curated New England Jr. Prep and Prep schools plus USHL, OHL, QMJHL, Eastern Canada Junior A, and NCAA Division I men's hockey programs." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -185,6 +185,7 @@
     .pin-ohl { background: #dc2626; }
     .pin-qmjhl { background: #7c3aed; }
     .pin-junior-a { background: #047857; }
+    .pin-college { background: #c2410c; }
     .score-bar { background: #dbeafe; border-radius: 999px; height: 8px; overflow: hidden; }
     .score-bar span { background: #1a87f5; display: block; height: 100%; }
     .fact-list { display: grid; gap: 6px; margin: 0 0 12px; padding: 0; }
@@ -234,8 +235,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-6">
         <div>
           <p class="text-northstar-700 font-semibold uppercase tracking-widest text-sm mb-3">Pathway Map</p>
-          <h1 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-none mb-3">Schools and Junior Hockey Programs</h1>
-          <p class="max-w-3xl text-base md:text-lg text-gray-600 leading-relaxed">Choose filters to map curated New England Jr. Prep and Prep schools alongside USHL, OHL, QMJHL, and Eastern Canada Junior A programs.</p>
+          <h1 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-none mb-3">Schools, Junior Hockey, and NCAA D1 Programs</h1>
+          <p class="max-w-3xl text-base md:text-lg text-gray-600 leading-relaxed">Choose filters to map curated New England Jr. Prep and Prep schools alongside USHL, OHL, QMJHL, Eastern Canada Junior A, and NCAA Division I men's hockey programs.</p>
         </div>
       </div>
     </section>
@@ -293,6 +294,25 @@
             </fieldset>
 
             <fieldset>
+              <legend class="text-sm font-semibold text-gray-900 mb-2">College Hockey</legend>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" class="filter filter-box" data-filter="collegeLevel" value="NCAA D1" /> NCAA D1 men</label>
+            </fieldset>
+
+            <fieldset>
+              <legend class="text-sm font-semibold text-gray-900 mb-2">NCAA Conference</legend>
+              <select id="college-conference-filter" class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm">
+                <option value="all">All conferences</option>
+                <option value="Atlantic Hockey America">Atlantic Hockey America</option>
+                <option value="Big Ten">Big Ten</option>
+                <option value="CCHA">CCHA</option>
+                <option value="ECAC Hockey">ECAC Hockey</option>
+                <option value="Hockey East">Hockey East</option>
+                <option value="NCHC">NCHC</option>
+                <option value="Independent">Independent</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
               <legend class="text-sm font-semibold text-gray-900 mb-2">Region Focus</legend>
               <select id="region-filter" class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm">
                 <option value="all">All regions</option>
@@ -303,7 +323,7 @@
 
             <div class="sticky bottom-0 -mx-4 -mb-4 border-t border-gray-200 bg-white p-4">
               <button id="search-map" type="button" class="w-full rounded-md bg-northstar-700 px-4 py-3 text-sm font-semibold text-white hover:bg-northstar-800 transition">Search map</button>
-              <p class="mt-2 text-xs text-gray-500">Pick any school or junior filter. Blank groups are treated as no preference.</p>
+              <p class="mt-2 text-xs text-gray-500">Pick any school, junior, or college filter. Blank groups are treated as no preference.</p>
             </div>
           </div>
         </aside>
@@ -326,6 +346,7 @@
                   <span class="inline-flex items-center gap-2"><span class="legend-dot bg-red-600"></span> OHL</span>
                   <span class="inline-flex items-center gap-2"><span class="legend-dot bg-violet-600"></span> QMJHL</span>
                   <span class="inline-flex items-center gap-2"><span class="legend-dot bg-emerald-700"></span> Junior A East</span>
+                  <span class="inline-flex items-center gap-2"><span class="legend-dot bg-orange-700"></span> NCAA D1</span>
                 </div>
               </div>
             </div>
@@ -388,6 +409,20 @@
         ].join('');
       }
 
+      function collegePopup(item) {
+        return [
+          '<div>',
+          '<p class="text-xs font-semibold uppercase tracking-wide text-northstar-700 mb-1">NCAA Division I</p>',
+          '<h3 class="font-semibold text-lg text-gray-950 mb-1">' + item.name + '</h3>',
+          '<p class="text-sm text-gray-600 mb-3">' + item.city + ', ' + item.state + ' · ' + item.conference + '</p>',
+          '<p class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Quick Facts</p>',
+          factList(collegeFacts(item)),
+          '<p class="text-xs text-gray-500 mb-3">Source: ' + item.source + '</p>',
+          '<a class="text-sm font-semibold text-northstar-700 hover:text-northstar-900" target="_blank" rel="noreferrer" href="' + item.url + '">View source</a>',
+          '</div>'
+        ].join('');
+      }
+
       function scoreRow(label, score) {
         return '<div><div class="flex items-center justify-between text-xs font-semibold text-gray-600 mb-1"><span>' + label + '</span><span>' + score + '/5</span></div><div class="score-bar"><span style="width:' + (score * 20) + '%"></span></div></div>';
       }
@@ -417,8 +452,19 @@
         return facts.concat(item.quickFacts || []);
       }
 
+      function collegeFacts(item) {
+        var facts = [
+          '<strong>Status:</strong> ' + item.status,
+          '<strong>Conference:</strong> ' + item.conference,
+          '<strong>Location:</strong> ' + item.city + ', ' + item.state,
+          "<strong>Map category:</strong> NCAA Division I men's hockey"
+        ];
+        return facts.concat(item.quickFacts || []);
+      }
+
       function pinClass(item) {
         if (item.kind === 'school') return 'pin-school';
+        if (item.kind === 'college') return 'pin-college';
         if (item.league === 'USHL') return 'pin-ushl';
         if (item.league === 'OHL') return 'pin-ohl';
         if (item.league === 'QMJHL') return 'pin-qmjhl';
@@ -427,6 +473,7 @@
 
       function pinText(item) {
         if (item.kind === 'school') return 'S';
+        if (item.kind === 'college') return 'D1';
         if (item.league === 'Junior A') return 'JA';
         if (item.league === 'USHL') return 'U';
         if (item.league === 'OHL') return 'O';
@@ -439,6 +486,8 @@
           return Object.assign({ kind: 'school' }, item);
         }).concat(data.juniors.map(function (item) {
           return Object.assign({ kind: 'junior' }, item);
+        })).concat((data.colleges || []).map(function (item) {
+          return Object.assign({ kind: 'college' }, item);
         }));
       }
 
@@ -447,11 +496,11 @@
       }
 
       function hasActiveFilters() {
-        return Boolean(document.querySelectorAll('.filter:checked').length || document.getElementById('region-filter').value !== 'all');
+        return Boolean(document.querySelectorAll('.filter:checked').length || document.getElementById('region-filter').value !== 'all' || document.getElementById('college-conference-filter').value !== 'all');
       }
 
       function sortRank(item) {
-        var kindRank = item.kind === 'school' ? 0 : 1;
+        var kindRank = item.kind === 'school' ? 0 : item.kind === 'college' ? 1 : 2;
         var tierRanks = { Top: 0, 'Tier 2': 1, 'Tier 3': 2 };
         var tierRank = Object.prototype.hasOwnProperty.call(tierRanks, item.schoolTier) ? tierRanks[item.schoolTier] : 9;
         return [kindRank, tierRank, item.name];
@@ -463,9 +512,12 @@
         var residential = checkedValues('residential');
         var gender = checkedValues('gender');
         var leagues = checkedValues('league');
+        var collegeLevels = checkedValues('collegeLevel');
+        var collegeConference = document.getElementById('college-conference-filter').value;
         var region = document.getElementById('region-filter').value;
-        var hasSchoolIntent = Boolean(schoolLevels.length || schoolTiers.length || residential.length || gender.length || region === 'new-england');
+        var hasSchoolIntent = Boolean(schoolLevels.length || schoolTiers.length || residential.length || gender.length);
         var hasJuniorIntent = Boolean(leagues.length || region === 'us-junior');
+        var hasCollegeIntent = Boolean(collegeLevels.length || collegeConference !== 'all');
 
         if (item.kind === 'school') {
           if (!hasSchoolIntent) return false;
@@ -478,6 +530,10 @@
           if (!hasJuniorIntent) return false;
           if (leagues.length && leagues.indexOf(item.league) === -1) return false;
         }
+        if (item.kind === 'college') {
+          if (!hasCollegeIntent) return false;
+          if (collegeConference !== 'all' && item.conference !== collegeConference) return false;
+        }
         if (region === 'new-england' && newEnglandStates.indexOf(item.state) === -1) return false;
         if (region === 'us-junior' && (item.kind !== 'junior' || canadaStates.indexOf(item.state) !== -1)) return false;
         return true;
@@ -488,13 +544,15 @@
         if (!items.length) {
           listEl.innerHTML = hasActiveFilters()
             ? '<div class="p-4 text-sm text-gray-500 leading-relaxed">No matching locations. Try clearing a filter or choosing another school level or league.</div>'
-            : '<div class="p-4 text-sm text-gray-500 leading-relaxed">Select a school or junior preference, then click Search map.</div>';
+            : '<div class="p-4 text-sm text-gray-500 leading-relaxed">Select a school, junior, or college preference, then click Search map.</div>';
           return;
         }
         listEl.innerHTML = items.map(function (item) {
           var meta = item.kind === 'school'
             ? (item.schoolLevel || 'Prep') + ' · ' + (item.schoolTier || 'Tier') + ' · ' + item.gender + ' · ' + item.residential
-            : item.league + (item.subleague ? ' · ' + item.subleague : '');
+            : item.kind === 'college'
+              ? 'NCAA D1 · ' + item.conference
+              : item.league + (item.subleague ? ' · ' + item.subleague : '');
           return '<button type="button" data-id="' + item.id + '" class="result-item w-full text-left p-4 hover:bg-northstar-50 transition"><span class="block text-sm font-semibold text-gray-950">' + item.name + '</span><span class="block text-xs text-gray-500 mt-1">' + item.city + ', ' + item.state + ' · ' + meta + '</span></button>';
         }).join('');
 
@@ -502,7 +560,7 @@
           button.addEventListener('click', function () {
             var marker = markers.find(function (entry) { return entry.item.id === button.getAttribute('data-id'); });
             if (!marker) return;
-            map.setView([marker.item.lat, marker.item.lng], marker.item.kind === 'school' ? 9 : 7);
+            map.setView([marker.item.lat, marker.item.lng], marker.item.kind === 'school' ? 9 : marker.item.kind === 'college' ? 8 : 7);
             marker.marker.openPopup();
             if (window.matchMedia('(max-width: 1279px)').matches) {
               document.querySelector('.map-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -530,7 +588,7 @@
           });
           var marker = L.marker([item.lat, item.lng], { icon: icon })
             .addTo(map)
-            .bindPopup(item.kind === 'school' ? schoolPopup(item) : juniorPopup(item), {
+            .bindPopup(item.kind === 'school' ? schoolPopup(item) : item.kind === 'college' ? collegePopup(item) : juniorPopup(item), {
               autoPan: true,
               autoPanPadding: [28, 28],
               closeButton: true,
@@ -559,6 +617,7 @@
       document.getElementById('reset-filters').addEventListener('click', function () {
         document.querySelectorAll('.filter').forEach(function (input) { input.checked = false; });
         document.getElementById('region-filter').value = 'all';
+        document.getElementById('college-conference-filter').value = 'all';
         render();
       });
 
