@@ -6,6 +6,7 @@ Informational website for **Northstar Education**, a hockey company that helps K
 
 - **Tailwind CSS** (via CDN) for layout and styling  
 - Marketing **homepage** (`index.html`) plus multi-page **Pathway guides** under `/pathway/`
+- Interactive **Pathway Map** under `/map/`, powered by the maintainable data file in `data/map-data.js`
 
 ## Pathway guides (multi-page)
 
@@ -37,6 +38,7 @@ Then open the URL shown (e.g. http://localhost:3000).
 - **Contact** — Email and call-to-action
 - **Footer** — Links and copyright
 - **Pathway guides** — `/pathway/` multi-article hub + deep dives (markdown sources in `pathway/content/`)
+- **Pathway Map** — `/map/` interactive filterable map of schools and junior hockey programs
 
 ## Customization
 
