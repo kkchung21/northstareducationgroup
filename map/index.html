@@ -532,7 +532,7 @@
       }
 
       function normalizeText(value) {
-        return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+        return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
       }
 
       function getSearchQuery() {
@@ -554,6 +554,7 @@
           item.schoolTier,
           item.gender,
           item.residential,
+          (item.aliases || []).join(' '),
           (item.labels || []).join(' ')
         ].filter(Boolean).join(' '));
       }
@@ -564,8 +565,9 @@
         var tokens = query.split(' ').filter(Boolean);
         if (tokens.length <= 1) return text.indexOf(query) !== -1;
         if (text.indexOf(query) !== -1) return true;
+        var nameAndAliasText = normalizeText([item.name, (item.aliases || []).join(' ')].join(' '));
         return tokens.every(function (token) {
-          return normalizeText(item.name).indexOf(token) !== -1;
+          return nameAndAliasText.indexOf(token) !== -1;
         });
       }
 
