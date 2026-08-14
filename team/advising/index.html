@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Team Advising Workspace | Northstar Education Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            northstar: {
+              50: '#eef9ff',
+              100: '#d9f1ff',
+              600: '#1a87f5',
+              800: '#1658b6',
+              900: '#184b8f',
+              950: '#142f57',
+            },
+          },
+          fontFamily: {
+            sans: ['Outfit', 'system-ui', 'sans-serif'],
+            display: ['Bebas Neue', 'Impact', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="font-sans bg-slate-950 text-white min-h-screen">
+  <main class="min-h-screen flex items-center justify-center px-5 py-12">
+    <section class="w-full max-w-3xl rounded-2xl border border-white/10 bg-white/[0.06] p-8 md:p-10 shadow-2xl">
+      <p class="text-northstar-100 uppercase tracking-[0.2em] text-xs font-bold mb-4">Northstar team only</p>
+      <h1 class="font-display text-4xl md:text-6xl tracking-wide leading-none mb-5">Hockey Advising Workspace</h1>
+      <p class="text-slate-200 text-lg leading-relaxed mb-8">
+        Use this workspace while meeting with Korean hockey families to collect intake information, track service tags, draft reports, and prepare shareable follow-up links.
+      </p>
+      <div class="grid gap-3 sm:grid-cols-2 mb-8">
+        <div class="rounded-xl border border-white/10 bg-white/[0.05] p-4">
+          <h2 class="font-semibold text-white mb-1">Team intake</h2>
+          <p class="text-sm text-slate-300">Fill out the bilingual form with the client during a call or advising session.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/[0.05] p-4">
+          <h2 class="font-semibold text-white mb-1">Missing info flow</h2>
+          <p class="text-sm text-slate-300">Send a narrow follow-up link for missing fields rather than asking families to create an account.</p>
+        </div>
+      </div>
+      <a
+        href="https://korea-hockey-advising.kkchung21.chatgpt.site"
+        class="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 font-semibold text-northstar-900 transition hover:bg-northstar-50"
+      >
+        Open advising app
+      </a>
+      <p class="mt-5 text-sm text-slate-400">
+        Access to this gateway should be protected at the server level. Keep the app itself restricted to approved team members.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
