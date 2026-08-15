@@ -286,6 +286,21 @@
         try { return localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) { return 'en'; }
       }
 
+      function syncLanguageLinks(lang) {
+        document.querySelectorAll('a[href]').forEach(function (link) {
+          var rawHref = link.getAttribute('href');
+          if (!rawHref || rawHref.indexOf('mailto:') === 0 || rawHref.indexOf('tel:') === 0) return;
+          try {
+            var url = new URL(rawHref, location.href);
+            var isMainSite = url.hostname === location.hostname;
+            var isAdvising = url.hostname === 'advising.northstareducationgroup.com';
+            if (!isMainSite && !isAdvising) return;
+            url.searchParams.set('lang', lang);
+            link.setAttribute('href', isMainSite ? url.pathname + url.search + url.hash : url.toString());
+          } catch (e) {}
+        });
+      }
+
       function setLang(lang) {
         document.body.classList.toggle('lang-ko', lang === 'ko');
         document.documentElement.lang = lang;
@@ -297,6 +312,7 @@
         document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
           btn.classList.toggle('active', btn.getAttribute('data-lang-set') === lang);
         });
+        syncLanguageLinks(lang);
       }
 
       document.querySelectorAll('.lang-toggle button').forEach(function (btn) {

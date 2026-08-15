@@ -396,6 +396,30 @@
   <script src="/data/map-data.js"></script>
   <script>
     (function () {
+      var language = (function () {
+        var params = new URLSearchParams(location.search);
+        var urlLanguage = params.get('lang');
+        if (urlLanguage === 'ko' || urlLanguage === 'en') return urlLanguage;
+        try { return localStorage.getItem('northstar-lang') || 'en'; } catch (e) { return 'en'; }
+      })();
+      document.documentElement.lang = language;
+      try { localStorage.setItem('northstar-lang', language); } catch (e) {}
+      function syncLanguageLinks(lang) {
+        document.querySelectorAll('a[href]').forEach(function (link) {
+          var rawHref = link.getAttribute('href');
+          if (!rawHref || rawHref.indexOf('mailto:') === 0 || rawHref.indexOf('tel:') === 0) return;
+          try {
+            var url = new URL(rawHref, location.href);
+            var isMainSite = url.hostname === location.hostname;
+            var isAdvising = url.hostname === 'advising.northstareducationgroup.com';
+            if (!isMainSite && !isAdvising) return;
+            url.searchParams.set('lang', lang);
+            link.setAttribute('href', isMainSite ? url.pathname + url.search + url.hash : url.toString());
+          } catch (e) {}
+        });
+      }
+      syncLanguageLinks(language);
+
       var data = window.NORTHSTAR_MAP_DATA;
       var map = L.map('pathway-map', { scrollWheelZoom: false, zoomControl: true }).setView([43.1, -72.3], 6);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

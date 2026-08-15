@@ -270,15 +270,39 @@ function articleScripts () {
   function show(lang) {
     lang = lang === 'ko' ? 'ko' : 'en';
     document.body.classList.toggle('pathway-ko', lang === 'ko');
+    document.documentElement.lang = lang;
     paintButtons(lang);
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
+    try {
+      localStorage.setItem(KEY, lang);
+      localStorage.setItem('northstar-lang', lang);
+    } catch (e) {}
+    var currentUrl = new URL(location.href);
+    currentUrl.searchParams.set('lang', lang);
+    history.replaceState(null, '', currentUrl);
+    syncLanguageLinks(lang);
+  }
+  function syncLanguageLinks(lang) {
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      var rawHref = link.getAttribute('href');
+      if (!rawHref || rawHref.indexOf('mailto:') === 0 || rawHref.indexOf('tel:') === 0) return;
+      try {
+        var url = new URL(rawHref, location.href);
+        var isMainSite = url.hostname === location.hostname;
+        var isAdvising = url.hostname === 'advising.northstareducationgroup.com';
+        if (!isMainSite && !isAdvising) return;
+        url.searchParams.set('lang', lang);
+        link.setAttribute('href', isMainSite ? url.pathname + url.search + url.hash : url.toString());
+      } catch (e) {}
+    });
   }
   document.querySelectorAll('[data-article-lang]').forEach(function (btn) {
     btn.addEventListener('click', function () { show(btn.getAttribute('data-article-lang')); });
   });
   var stored = 'en';
   try {
-    stored = localStorage.getItem(KEY);
+    var params = new URLSearchParams(location.search);
+    stored = params.get('lang');
+    if (!stored) stored = localStorage.getItem(KEY);
     if (!stored) stored = localStorage.getItem('northstar-lang');
     if (!stored) stored = 'en';
   } catch (e) {}
