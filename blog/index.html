@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Hockey Notes | Northstar Education Group</title>
+  <meta name="description" content="Northstar Education Group notes on youth hockey, prep school admissions, club pathways, and timely updates for Korean hockey families." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            northstar: {
+              50: '#eef9ff',
+              100: '#d9f1ff',
+              200: '#bce7ff',
+              300: '#8ed9ff',
+              600: '#1a87f5',
+              700: '#136ee1',
+              800: '#1658b6',
+              900: '#184b8f',
+              950: '#142f57',
+            },
+            ice: '#f0f9ff',
+          },
+          fontFamily: {
+            sans: ['Outfit', 'system-ui', 'sans-serif'],
+            display: ['Bebas Neue', 'Impact', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    [data-lang="ko"] { display: none !important; }
+    body.lang-ko [data-lang="en"] { display: none !important; }
+    body.lang-ko [data-lang="ko"] { display: revert !important; }
+    .lang-toggle button.active { color: #1a87f5; font-weight: 600; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="/" class="font-display text-xl md:text-2xl tracking-wide text-northstar-800">NORTHSTAR EDUCATION GROUP</a>
+        <div class="hidden lg:flex items-center gap-7">
+          <a href="/#services" class="text-gray-600 hover:text-northstar-600 font-medium transition"><span data-lang="en">Services</span><span data-lang="ko">서비스</span></a>
+          <a href="/pathway/" class="text-gray-600 hover:text-northstar-600 font-medium transition"><span data-lang="en">Resources</span><span data-lang="ko">리소스</span></a>
+          <span class="font-medium text-northstar-700"><span data-lang="en">Blog</span><span data-lang="ko">블로그</span></span>
+          <a href="/map/" class="text-gray-600 hover:text-northstar-600 font-medium transition"><span data-lang="en">Map</span><span data-lang="ko">지도</span></a>
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="inline-flex items-center rounded-lg bg-northstar-600 px-4 py-2 text-sm font-semibold text-white hover:bg-northstar-700 transition"><span data-lang="en">Start Intake</span><span data-lang="ko">인테이크 시작</span></a>
+          <div class="lang-toggle flex items-center gap-1 text-sm font-medium text-gray-500">
+            <button type="button" data-lang-set="en" class="hover:text-northstar-600 transition px-1" aria-label="English">EN</button>
+            <span class="text-gray-300">|</span>
+            <button type="button" data-lang-set="ko" class="hover:text-northstar-600 transition px-1" aria-label="한국어">한국어</button>
+          </div>
+        </div>
+        <div class="lg:hidden flex items-center gap-2">
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="px-2 py-1 text-sm font-semibold text-northstar-700 hover:text-northstar-900 transition"><span data-lang="en">Intake</span><span data-lang="ko">인테이크</span></a>
+          <button type="button" class="p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden lg:hidden pb-4 border-t border-gray-100">
+        <a href="/#services" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Services</span><span data-lang="ko">서비스</span></a>
+        <a href="/pathway/" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Resources</span><span data-lang="ko">리소스</span></a>
+        <span class="block py-2 font-medium text-northstar-700"><span data-lang="en">Blog</span><span data-lang="ko">블로그</span></span>
+        <a href="/map/" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Map</span><span data-lang="ko">지도</span></a>
+        <a href="/#contact" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Contact</span><span data-lang="ko">연락처</span></a>
+        <a href="https://advising.northstareducationgroup.com/" class="block py-2 text-gray-500 hover:text-northstar-600"><span data-lang="en">Team Login</span><span data-lang="ko">팀 로그인</span></a>
+        <div class="lang-toggle flex items-center gap-2 pt-2 border-t border-gray-100 mt-2">
+          <button type="button" data-lang-set="en" class="text-gray-600 hover:text-northstar-600 font-medium">EN</button>
+          <span class="text-gray-300">|</span>
+          <button type="button" data-lang-set="ko" class="text-gray-600 hover:text-northstar-600 font-medium">한국어</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden bg-gradient-to-br from-northstar-950 via-northstar-900 to-northstar-800 text-white">
+      <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.15&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <p class="text-northstar-300 font-medium uppercase tracking-widest text-sm mb-4"><span data-lang="en">Youth Hockey Notes</span><span data-lang="ko">유스 하키 노트</span></p>
+        <h1 class="font-display text-4xl sm:text-5xl md:text-7xl tracking-wide leading-tight max-w-3xl mb-6">
+          <span data-lang="en">Updates families should understand before the next decision.</span>
+          <span data-lang="ko">다음 결정을 내리기 전 가족이 알아야 할 업데이트.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
+          <span data-lang="en">Short, practical notes on youth hockey, prep admissions, club placement, and the shifting pathway from Korea to New England.</span>
+          <span data-lang="ko">한국에서 뉴잉글랜드로 이어지는 유스 하키, 프랩 입학, 클럽 배치, 진로 변화에 대한 짧고 실용적인 노트입니다.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div class="grid lg:grid-cols-[1fr_320px] gap-8 items-start">
+        <div class="space-y-6">
+          <article class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
+            <p class="text-xs font-semibold uppercase tracking-widest text-northstar-700 mb-3"><span data-lang="en">Featured note</span><span data-lang="ko">주요 노트</span></p>
+            <h2 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-tight mb-4">
+              <span data-lang="en">What we will track here</span>
+              <span data-lang="ko">이곳에서 다룰 내용</span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-5">
+              <span data-lang="en">This page is for timely updates that do not need to become a full pathway guide yet: application-cycle reminders, club tryout timing, camp observations, coaching signals, and changes families should ask about before committing to a school or team.</span>
+              <span data-lang="ko">이 페이지는 아직 전체 가이드가 될 필요는 없지만 시의성이 있는 업데이트를 위한 공간입니다. 지원 시즌 리마인더, 클럽 트라이아웃 일정, 캠프 관찰, 코치들이 보는 신호, 학교나 팀을 결정하기 전 확인해야 할 변화 등을 다룹니다.</span>
+            </p>
+            <ul class="grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
+              <li class="rounded-xl bg-white border border-northstar-100 p-4"><span data-lang="en">Prep admissions deadlines and interview reminders</span><span data-lang="ko">프랩 입학 마감일 및 인터뷰 리마인더</span></li>
+              <li class="rounded-xl bg-white border border-northstar-100 p-4"><span data-lang="en">Club and spring/summer tournament timing</span><span data-lang="ko">클럽 및 봄/여름 토너먼트 일정</span></li>
+              <li class="rounded-xl bg-white border border-northstar-100 p-4"><span data-lang="en">What coaches are emphasizing after evaluations</span><span data-lang="ko">평가 후 코치들이 강조하는 부분</span></li>
+              <li class="rounded-xl bg-white border border-northstar-100 p-4"><span data-lang="en">Questions Korean families should ask before travel</span><span data-lang="ko">한국 가정이 출국 전 물어봐야 할 질문</span></li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="rounded-full bg-northstar-100 px-3 py-1 text-xs font-bold text-northstar-800"><span data-lang="en">Post template</span><span data-lang="ko">글 템플릿</span></span>
+              <time class="text-sm text-gray-500" datetime="2026-08-15">Aug 15, 2026</time>
+            </div>
+            <h2 class="font-display text-2xl md:text-4xl text-northstar-900 tracking-wide leading-tight mb-3">
+              <span data-lang="en">Use this format for future updates</span>
+              <span data-lang="ko">향후 업데이트는 이 형식을 사용하세요</span>
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              <span data-lang="en">A useful post should answer three questions quickly: what changed, who it affects, and what a family should do next. Keep each update specific enough to be actionable, and link to a longer pathway guide when the topic needs more context.</span>
+              <span data-lang="ko">좋은 글은 세 가지 질문에 빠르게 답해야 합니다. 무엇이 바뀌었는지, 누구에게 영향을 주는지, 가족이 다음에 무엇을 해야 하는지입니다. 각 업데이트는 실행 가능할 만큼 구체적으로 작성하고, 더 많은 맥락이 필요하면 긴 가이드로 연결하세요.</span>
+            </p>
+            <div class="grid md:grid-cols-3 gap-3 text-sm">
+              <div class="rounded-xl bg-ice border border-northstar-100 p-4">
+                <strong class="block text-northstar-900 mb-1"><span data-lang="en">What changed?</span><span data-lang="ko">무엇이 바뀌었나요?</span></strong>
+                <p class="text-gray-600"><span data-lang="en">Name the rule, deadline, event, roster trend, or observation.</span><span data-lang="ko">규정, 마감일, 이벤트, 로스터 흐름, 관찰 내용을 명확히 적습니다.</span></p>
+              </div>
+              <div class="rounded-xl bg-ice border border-northstar-100 p-4">
+                <strong class="block text-northstar-900 mb-1"><span data-lang="en">Who is affected?</span><span data-lang="ko">누가 영향을 받나요?</span></strong>
+                <p class="text-gray-600"><span data-lang="en">Specify age, grade, school type, visa status, or hockey level.</span><span data-lang="ko">나이, 학년, 학교 유형, 비자 상황, 하키 수준을 구체화합니다.</span></p>
+              </div>
+              <div class="rounded-xl bg-ice border border-northstar-100 p-4">
+                <strong class="block text-northstar-900 mb-1"><span data-lang="en">What now?</span><span data-lang="ko">다음 단계는?</span></strong>
+                <p class="text-gray-600"><span data-lang="en">Give one clear next step or question to ask an advisor.</span><span data-lang="ko">가족이 할 일 또는 어드바이저에게 물어볼 질문 하나를 제시합니다.</span></p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="rounded-2xl border border-gray-200 bg-white p-6 sticky top-24">
+          <h2 class="font-display text-2xl text-northstar-900 tracking-wide mb-3"><span data-lang="en">Writing queue</span><span data-lang="ko">작성할 주제</span></h2>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">
+            <span data-lang="en">Use this page for timely notes. Save evergreen explainers for the Resources section.</span>
+            <span data-lang="ko">시의성 있는 글은 이 페이지에, 오래 두고 볼 설명 글은 리소스 섹션에 넣으세요.</span>
+          </p>
+          <ul class="space-y-3 text-sm text-gray-700">
+            <li class="border-t border-gray-100 pt-3"><span data-lang="en">Korea camp follow-up observations</span><span data-lang="ko">한국 캠프 후속 관찰</span></li>
+            <li class="border-t border-gray-100 pt-3"><span data-lang="en">Fall application readiness checklist</span><span data-lang="ko">가을 지원 준비 체크리스트</span></li>
+            <li class="border-t border-gray-100 pt-3"><span data-lang="en">How to compare club-team commute options</span><span data-lang="ko">클럽팀 통학 옵션 비교법</span></li>
+            <li class="border-t border-gray-100 pt-3"><span data-lang="en">When a day school is realistic for Korean families</span><span data-lang="ko">한국 가정에게 데이스쿨이 현실적인 경우</span></li>
+          </ul>
+          <a href="mailto:kenneth@northstareducationgroup.com" class="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-northstar-600 px-4 py-3 font-semibold text-white hover:bg-northstar-700 transition"><span data-lang="en">Send an update idea</span><span data-lang="ko">업데이트 아이디어 보내기</span></a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-northstar-950 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <a href="/" class="font-display text-lg md:text-xl text-white hover:text-gray-200 transition">NORTHSTAR EDUCATION GROUP</a>
+        <div class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2">
+          <a href="/pathway/start-here/" class="hover:text-white transition"><span data-lang="en">Start Here</span><span data-lang="ko">시작하기</span></a>
+          <a href="/pathway/" class="hover:text-white transition"><span data-lang="en">Resources</span><span data-lang="ko">리소스</span></a>
+          <a href="/blog/" class="hover:text-white transition"><span data-lang="en">Blog</span><span data-lang="ko">블로그</span></a>
+          <a href="/map/" class="hover:text-white transition"><span data-lang="en">Map</span><span data-lang="ko">지도</span></a>
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="hover:text-white transition"><span data-lang="en">Intake Form</span><span data-lang="ko">인테이크</span></a>
+        </div>
+      </div>
+      <p class="mt-6 text-center md:text-left text-sm">© Northstar Education Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = 'northstar-lang';
+      var TITLES = { en: 'Youth Hockey Notes | Northstar Education Group', ko: '유스 하키 노트 | Northstar Education Group' };
+
+      function getLang() {
+        var params = new URLSearchParams(location.search);
+        if (params.get('lang') === 'ko' || params.get('lang') === 'en') return params.get('lang');
+        try { return localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) { return 'en'; }
+      }
+
+      function setLang(lang) {
+        document.body.classList.toggle('lang-ko', lang === 'ko');
+        document.documentElement.lang = lang;
+        document.title = TITLES[lang] || TITLES.en;
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+        var url = new URL(location.href);
+        url.searchParams.set('lang', lang);
+        history.replaceState(null, '', url);
+        document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-lang-set') === lang);
+        });
+      }
+
+      document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
+        btn.addEventListener('click', function () { setLang(btn.getAttribute('data-lang-set')); });
+      });
+
+      setLang(getLang());
+
+      var mb = document.getElementById('menu-btn');
+      var mm = document.getElementById('mobile-menu');
+      if (mb && mm) {
+        mb.addEventListener('click', function () {
+          mm.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
