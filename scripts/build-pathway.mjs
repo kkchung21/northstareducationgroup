@@ -217,9 +217,10 @@ function headerHtml ({ activePath }) {
           <a href="/pathway/" class="font-medium transition ${pathwayActive || articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Resources</a>
           <a href="/map/" class="text-gray-600 hover:text-northstar-600 font-medium transition">Map</a>
           <a href="/#contact" class="text-gray-600 hover:text-northstar-600 font-medium transition">Contact</a>
+          <a href="https://advising.northstareducationgroup.com/" class="text-sm font-semibold text-gray-500 hover:text-northstar-700 transition">Team Login</a>
         </div>
         <div class="lg:hidden flex items-center gap-2">
-          <a href="/map/" class="px-2 py-1 text-sm font-semibold text-northstar-700 hover:text-northstar-900 transition">Map</a>
+          <a href="https://advising.northstareducationgroup.com/" class="px-2 py-1 text-sm font-semibold text-northstar-700 hover:text-northstar-900 transition">Team</a>
           <button type="button" class="p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
