@@ -4,6 +4,19 @@ NCAA Division 1 하키에 헌신한 한국 가정에게, Prep School은 마지�
 
 이 글은 Junior Hockey 환경, 주요 리그들, Postgraduate (PG) Year의 역할, 그리고 자녀의 Prep School 경력이 끝날 때 결정 순서를 어떻게 생각해야 할지 설명합니다.
 
+## 2026 NCAA 업데이트: 이제 나이와 타이밍이 더 중요합니다
+
+2027년 가을 이후 대학에 처음 풀타임 등록하는 선수부터 NCAA Division I 자격 모델이 바뀝니다. 새 age-based rule에서는 선수가 19세가 된 뒤의 학년도 무렵부터 5년 자격 기간이 시작될 수 있고, 선수가 아직 Junior Hockey에 있어도 그 시간은 계속 흐릅니다.
+
+한국 가정에게 이는 Junior Hockey 계획 방식을 바꿉니다:
+
+- Prep 이후 1~3년이 NCAA Division I 자격상 자동으로 안전하다고 가정하면 안 됩니다.
+- PG year 또는 Junior season은 여전히 맞을 수 있지만, 명확한 목적과 대학 등록 타임라인이 필요합니다.
+- 학교, 클럽, 주니어, 대학, 비자, 군 복무 타이밍을 더 일찍 함께 설계해야 합니다.
+- 여러 해의 Junior 계획을 결정하기 전에 NCAA Eligibility Center와 대학 compliance office에 개별 상황을 확인해야 합니다.
+
+결론: 질문은 더 이상 **"주니어를 뛸 수 있나?"**만이 아닙니다. **"대학 입학 시 NCAA 자격이 얼마나 남아 있나?"**입니다.
+
 ## 현실: 거의 모든 NCAA D1 하키 선수가 먼저 Junior를 합니다
 
 이것이 한국 가정이 가장 먼저 내면화해야 할 것입니다. Prep School에서 곧장 NCAA Division 1 하키로 가는 경로는 드뭅니다. 결국 D1을 하는 대부분 선수들은 먼저 적어도 1년, 종종 2년을 Junior Hockey에 보냅니다.
@@ -15,7 +28,7 @@ NCAA Division 1 하키에 헌신한 한국 가정에게, Prep School은 마지�
 - **NCAA Roster 슬롯 타이밍.** D1 대학 팀은 Roster 슬롯이 제한적이며 종종 Prep 졸업보다 1~2년 더 나이 든 선수를 원합니다. 코치들은 자주 Prep 코치들에게 "이 선수가 마음에 들어 — 1년의 Junior를 거치게 해주면 우리가 데려갈게" 라고 말합니다.
 - **Scout 노출.** NCAA D1 코치들은 상위 Junior 리그에서 활발히 영입합니다. 강한 Junior 시즌이 종종 같은 선수가 Prep에서 직접 받을 수 있었을 것보다 더 강한 NCAA 제안으로 이어집니다.
 
-한국 가정에게 이는 다음을 의미합니다: **Prep School 졸업과 NCAA 입학 사이에 1~3년을 계획하세요.** Postgraduate Prep Year로, Junior Hockey 시즌으로, 또는 그 둘의 조합으로.
+한국 가정에게 이는 Junior Hockey가 여전히 일반적인 경로이지만, 예전보다 타이밍을 더 엄격하게 봐야 한다는 뜻입니다. **특히 선수가 19세에 가까워질수록 Prep 졸업과 NCAA 입학 사이의 시간을 신중하게 계획해야 합니다.** Postgraduate Prep Year, Junior Hockey 시즌, 또는 그 둘의 조합은 여전히 맞을 수 있지만, 추가되는 각 해가 NCAA 자격 타이밍에 어떤 영향을 주는지 확인해야 합니다.
 
 ## Junior Hockey 단계 구조
 
@@ -37,15 +50,15 @@ USA Hockey는 Junior Hockey를 세 단계로 조직하며, Youth 단계 Tier 1/T
 
 Pay-to-play Junior 리그. EHL (Eastern Hockey League) 은 미국에서 가장 큰 D3 Commit 생산자입니다. USPHL Premier는 NCDC 아래의 제휴 리그입니다. 이 리그들은 주로 NCAA D3와 ACHA 프로그램에 공급하며, 일부 D2 Commit도 있습니다. Tier 3에서의 진짜 D1 Commit은 드뭅니다.
 
-## 주요 2025년 변화: CHL 선수가 이제 NCAA D1 자격이 됨
+## CHL은 이제 옵션이지만, age-based 타이밍이 먼저입니다
 
-Junior Hockey 결정을 근본적으로 재편한 발전: 2025년 8월 1일부로, Canadian Hockey League (CHL) — Ontario Hockey League (OHL), Western Hockey League (WHL), Quebec Maritimes Junior Hockey League (QMJHL) 포함 — 의 선수들이 이제 NCAA Division 1 하키를 할 수 있게 되었습니다, CHL에 있는 동안 실제 및 필요 경비 이상의 보수를 받지 않은 한.
+여전히 중요한 최근 변화가 있습니다. 2025년 8월 1일부로, Canadian Hockey League (CHL) — Ontario Hockey League (OHL), Western Hockey League (WHL), Quebec Maritimes Junior Hockey League (QMJHL) 포함 — 의 선수들이 이제 NCAA Division 1 하키를 할 수 있게 되었습니다, CHL에 있는 동안 실제 및 필요 경비 이상의 보수를 받지 않은 한.
 
 이전에는 NCAA가 CHL을 "프로페셔널" 로 간주했고, CHL에서 보낸 어떤 시간도 NCAA D1 자격을 제거했을 것입니다. 2025년 규칙 변경은 그 길이 이제 열렸음을 의미합니다.
 
 함의: 이제 상위 선수들에게 네 번째 현실적인 Junior 경로가 있습니다 — Canadian Major Junior Hockey — 이전에는 NCAA 호환 옵션이 아니었습니다. CHL 팀이 영입할 만한 재능이 있는 상위 한국 선수들은 이제 이전 세대에게는 없었던 추가 선택지를 가지고 있습니다.
 
-이는 중요한 발전입니다. 또한 전체 Junior Hockey 환경이 현재 전환 중임을 의미합니다. NCAA 프로그램들이 이제 최고 선수들을 위해 CHL과 경쟁하고 있으며, 오랫동안 확립된 USHL-to-NCAA 파이프라인이 실시간으로 disruption되고 있습니다. 우리는 환경이 안정화되면서 이 가이드를 업데이트할 것입니다.
+이는 중요한 변화이지만, 이제 2026 age-based eligibility model과 함께 읽어야 합니다. CHL, USHL, NAHL, NCDC, 또는 PG 경로는 선수 발전에 도움이 될 수 있지만, 추가되는 한 해가 NCAA 자격 기간 안에서 의미가 있어야 합니다.
 
 지금으로서는, **CHL은 진짜 최상위 단계 선수들을 위한 합법적인 옵션입니다** — 구체적으로 CHL 팀이 영입할 만한 단계에서 스케이팅하는 한국 선수들. 대부분 한국 선수에게 현실적인 옵션은 USHL, NAHL, NCDC, 또는 Postgraduate Prep Year로 남아 있습니다.
 
@@ -141,8 +154,8 @@ NCDC가 종종 가장 잘 맞습니다 — Northeast 기반, 등록금 무료, �
 
 Northstar는 한국 가정이 이 결정 순서를 구체적으로 탐색하도록 돕습니다. 프레임워크는 여기 있습니다. 실행은 개인적이며 실제 사람들과의 실제 대화를 요구합니다 — 단지 글을 읽는 것이 아닙니다.
 
-## 2025-26 전환기에 대한 노트
+## 2026-27 전환기에 대한 노트
 
-위에서 언급했지만 다시 강조할 가치가 있습니다. 2025년 8월부로 발효된 CHL/NCAA 규칙 변경이 전체 Junior Hockey 환경을 전환에 놓았습니다. 영입 패턴이 변하고 있습니다. NCAA 프로그램들이 새로운 선수 풀을 평가하고 있습니다. Junior 리그들이 재조정 중입니다.
+2025년 8월부로 발효된 CHL/NCAA 규칙 변경은 여전히 중요하지만, 많은 가족에게는 새 Division I age-based eligibility model이 이제 더 큰 계획 이슈입니다. 영입 패턴이 변하고 있고, NCAA 프로그램들이 새로운 선수 풀을 평가하고 있으며, Junior 리그들도 재조정 중입니다.
 
-이것이 실질적으로 의미하는 것: **이 글의 조언은 2025-26 시점의 현재 이해를 기반으로 합니다**. 시스템이 안정화되면서 향후 2~3년 동안 특정 결정과 트레이드오프가 변할 수 있습니다. 환경이 더 명확해지면 이 가이드를 업데이트할 것이지만, 이 시기에 결정을 내리는 가족들은 변화를 실시간으로 추적하는 어드바이저와 작업해야 합니다. 이는 "한 번 정하고 잊는" 계획의 시기가 아닙니다.
+이것이 실질적으로 의미하는 것: **이 글의 조언은 2026-27 시점의 현재 이해를 기반으로 합니다**. 2027년 가을 입학생부터 새 모델이 적용되면서 특정 결정과 트레이드오프가 변할 수 있습니다. 이 시기에 결정을 내리는 가족들은 변화를 실시간으로 추적하는 어드바이저와 작업해야 합니다. 이는 "한 번 정하고 잊는" 계획의 시기가 아닙니다.

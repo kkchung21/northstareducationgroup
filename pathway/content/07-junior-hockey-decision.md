@@ -4,6 +4,19 @@ For Korean families committed to NCAA Division 1 hockey, prep school is not the 
 
 This article explains the junior hockey landscape, the major leagues, the role of the postgraduate (PG) year, and how to think about the decision sequence as your child's prep school career comes to an end.
 
+## 2026 NCAA Update: Age Now Matters More
+
+The NCAA Division I eligibility model is changing for athletes who first enroll full time in college in fall 2027 or later. Under the new age-based rule, a five-year eligibility period can start around the academic year after a player turns 19, even if the player is still in junior hockey. Once that clock starts, it keeps running.
+
+For Korean families, this changes the way junior hockey should be planned:
+
+- Do not assume 1 to 3 post-prep years are automatically safe for NCAA Division I eligibility.
+- A PG year or junior season can still make sense, but it needs a clear purpose and a college enrollment timeline.
+- School, club, junior, college, visa, and military-service timing should be planned together earlier.
+- Confirm individual cases with the NCAA Eligibility Center and the college compliance office before committing to a multi-year junior plan.
+
+Bottom line: the question is no longer only **"Can this player play juniors?"** It is **"How much NCAA eligibility will be left when college starts?"**
+
 ## The Reality: Almost All NCAA D1 Hockey Players Play Junior First
 
 This is the first thing Korean families need to internalize. The pathway from prep school directly to NCAA Division 1 hockey is rare. Most players who eventually play D1 spend at least one year, and often two, in junior hockey first.
@@ -15,7 +28,7 @@ The standard reasons:
 - **NCAA roster slot timing.** D1 college teams have limited roster slots and often want players a year or two older than prep graduation. Coaches frequently tell prep coaches "I love this player — get him a year of juniors and we'll take him."
 - **Scout exposure.** NCAA D1 coaches recruit heavily from the top junior leagues. A strong junior season often results in a stronger NCAA offer than the same player would have received directly from prep.
 
-For Korean families, this means: **plan for 1 to 3 years between prep school graduation and NCAA enrollment.** Either as a postgraduate prep year, a junior hockey season, or a combination.
+For Korean families, this means junior hockey is still normal, but the timing is tighter than it used to be. **Plan the years between prep graduation and NCAA enrollment carefully, especially once the player is near 19.** Either a postgraduate prep year, a junior hockey season, or a combination can make sense, but each added year now has to be checked against NCAA eligibility timing.
 
 ## The Junior Hockey Tier Structure
 
@@ -37,15 +50,15 @@ The **NCDC** is the top tier of the United States Premier Hockey League (USPHL).
 
 Pay-to-play junior leagues. The EHL (Eastern Hockey League) is the largest D3 commitment producer in the country. USPHL Premier is the affiliate league below NCDC. These leagues primarily feed NCAA D3 and ACHA programs, with some D2 commitments. Genuine D1 commits from Tier 3 are rare.
 
-## The Major 2025 Change: CHL Players Now NCAA D1 Eligible
+## CHL Is Now an Option, But Age-Based Timing Comes First
 
-A development that has fundamentally reshaped the junior hockey decision: as of August 1, 2025, players from the Canadian Hockey League (CHL) — which includes the Ontario Hockey League (OHL), Western Hockey League (WHL), and Quebec Maritimes Junior Hockey League (QMJHL) — are now eligible to play NCAA Division 1 hockey, provided they were not paid more than actual and necessary expenses while in the CHL.
+One recent development still matters: as of August 1, 2025, players from the Canadian Hockey League (CHL) — which includes the Ontario Hockey League (OHL), Western Hockey League (WHL), and Quebec Maritimes Junior Hockey League (QMJHL) — are now eligible to play NCAA Division 1 hockey, provided they were not paid more than actual and necessary expenses while in the CHL.
 
 Previously, the CHL was considered "professional" by the NCAA, and any time spent in the CHL would have eliminated NCAA D1 eligibility. The 2025 rule change means that path is now open.
 
 The implication: there is now a fourth realistic junior pathway for top players — Canadian major junior hockey — that did not exist as an NCAA-compatible option before. Top Korean players with the talent to be drafted into a CHL team now have an additional choice that wasn't available to previous generations.
 
-This is a significant development. It also means the entire junior hockey landscape is currently in transition. NCAA programs are now competing with the CHL for the best players, and the long-established USHL-to-NCAA pipeline is being disrupted in real time. We will keep this guide updated as the landscape stabilizes.
+This is significant, but it should now be read alongside the 2026 age-based eligibility model. A CHL, USHL, NAHL, NCDC, or PG route can help a player develop, but the added year still has to make sense inside the NCAA eligibility window.
 
 For now, **CHL is a legitimate option for the very top tier of players** — specifically Korean players who are skating at a level where CHL teams are drafting them. For most Korean players, the realistic options remain USHL, NAHL, NCDC, or a postgraduate prep year.
 
@@ -141,8 +154,8 @@ This guide gives you the framework to think about the decision. The actual decis
 
 Northstar helps Korean families navigate this decision sequence specifically. The framework is here. The execution is personal and requires real conversations with real people — not just reading articles.
 
-## A Note on the 2025-26 Transition Period
+## A Note on the 2026-27 Transition Period
 
-We mentioned this above but it bears repeating. The CHL/NCAA rule change effective August 2025 has put the entire junior hockey landscape into transition. Recruitment patterns are shifting. NCAA programs are evaluating new pools of players. Junior leagues are recalibrating.
+The CHL/NCAA rule change effective August 2025 remains important, but the newer Division I age-based eligibility model is now the bigger planning issue for many families. Recruitment patterns are shifting, NCAA programs are evaluating new pools of players, and junior leagues are recalibrating.
 
-What this means practically: **the advice in this article is based on current understanding as of 2025-26**. The specific decisions and tradeoffs may shift over the next two to three years as the system stabilizes. We will update this guide as the landscape becomes clearer, but families making decisions in this period should work with advisors who are tracking the changes in real time. This is not a moment for "set it and forget it" planning.
+What this means practically: **the advice in this article is based on current understanding as of 2026-27**. The specific decisions and tradeoffs may shift as the new model is implemented for fall 2027 entrants. Families making decisions in this period should work with advisors who are tracking the changes in real time. This is not a moment for "set it and forget it" planning.

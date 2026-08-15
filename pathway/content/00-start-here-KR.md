@@ -75,7 +75,7 @@
 
 6. **올바른 Prep School 선택하기: 결정 프레임워크** — Prep 선택에 대한 깊이 있는 다이브, 학교를 가족 목표에 매칭하는 방법 포함.
 
-7. **Prep 이후: Junior Hockey 결정 이해하기** — USHL, NAHL, NCDC, CHL, PG Year, 그리고 2025년 NCAA 규칙 변경이 Junior Hockey를 어떻게 재편하고 있는지.
+7. **Prep 이후: Junior Hockey 결정 이해하기** — USHL, NAHL, NCDC, CHL, PG Year, 그리고 2026 NCAA age-based eligibility model이 Junior Hockey 타이밍에 어떤 영향을 주는지.
 
 ## 이 콘텐츠가 대체하지 않는 것
 

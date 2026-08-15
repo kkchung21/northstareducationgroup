@@ -75,7 +75,7 @@ The full content set, in order:
 
 6. **How to Choose the Right Prep School: A Decision Framework** — the deep-dive on prep selection, including how to match schools to family goals.
 
-7. **After Prep: Understanding the Junior Hockey Decision** — USHL, NAHL, NCDC, CHL, PG year, and how the 2025 NCAA rule change is reshaping junior hockey.
+7. **After Prep: Understanding the Junior Hockey Decision** — USHL, NAHL, NCDC, CHL, PG year, and how the 2026 NCAA age-based eligibility model affects junior hockey timing.
 
 ## What This Content Doesn't Replace
 
