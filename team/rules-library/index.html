@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Player Movement Rules | Northstar Education Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            northstar: {
+              50: '#eef9ff',
+              100: '#d9f1ff',
+              600: '#1a87f5',
+              800: '#1658b6',
+              900: '#184b8f',
+              950: '#142f57',
+            },
+          },
+          fontFamily: {
+            sans: ['Outfit', 'system-ui', 'sans-serif'],
+            display: ['Bebas Neue', 'Impact', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="min-h-screen bg-slate-950 font-sans text-slate-100">
+  <header class="border-b border-white/10 bg-slate-950">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-6 md:flex-row md:items-end md:justify-between">
+      <div>
+        <p class="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-northstar-100">Northstar team only</p>
+        <h1 class="font-display text-4xl leading-none tracking-wide text-white md:text-6xl">Player Movement Rules</h1>
+        <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-300 md:text-base">
+          Searchable operations knowledge base for Korean hockey-athlete placement, tryouts, transfers, import status, and agency confirmations.
+        </p>
+      </div>
+      <nav class="flex flex-wrap gap-2 text-sm">
+        <a href="/team/advising/" class="rounded-lg border border-white/10 px-3 py-2 text-slate-200 transition hover:border-northstar-100 hover:text-white">Advising</a>
+        <a href="#questions" class="rounded-lg border border-white/10 px-3 py-2 text-slate-200 transition hover:border-northstar-100 hover:text-white">Question Queue</a>
+        <a href="#call-notes" class="rounded-lg border border-white/10 px-3 py-2 text-slate-200 transition hover:border-northstar-100 hover:text-white">Call Notes</a>
+        <a href="#sources" class="rounded-lg border border-white/10 px-3 py-2 text-slate-200 transition hover:border-northstar-100 hover:text-white">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-5 py-8">
+    <section class="mb-8 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+      <div class="rounded-lg border border-rose-300/20 bg-rose-950/30 p-5">
+        <p class="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-rose-100">Active case warning</p>
+        <h2 class="mb-3 text-2xl font-semibold text-white">Korean player / Canada Junior A camp</h2>
+        <p class="text-sm leading-6 text-rose-50">
+          Do not send a Korean player to a sanctioned camp, tryout, practice, exhibition, or regular-season activity until the required federation and league permission is confirmed in writing. A recent case showed that a player may be held off the ice when a league commissioner needs a Korean Hockey Federation permission letter for a 15-day tryout.
+        </p>
+      </div>
+      <div class="rounded-lg border border-amber-300/20 bg-amber-950/25 p-5">
+        <p class="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-amber-100">Operating rule</p>
+        <p class="text-sm leading-6 text-amber-50">
+          Use primary sources only for rules conclusions. If a source is incomplete, contradictory, or not specific to Korea, mark the answer as needing a phone call or written governing-body confirmation.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-6 rounded-lg border border-white/10 bg-white/[0.04] p-4">
+      <div class="grid gap-3 lg:grid-cols-[1.4fr_repeat(5,minmax(0,1fr))]">
+        <label class="block">
+          <span class="mb-1 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">Search</span>
+          <input id="searchInput" type="search" placeholder="Try: KHF letter, QMJHL call-up, apartment lease, 트라이아웃"
+            class="w-full rounded-lg border border-white/10 bg-slate-900 px-3 py-2.5 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-northstar-100" />
+        </label>
+        <label class="block">
+          <span class="mb-1 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">Country</span>
+          <select id="countryFilter" class="w-full rounded-lg border border-white/10 bg-slate-900 px-3 py-2.5 text-sm text-white outline-none focus:border-northstar-100"></select>
+        </label>
+        <label class="block">
+          <span class="mb-1 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">League</span>
+          <select id="leagueFilter" class="w-full rounded-lg border border-white/10 bg-slate-900 px-3 py-2.5 text-sm text-white outline-none focus:border-northstar-100"></select>
+        </label>
+        <label class="block">
+          <span class="mb-1 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">Agency</span>
+          <select id="agencyFilter" class="w-full rounded-lg border border-white/10 bg-slate-900 px-3 py-2.5 text-sm text-white outline-none focus:border-northstar-100"></select>
+        </label>
+        <label class="block">
+          <span class="mb-1 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">Risk</span>
+          <select id="riskFilter" class="w-full rounded-lg border border-white/10 bg-slate-900 px-3 py-2.5 text-sm text-white outline-none focus:border-northstar-100"></select>
+        </label>
+        <label class="block">
+          <span class="mb-1 block text-xs font-semibold uppercase tracking-[0.16em] text-slate-400">Confidence</span>
+          <select id="confidenceFilter" class="w-full rounded-lg border border-white/10 bg-slate-900 px-3 py-2.5 text-sm text-white outline-none focus:border-northstar-100"></select>
+        </label>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <div class="mb-3 flex items-center justify-between gap-4">
+        <h2 class="text-xl font-semibold text-white">Scenario Matrix</h2>
+        <p id="resultCount" class="text-sm text-slate-400"></p>
+      </div>
+      <div id="scenarioList" class="grid gap-4"></div>
+    </section>
+
+    <section class="mb-10 grid gap-4 lg:grid-cols-3">
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-5 lg:col-span-2">
+        <h2 class="mb-4 text-xl font-semibold text-white">Required Before Player Skates</h2>
+        <div class="overflow-x-auto">
+          <table class="min-w-full text-left text-sm">
+            <thead class="border-b border-white/10 text-xs uppercase tracking-[0.14em] text-slate-400">
+              <tr>
+                <th class="py-3 pr-4">Requirement</th>
+                <th class="py-3 pr-4">Owner</th>
+                <th class="py-3 pr-4">Applies To</th>
+                <th class="py-3">Status</th>
+              </tr>
+            </thead>
+            <tbody id="checklistRows" class="divide-y divide-white/10"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-5">
+        <h2 class="mb-4 text-xl font-semibold text-white">Korean Search Labels</h2>
+        <div id="koreanLabels" class="flex flex-wrap gap-2"></div>
+      </div>
+    </section>
+
+    <section id="questions" class="mb-10">
+      <div class="mb-3 flex items-center justify-between gap-4">
+        <h2 class="text-xl font-semibold text-white">Agency Question Queue</h2>
+        <p class="text-sm text-slate-400">Save answers with date, person, role, agency, exact answer, and email confirmation.</p>
+      </div>
+      <div id="questionQueue" class="grid gap-3"></div>
+    </section>
+
+    <section id="call-notes" class="mb-10">
+      <div class="mb-3 flex items-center justify-between gap-4">
+        <h2 class="text-xl font-semibold text-white">Agency Answer Log</h2>
+        <p class="text-sm text-slate-400">Replace starter rows with dated call/email answers once confirmed.</p>
+      </div>
+      <div id="callNotes" class="grid gap-3"></div>
+    </section>
+
+    <section id="sources" class="mb-8 rounded-lg border border-white/10 bg-white/[0.04] p-5">
+      <h2 class="mb-4 text-xl font-semibold text-white">Primary Source Library</h2>
+      <div id="sourceList" class="grid gap-3 md:grid-cols-2"></div>
+      <p class="mt-5 rounded-lg border border-red-300/20 bg-red-950/25 p-3 text-sm text-red-50">
+        Rejected source note: the downloaded CHL-Sport-Regulations-26-27 PDF appears to be Champions Hockey League material, not Canadian Hockey League material. Do not use it for Northstar Canadian junior decisions.
+      </p>
+    </section>
+  </main>
+
+  <script src="./rules-data.js"></script>
+  <script>
+    const confidenceStyles = {
+      'Primary source confirmed': 'border-emerald-300/30 bg-emerald-950/35 text-emerald-100',
+      'Needs written confirmation': 'border-amber-300/30 bg-amber-950/35 text-amber-100',
+      'Phone call required': 'border-sky-300/30 bg-sky-950/35 text-sky-100',
+      'Do not rely on this yet': 'border-rose-300/30 bg-rose-950/35 text-rose-100',
+    };
+
+    const riskStyles = {
+      Critical: 'bg-red-500/15 text-red-100 border-red-300/30',
+      High: 'bg-amber-500/15 text-amber-100 border-amber-300/30',
+      Medium: 'bg-sky-500/15 text-sky-100 border-sky-300/30',
+    };
+
+    const {
+      scenarios,
+      checklist,
+      questions,
+      callNotes,
+      sources,
+      koreanLabels,
+    } = window.northstarRulesData;
+
+    const controls = {
+      search: document.getElementById('searchInput'),
+      country: document.getElementById('countryFilter'),
+      league: document.getElementById('leagueFilter'),
+      agency: document.getElementById('agencyFilter'),
+      risk: document.getElementById('riskFilter'),
+      confidence: document.getElementById('confidenceFilter'),
+    };
+
+    function uniqueValues(key) {
+      return [...new Set(scenarios.flatMap((scenario) => Array.isArray(scenario[key]) ? scenario[key] : [scenario[key]]))].sort();
+    }
+
+    function fillSelect(select, label, values) {
+      select.innerHTML = `<option value="">All ${label}</option>` + values.map((value) => `<option value="${value}">${value}</option>`).join('');
+    }
+
+    function badge(text, className) {
+      return `<span class="inline-flex items-center rounded-md border px-2 py-1 text-xs font-semibold ${className}">${text}</span>`;
+    }
+
+    function scenarioMatches(scenario) {
+      const query = controls.search.value.trim().toLowerCase();
+      const haystack = [
+        scenario.title,
+        scenario.answer,
+        ...scenario.countries,
+        ...scenario.leagues,
+        ...scenario.agencies,
+        ...scenario.tags,
+        ...scenario.sources,
+        ...scenario.actions,
+      ].join(' ').toLowerCase();
+
+      return (!query || haystack.includes(query))
+        && (!controls.country.value || scenario.countries.includes(controls.country.value))
+        && (!controls.league.value || scenario.leagues.includes(controls.league.value))
+        && (!controls.agency.value || scenario.agencies.includes(controls.agency.value))
+        && (!controls.risk.value || scenario.risk === controls.risk.value)
+        && (!controls.confidence.value || scenario.confidence === controls.confidence.value);
+    }
+
+    function renderScenarios() {
+      const filtered = scenarios.filter(scenarioMatches);
+      document.getElementById('resultCount').textContent = `${filtered.length} of ${scenarios.length} scenarios`;
+      document.getElementById('scenarioList').innerHTML = filtered.map((scenario) => `
+        <article class="rounded-lg border border-white/10 bg-white/[0.04] p-5">
+          <div class="mb-4 flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+            <div>
+              <h3 class="text-lg font-semibold text-white">${scenario.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">${scenario.answer}</p>
+            </div>
+            <div class="flex shrink-0 flex-wrap gap-2 md:justify-end">
+              ${badge(scenario.risk, riskStyles[scenario.risk])}
+              ${badge(scenario.confidence, confidenceStyles[scenario.confidence])}
+            </div>
+          </div>
+          <div class="grid gap-4 lg:grid-cols-3">
+            <div>
+              <p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Required next steps</p>
+              <ul class="space-y-2 text-sm text-slate-300">${scenario.actions.map((action) => `<li>${action}</li>`).join('')}</ul>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Agencies</p>
+              <div class="flex flex-wrap gap-2">${scenario.agencies.map((agency) => badge(agency, 'border-white/10 bg-slate-900 text-slate-200')).join('')}</div>
+            </div>
+            <div>
+              <p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Tags and sources</p>
+              <div class="mb-3 flex flex-wrap gap-2">${scenario.tags.slice(0, 7).map((tag) => badge(tag, 'border-white/10 bg-slate-900 text-slate-300')).join('')}</div>
+              <p class="text-xs leading-5 text-slate-400">${scenario.sources.join(' | ')}</p>
+            </div>
+          </div>
+        </article>
+      `).join('') || '<p class="rounded-lg border border-white/10 bg-white/[0.04] p-5 text-slate-300">No scenarios match the current filters.</p>';
+    }
+
+    function renderStaticSections() {
+      document.getElementById('checklistRows').innerHTML = checklist.map(([requirement, owner, appliesTo, status]) => `
+        <tr class="align-top">
+          <td class="py-3 pr-4 text-slate-100">${requirement}</td>
+          <td class="py-3 pr-4 text-slate-300">${owner}</td>
+          <td class="py-3 pr-4 text-slate-300">${appliesTo}</td>
+          <td class="py-3 text-amber-100">${status}</td>
+        </tr>
+      `).join('');
+
+      document.getElementById('koreanLabels').innerHTML = koreanLabels.map((label) => badge(label, 'border-white/10 bg-slate-900 text-slate-200')).join('');
+
+      document.getElementById('questionQueue').innerHTML = questions.map(([id, question, agency, priority, status]) => `
+        <article class="grid gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-4 md:grid-cols-[0.45fr_1.8fr_0.9fr_0.45fr_0.45fr] md:items-center">
+          <p class="font-semibold text-white">${id}</p>
+          <p class="text-sm leading-6 text-slate-200">${question}</p>
+          <p class="text-sm text-slate-300">${agency}</p>
+          ${badge(priority, riskStyles[priority] || riskStyles.High)}
+          <p class="text-sm text-slate-400">${status}</p>
+        </article>
+      `).join('');
+
+      document.getElementById('callNotes').innerHTML = callNotes.map((note) => `
+        <article class="rounded-lg border border-white/10 bg-white/[0.04] p-5">
+          <div class="mb-3 flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">${note.date}</p>
+              <h3 class="mt-1 font-semibold text-white">${note.topic}</h3>
+              <p class="mt-1 text-sm text-slate-300">${note.agency} | ${note.contact}</p>
+            </div>
+            ${badge(note.confidence, confidenceStyles[note.confidence])}
+          </div>
+          <p class="text-sm leading-6 text-slate-200">${note.answer}</p>
+          <p class="mt-3 text-sm leading-6 text-amber-100">${note.followUp}</p>
+        </article>
+      `).join('');
+
+      document.getElementById('sourceList').innerHTML = sources.map(([name, covers, url]) => `
+        <article class="rounded-lg border border-white/10 bg-slate-900/70 p-4">
+          <h3 class="font-semibold text-white">${name}</h3>
+          <p class="mt-2 text-sm leading-6 text-slate-300">${covers}</p>
+          <a href="${url}" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-semibold text-northstar-100 hover:text-white">Open source</a>
+        </article>
+      `).join('');
+    }
+
+    fillSelect(controls.country, 'countries', uniqueValues('countries'));
+    fillSelect(controls.league, 'leagues', uniqueValues('leagues'));
+    fillSelect(controls.agency, 'agencies', uniqueValues('agencies'));
+    fillSelect(controls.risk, 'risk levels', uniqueValues('risk'));
+    fillSelect(controls.confidence, 'confidence', uniqueValues('confidence'));
+
+    Object.values(controls).forEach((control) => control.addEventListener('input', renderScenarios));
+    renderStaticSections();
+    renderScenarios();
+  </script>
+</body>
+</html>
