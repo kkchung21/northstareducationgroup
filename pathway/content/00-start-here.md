@@ -42,7 +42,16 @@ Your child is 16 to 18 years old, in prep school or about to graduate, and you'r
 
 **Start with:**
 - [After Prep: Understanding the Junior Hockey Decision](/pathway/junior-hockey-decision/) — USHL, NAHL, NCDC, CHL, PG year, and how to think about the sequence
+- [Before a Junior Camp: The Rules Check Korean Hockey Players Cannot Skip](/pathway/junior-camp-rules-check/) — what to confirm before a Korean player attends a camp, tryout, practice, or junior placement
 - [The Academic Endgame: Four Tiers of College Outcomes](/pathway/academic-endgame/) — for the broader college outcome picture
+
+### "We have a junior camp or tryout invite"
+
+Your child has been invited to a junior camp, rookie camp, tryout, practice, or team placement conversation in Canada or the United States.
+
+**Start with:**
+- [Before a Junior Camp: The Rules Check Korean Hockey Players Cannot Skip](/pathway/junior-camp-rules-check/) — the pre-travel checklist for permission letters, import status, insurance, transfers, and league clearance
+- [After Prep: Understanding the Junior Hockey Decision](/pathway/junior-hockey-decision/) — for the broader junior pathway context
 
 ### "We want to understand how to think about rankings, status, and what really matters"
 
@@ -76,6 +85,8 @@ The full content set, in order:
 6. **How to Choose the Right Prep School: A Decision Framework** — the deep-dive on prep selection, including how to match schools to family goals.
 
 7. **After Prep: Understanding the Junior Hockey Decision** — USHL, NAHL, NCDC, CHL, PG year, and how the 2026 NCAA age-based eligibility model affects junior hockey timing.
+
+8. **Before a Junior Camp: The Rules Check Korean Hockey Players Cannot Skip** — what Korean families must confirm before travel, including federation permission, insurance, transfer status, import classification, and league clearance.
 
 ## What This Content Doesn't Replace
 

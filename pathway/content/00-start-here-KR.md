@@ -42,7 +42,16 @@
 
 **시작점:**
 - [Prep 이후: Junior Hockey 결정 이해하기](/pathway/junior-hockey-decision/) — USHL, NAHL, NCDC, CHL, PG Year, 그리고 순서를 어떻게 생각해야 하나
+- [주니어 캠프 전: 한국 하키 선수가 절대 건너뛰면 안 되는 규정 확인](/pathway/junior-camp-rules-check/) — 한국 선수가 캠프, 트라이아웃, 연습, 또는 주니어 입단 전에 무엇을 확인해야 하는지
 - [학업 종착점: 대학 결과의 4단계](/pathway/academic-endgame/) — 더 넓은 대학 결과 그림을 위해
+
+### "주니어 캠프 또는 트라이아웃 초청을 받았습니다"
+
+자녀가 캐나다 또는 미국의 주니어 캠프, 루키 캠프, 트라이아웃, 연습, 또는 팀 입단 대화를 진행 중인 상황입니다.
+
+**시작점:**
+- [주니어 캠프 전: 한국 하키 선수가 절대 건너뛰면 안 되는 규정 확인](/pathway/junior-camp-rules-check/) — 허가서, 임포트 상태, 보험, 이적, 리그 승인에 관한 출국 전 체크리스트
+- [Prep 이후: Junior Hockey 결정 이해하기](/pathway/junior-hockey-decision/) — 더 넓은 주니어 경로 맥락
 
 ### "랭킹, 신분, 그리고 진짜로 중요한 것을 어떻게 생각해야 할지 이해하고 싶습니다"
 
@@ -76,6 +85,8 @@
 6. **올바른 Prep School 선택하기: 결정 프레임워크** — Prep 선택에 대한 깊이 있는 다이브, 학교를 가족 목표에 매칭하는 방법 포함.
 
 7. **Prep 이후: Junior Hockey 결정 이해하기** — USHL, NAHL, NCDC, CHL, PG Year, 그리고 2026 NCAA age-based eligibility model이 Junior Hockey 타이밍에 어떤 영향을 주는지.
+
+8. **주니어 캠프 전: 한국 하키 선수가 절대 건너뛰면 안 되는 규정 확인** — 한국 가정이 출국 전에 확인해야 할 federation permission, insurance, transfer status, import classification, league clearance.
 
 ## 이 콘텐츠가 대체하지 않는 것
 
