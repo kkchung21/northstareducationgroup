@@ -230,12 +230,12 @@ function headerHtml ({ activePath }) {
               <div class="rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
                 <a href="/pathway/start-here/" class="block rounded-lg px-3 py-2 text-sm font-medium transition ${guideActive ? 'bg-northstar-50 text-northstar-700' : 'text-gray-600 hover:bg-gray-50 hover:text-northstar-700'}">Start Here</a>
                 <a href="/pathway/" class="block rounded-lg px-3 py-2 text-sm font-medium transition ${articleActive ? 'bg-northstar-50 text-northstar-700' : 'text-gray-600 hover:bg-gray-50 hover:text-northstar-700'}">Guide Library</a>
+                <a href="/blog/" class="block rounded-lg px-3 py-2 text-sm font-medium transition text-gray-600 hover:bg-gray-50 hover:text-northstar-700">Blog</a>
+                <a href="/map/" class="block rounded-lg px-3 py-2 text-sm font-medium transition text-gray-600 hover:bg-gray-50 hover:text-northstar-700">Map</a>
               </div>
             </div>
           </div>
-          <a href="/blog/" class="text-gray-600 hover:text-northstar-600 font-medium transition">Blog</a>
-          <a href="/map/" class="text-gray-600 hover:text-northstar-600 font-medium transition">Map</a>
-          <a href="/#contact" class="text-gray-600 hover:text-northstar-600 font-medium transition">Contact</a>
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="inline-flex items-center rounded-lg bg-northstar-600 px-4 py-2 text-sm font-semibold text-white hover:bg-northstar-700 transition">Start Intake</a>
           <a href="https://advising.northstareducationgroup.com/" class="text-sm font-semibold text-gray-500 hover:text-northstar-700 transition">Team Login</a>
         </div>
         <div class="lg:hidden flex items-center gap-2">
@@ -251,8 +251,8 @@ function headerHtml ({ activePath }) {
         <span class="block pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400">Resources</span>
         <a href="/pathway/start-here/" class="block py-2 pl-3 font-medium ${guideActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Start Here</a>
         <a href="/pathway/" class="block py-2 pl-3 font-medium ${articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Guide Library</a>
-        <a href="/blog/" class="block py-2 text-gray-600 hover:text-northstar-600">Blog</a>
-        <a href="/map/" class="block py-2 text-gray-600 hover:text-northstar-600">Map</a>
+        <a href="/blog/" class="block py-2 pl-3 text-gray-600 hover:text-northstar-600">Blog</a>
+        <a href="/map/" class="block py-2 pl-3 text-gray-600 hover:text-northstar-600">Map</a>
         <a href="/#contact" class="block py-2 text-gray-600 hover:text-northstar-600">Contact</a>
       </div>
     </nav>
