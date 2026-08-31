@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Canadian Junior Hockey Pathway Has Changed | Northstar Education Group</title>
+  <meta name="description" content="Why Hockey Canada-sanctioned Junior A deserves a new look from Korean hockey players after the NCAA major junior eligibility change." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            northstar: {
+              50: '#eef9ff',
+              100: '#d9f1ff',
+              200: '#bce7ff',
+              300: '#8ed9ff',
+              600: '#1a87f5',
+              700: '#136ee1',
+              800: '#1658b6',
+              900: '#184b8f',
+              950: '#142f57',
+            },
+            ice: '#f0f9ff',
+          },
+          fontFamily: {
+            sans: ['Outfit', 'system-ui', 'sans-serif'],
+            display: ['Bebas Neue', 'Impact', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    [data-lang="ko"] { display: none !important; }
+    body.lang-ko [data-lang="en"] { display: none !important; }
+    body.lang-ko [data-lang="ko"] { display: revert !important; }
+    .lang-toggle button.active { color: #1a87f5; font-weight: 600; }
+    .article-prose p { margin-bottom: 1.25rem; line-height: 1.8; }
+    .article-prose h2 { margin-top: 3rem; margin-bottom: 1rem; font-family: "Bebas Neue", Impact, sans-serif; color: #142f57; font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: 0; line-height: 0.95; }
+    .article-prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; color: #142f57; font-weight: 700; font-size: 1.35rem; }
+    .article-prose strong { color: #142f57; }
+    .flow-card { position: relative; }
+    .flow-card:not(:last-child)::after { content: ""; position: absolute; right: -1.25rem; top: 50%; width: 1.25rem; height: 2px; background: #8ed9ff; }
+    @media (max-width: 767px) {
+      .flow-card:not(:last-child)::after { display: none; }
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="/" class="font-display text-xl md:text-2xl tracking-wide text-northstar-800">NORTHSTAR EDUCATION GROUP</a>
+        <div class="hidden lg:flex items-center gap-5">
+          <a href="/#services" class="text-gray-600 hover:text-northstar-600 font-medium transition">Services</a>
+          <a href="/#about" class="text-gray-600 hover:text-northstar-600 font-medium transition">About</a>
+          <div class="relative group">
+            <button type="button" class="inline-flex items-center gap-1 font-medium text-northstar-700 transition" aria-haspopup="true">
+              Resources
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="invisible absolute left-0 top-full z-50 w-52 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div class="rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
+                <a href="/pathway/start-here/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700">Start Here</a>
+                <a href="/pathway/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700">Guide Library</a>
+                <a href="/blog/" class="block rounded-lg bg-northstar-50 px-3 py-2 text-sm font-medium text-northstar-700">Blog</a>
+                <a href="/map/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700">Map</a>
+              </div>
+            </div>
+          </div>
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="inline-flex items-center rounded-lg bg-northstar-600 px-4 py-2 text-sm font-semibold text-white hover:bg-northstar-700 transition">Start Intake</a>
+          <a href="https://advising.northstareducationgroup.com/" class="text-sm font-semibold text-gray-500 hover:text-northstar-700 transition">Team Login</a>
+        </div>
+        <div class="lg:hidden flex items-center gap-2">
+          <a href="/blog/" class="px-2 py-1 text-sm font-semibold text-northstar-700 hover:text-northstar-900 transition">Blog</a>
+          <button type="button" class="p-2 text-gray-600 hover:text-northstar-600" aria-label="Menu" id="menu-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden lg:hidden pb-4 border-t border-gray-100">
+        <a href="/" class="block py-2 text-gray-600 hover:text-northstar-600">Main site</a>
+        <a href="/pathway/start-here/" class="block py-2 text-gray-600 hover:text-northstar-600">Start Here</a>
+        <a href="/pathway/" class="block py-2 text-gray-600 hover:text-northstar-600">Guide Library</a>
+        <a href="/blog/" class="block py-2 font-medium text-northstar-700">Blog</a>
+        <a href="/map/" class="block py-2 text-gray-600 hover:text-northstar-600">Map</a>
+        <a href="https://advising.northstareducationgroup.com/?preintake=1" class="block py-2 font-semibold text-northstar-700 hover:text-northstar-900">Start Intake</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-br from-northstar-950 via-northstar-900 to-northstar-800 text-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <a href="/blog/" class="inline-flex items-center text-sm font-semibold text-northstar-200 hover:text-white mb-8">Back to articles</a>
+        <p class="text-northstar-300 font-semibold uppercase tracking-widest text-sm mb-4">Junior hockey strategy</p>
+        <h1 class="font-display text-5xl sm:text-6xl md:text-7xl tracking-wide leading-none max-w-4xl mb-6">The Canadian Junior Hockey Pathway Has Changed</h1>
+        <p class="text-xl md:text-2xl text-gray-200 leading-relaxed max-w-3xl">Why Hockey Canada-sanctioned Junior A deserves a new look from Korean players after the NCAA major junior eligibility change.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-3 text-sm text-northstar-100">
+          <time datetime="2026-08-31">Aug 31, 2026</time>
+          <span class="h-1 w-1 rounded-full bg-northstar-300"></span>
+          <span>Northstar Education Group</span>
+          <button type="button" data-share-url="/blog/canadian-junior-pathway/" data-share-title="The Canadian Junior Hockey Pathway Has Changed" class="share-button ml-0 md:ml-3 inline-flex items-center gap-2 rounded-lg border border-white/25 px-3 py-2 font-semibold text-white hover:bg-white/10 transition">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>
+            Share
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div class="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-10 items-start">
+        <article class="article-prose min-w-0">
+          <p class="text-xl leading-relaxed text-gray-700">For years, families trying to move an elite Korean hockey player to North America could reasonably organize their strategy around one objective: find the strongest league that preserved NCAA eligibility.</p>
+          <p>That made leagues such as the USHL and BCHL particularly attractive. The Canadian Hockey League offered exceptional competition and professional exposure, but major junior participation historically created a different NCAA eligibility calculation.</p>
+          <p>That distinction has changed. In November 2024, the NCAA Division I Council approved a rule change that allows men's ice hockey prospects who participate in major junior hockey to retain NCAA eligibility, provided they are not paid beyond actual and necessary expenses. The change became effective August 1, 2025.</p>
+
+          <div class="my-8 rounded-2xl border border-northstar-200 bg-northstar-50 p-5 md:p-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-northstar-700 mb-4">The strategic shift</p>
+            <div class="grid md:grid-cols-4 gap-4 text-center">
+              <div class="flow-card rounded-xl bg-white border border-northstar-100 p-4">
+                <span class="block text-sm font-semibold text-gray-500">Old NCAA-safe route</span>
+                <strong class="block mt-2 text-northstar-950">U18</strong>
+              </div>
+              <div class="flow-card rounded-xl bg-white border border-northstar-100 p-4">
+                <span class="block text-sm font-semibold text-gray-500">Avoid CHL</span>
+                <strong class="block mt-2 text-northstar-950">Junior A / USHL</strong>
+              </div>
+              <div class="flow-card rounded-xl bg-white border border-northstar-100 p-4">
+                <span class="block text-sm font-semibold text-gray-500">College path</span>
+                <strong class="block mt-2 text-northstar-950">NCAA</strong>
+              </div>
+              <div class="rounded-xl bg-white border border-northstar-100 p-4">
+                <span class="block text-sm font-semibold text-gray-500">New option</span>
+                <strong class="block mt-2 text-northstar-950">Junior A -> CHL -> NCAA</strong>
+              </div>
+            </div>
+          </div>
+
+          <p>For Canadian players, this was a major rule change. For international players, particularly Korean players arriving without an established North American resume, it should force a broader reconsideration of development strategy.</p>
+          <p>The question is no longer simply: <strong>Which Junior A league sends the most players to NCAA Division I?</strong></p>
+          <p>A more useful question may be: <strong>Which environment gives the player the best opportunity to establish a North American resume, play meaningful minutes, move upward into the CHL if warranted, and ultimately reach NCAA hockey?</strong></p>
+
+          <h2>The wall between the CHL and NCAA has disappeared</h2>
+          <p>The previous Canadian development system contained an unusual fork. A player interested in professional hockey could enter major junior. A player prioritizing NCAA hockey generally remained outside the CHL.</p>
+          <p>The new system permits a player to pursue CHL hockey and still keep NCAA Division I available, assuming the compensation rules are respected. It also creates something strategically important: <strong>Junior A can function as a developmental layer beneath the CHL, not just as an alternative to it.</strong></p>
+
+          <h2>BCHL player behavior changed almost immediately</h2>
+          <p>The BCHL provides one of the clearest early examples of how strongly the previous NCAA restriction shaped player decisions. After the NCAA announcement, reporting around the QMJHL's mid-season intake showed a major movement of players from NCAA-protective environments into major junior.</p>
+
+          <div class="my-8 rounded-2xl border border-gray-200 bg-white p-5 md:p-6 shadow-sm">
+            <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-widest text-northstar-700">BCHL movement after NCAA change</p>
+                <h3 class="!mt-2 !mb-0">37 departures, 25 already NCAA committed</h3>
+              </div>
+              <span class="rounded-full bg-northstar-50 px-3 py-1 text-sm font-semibold text-northstar-800">68% committed</span>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1"><span>Total BCHL players departing for CHL</span><span>37</span></div>
+                <div class="h-4 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-northstar-700" style="width:100%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1"><span>Already NCAA committed</span><span>25</span></div>
+                <div class="h-4 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-northstar-500" style="width:68%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1"><span>Not NCAA committed</span><span>12</span></div>
+                <div class="h-4 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-gray-400" style="width:32%"></div></div>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">This does not mean the BCHL became weak. It means the NCAA restriction had been a powerful strategic reason to avoid major junior.</p>
+          </div>
+
+          <p>Many of these players were not necessarily abandoning college hockey. Some had already secured their college destination. Once playing in the CHL ceased threatening NCAA eligibility in the same way, they were free to choose major junior hockey while preserving college as a next step.</p>
+
+          <h2>This does not mean the BCHL is suddenly a poor league</h2>
+          <p>Intellectual honesty matters here. The BCHL remains a strong NCAA development league. Its published 2025-26 commitment list includes Division I programs such as Dartmouth, Northeastern, Maine, Providence, Arizona State, UConn, UMass and many others.</p>
+          <p>The evidence does not justify saying the BCHL has stopped being an NCAA pathway. It has not. The better question is whether it retains the same unique strategic position it held when major junior and NCAA hockey were separated by a hard eligibility wall.</p>
+
+          <h2>The BCHL also sits outside Hockey Canada</h2>
+          <p>The BCHL became independent from Hockey Canada in 2023. That decision gave the league autonomy, but it also placed the BCHL outside Canada's sanctioned hockey structure.</p>
+          <p>Hockey Canada's non-sanctioned league policy creates in-season restrictions for players who participate in non-sanctioned leagues after September 30 and later seek to join, affiliate with, or be reinstated to sanctioned teams competing for national championships.</p>
+          <p>This does <strong>not</strong> mean BCHL to CHL movement is impossible. Players have made that transition. It does mean there can be added pathway friction, and for an international player trying to preserve as many options as possible, friction matters.</p>
+
+          <h2>The data shows Junior A already feeds both directions</h2>
+          <p>The Canadian Junior Hockey League is the umbrella organization for Hockey Canada-sanctioned Junior A leagues including the OJHL, CCHL, LHJAAAQ and others. Recent CJHL and CCHL reporting shows that sanctioned Junior A already connects meaningfully to both the CHL and NCAA Division I.</p>
+
+          <div class="my-8 grid md:grid-cols-3 gap-4">
+            <div class="rounded-2xl bg-northstar-950 text-white p-6">
+              <span class="text-northstar-300 text-sm font-bold uppercase tracking-widest">CHL bridge</span>
+              <strong class="block font-display text-6xl tracking-wide mt-3">264</strong>
+              <p class="text-northstar-100 text-sm leading-relaxed mt-2">Players with CJHL experience appeared in CHL games during the 2025-26 campaign.</p>
+            </div>
+            <div class="rounded-2xl bg-northstar-50 border border-northstar-200 p-6">
+              <span class="text-northstar-700 text-sm font-bold uppercase tracking-widest">CCHL example</span>
+              <strong class="block font-display text-6xl tracking-wide text-northstar-950 mt-3">43</strong>
+              <p class="text-gray-700 text-sm leading-relaxed mt-2">Former CCHL players appeared in CHL games in 2025-26.</p>
+            </div>
+            <div class="rounded-2xl bg-white border border-gray-200 p-6 shadow-sm">
+              <span class="text-northstar-700 text-sm font-bold uppercase tracking-widest">NCAA exit</span>
+              <strong class="block font-display text-6xl tracking-wide text-northstar-950 mt-3">265</strong>
+              <p class="text-gray-700 text-sm leading-relaxed mt-2">CJHL alumni appeared on NCAA Division I rosters across 57 of 62 programs in 2025-26.</p>
+            </div>
+          </div>
+
+          <p>That creates a two-sided development pathway. A successful Junior A player may progress from Junior A to the CHL and then to NCAA hockey. Or he may go from Junior A directly to NCAA hockey. The point is optionality.</p>
+
+          <h2>Why this calculation is different for a Korean player</h2>
+          <p>The greatest obstacle facing an elite Korean player is not necessarily talent. It is information.</p>
+          <p>North American scouts understand a Canadian player's league, opponents, coaches and history. They may have watched him from U15 through U18. The player has accumulated hockey reputational capital.</p>
+          <p>A Korean player, even an excellent one, can present evaluators with an information problem. How transferable is his production? How quickly does he process pressure on smaller North American ice? Can he defend away from the puck? Can he execute when time and space disappear?</p>
+          <p>These are not criticisms of Korean hockey. They are reasonable scouting questions created by unfamiliarity with the competitive environment. For the Korean player, the first North American objective should be <strong>validation</strong>.</p>
+
+          <div class="my-8 rounded-2xl bg-gray-50 border border-gray-200 p-5 md:p-6">
+            <h3 class="!mt-0">From reputation to evidence</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="rounded-xl bg-white border border-gray-200 p-4">
+                <span class="text-sm font-bold text-gray-500 uppercase tracking-widest">Before validation</span>
+                <p class="mt-3 text-gray-700">"He is one of the strongest players in Korea."</p>
+              </div>
+              <div class="rounded-xl bg-white border border-northstar-200 p-4">
+                <span class="text-sm font-bold text-northstar-700 uppercase tracking-widest">After validation</span>
+                <p class="mt-3 text-gray-700">"He has played 20 CCHL games. Here is the film, role, production, coach context and performance against known North American opponents."</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>Why Ontario, Ottawa and Montreal become interesting</h2>
+          <p>For an international player trying to become known, geography matters. The Ontario-Ottawa-Montreal corridor gives access to the OJHL, CCHL, LHJAAAQ, OHL organizations, QMJHL organizations, NCAA recruiting and a dense network of coaches and scouts.</p>
+          <p>For a Korean player, repeated exposure inside that ecosystem may be more useful than occasional showcases while playing thousands of kilometers away.</p>
+
+          <h2>The question is not whether the BCHL is better hockey</h2>
+          <p>League-ranking conversations often miss the point. The BCHL may be stronger, player-for-player, than several sanctioned Junior A leagues. That does not automatically make it the better development pathway for every player.</p>
+          <p>A Korean player choosing between a limited role in a prestigious league and a major role in a sanctioned Junior A league is not merely comparing logos. He is comparing playing time, special teams, coach trust, CHL proximity, North American validation and upward mobility.</p>
+
+          <div class="my-8 rounded-2xl border border-northstar-200 bg-white p-5 md:p-6 shadow-sm">
+            <p class="text-xs font-bold uppercase tracking-widest text-northstar-700 mb-3">Meaningful minutes matter</p>
+            <h3 class="!mt-0">Two hypothetical 50-game seasons</h3>
+            <div class="space-y-5">
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1"><span>Prestigious league, 7 minutes per game</span><span>350 minutes</span></div>
+                <div class="h-5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-gray-400" style="width:41%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1"><span>Appropriate level, 17 minutes per game</span><span>850 minutes</span></div>
+                <div class="h-5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-northstar-600" style="width:100%"></div></div>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">This is illustrative, not causal. But the difference is 500 competitive minutes of perception, decision-making and execution under pressure.</p>
+          </div>
+
+          <h2>A new model for Korean players</h2>
+          <p>For an exceptional Korean player who can immediately earn meaningful CHL minutes, the strategy is simple: go directly to the CHL, assuming the roster, import and eligibility details are handled correctly.</p>
+          <p>But relatively few international players arrive with enough North American credibility to secure that opportunity immediately. For everyone else, the pathway deserves reconsideration.</p>
+
+          <div class="my-8 grid md:grid-cols-2 gap-5">
+            <div class="rounded-2xl border border-gray-200 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-3">Old model</p>
+              <ol class="space-y-2 text-gray-700">
+                <li>Korea</li>
+                <li>Most prestigious NCAA feeder possible</li>
+                <li>BCHL / USHL</li>
+                <li>NCAA</li>
+              </ol>
+            </div>
+            <div class="rounded-2xl border border-northstar-200 bg-northstar-50 p-5">
+              <p class="text-xs font-bold uppercase tracking-widest text-northstar-700 mb-3">Emerging model</p>
+              <ol class="space-y-2 text-gray-700">
+                <li>Korea</li>
+                <li>North American validation</li>
+                <li>Sanctioned Junior A</li>
+                <li>CHL if development warrants it</li>
+                <li>NCAA Division I / professional hockey</li>
+              </ol>
+            </div>
+          </div>
+
+          <h2>Optimize the pathway, not the league name</h2>
+          <p>The NCAA's rule change fundamentally altered Canadian junior hockey. The CHL no longer requires players to sacrifice NCAA Division I eligibility in the same way it once did. At the same time, sanctioned Junior A already has substantial connectivity in both directions: upward into the CHL and onward to NCAA Division I.</p>
+          <p>The BCHL remains a strong league and a proven NCAA pathway. The evidence does not justify declaring otherwise. But for a Korean player without a North American resume, I would prioritize four things: <strong>meaningful minutes, North American validation, upward mobility and optionality</strong>.</p>
+          <p>If a sanctioned Junior A organization in Ontario, Ottawa or Quebec can provide those things better than a more prestigious league where the player occupies a marginal role, the supposedly lower league may actually represent the higher-upside pathway.</p>
+          <p>The objective should not be to get the best logo onto a player's resume as quickly as possible. The objective should be to put the player in an environment where his performance makes the next logo inevitable.</p>
+        </article>
+
+        <aside class="lg:sticky lg:top-24 space-y-5">
+          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+            <h2 class="font-display text-3xl text-northstar-950 tracking-wide mb-3">Key Takeaway</h2>
+            <p class="text-gray-700 leading-relaxed">For Korean players, the best pathway may be the one that creates evidence fastest: real games, real minutes, known opponents and a coach who can speak credibly to North American scouts.</p>
+          </div>
+          <div class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6">
+            <h2 class="font-display text-3xl text-northstar-950 tracking-wide mb-4">Data Snapshot</h2>
+            <dl class="space-y-4 text-sm">
+              <div><dt class="font-bold text-northstar-900">37</dt><dd class="text-gray-600">BCHL-to-CHL departures cited after the NCAA announcement.</dd></div>
+              <div><dt class="font-bold text-northstar-900">264</dt><dd class="text-gray-600">CJHL-experienced players in CHL games during 2025-26.</dd></div>
+              <div><dt class="font-bold text-northstar-900">265</dt><dd class="text-gray-600">CJHL alumni on NCAA Division I rosters in 2025-26.</dd></div>
+              <div><dt class="font-bold text-northstar-900">57 of 62</dt><dd class="text-gray-600">NCAA Division I programs with CJHL alumni in 2025-26.</dd></div>
+            </dl>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white p-6">
+            <h2 class="font-display text-3xl text-northstar-950 tracking-wide mb-4">Sources</h2>
+            <ul class="space-y-3 text-sm">
+              <li><a class="text-northstar-700 underline hover:text-northstar-900" href="https://www.ncaa.org/media-center-di-council-approves-rules-change-for-preenrollment-activities-in-mens-ice-hockey-skiing/">NCAA DI Council rule update</a></li>
+              <li><a class="text-northstar-700 underline hover:text-northstar-900" href="https://chl.ca/lhjmq/en/article/ncaa-rule-change-35-new-players-qmjhl/">QMJHL NCAA rule-change player movement note</a></li>
+              <li><a class="text-northstar-700 underline hover:text-northstar-900" href="https://www.thecchl.ca/cchl-players-to-play-major-junior-in-2025-26">CCHL / CJHL to CHL 2025-26 data</a></li>
+              <li><a class="text-northstar-700 underline hover:text-northstar-900" href="https://www.cjhlhockey.com/en/the-2025-26-season-saw-265-cjhl-alumni-on-ncaa-d-i-rosters">CJHL alumni on NCAA DI rosters</a></li>
+              <li><a class="text-northstar-700 underline hover:text-northstar-900" href="https://bchl.ca/2025-26-college-commitments">BCHL 2025-26 commitments</a></li>
+            </ul>
+          </div>
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="block rounded-2xl bg-northstar-600 px-6 py-5 text-center font-bold text-white hover:bg-northstar-700 transition">Start an advising intake</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-northstar-950 text-gray-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <a href="/" class="font-display text-lg md:text-xl text-white hover:text-gray-200 transition">NORTHSTAR EDUCATION GROUP</a>
+        <div class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2">
+          <a href="/pathway/start-here/" class="hover:text-white transition">Guide</a>
+          <a href="/pathway/" class="hover:text-white transition">Guide Library</a>
+          <a href="/blog/" class="hover:text-white transition">Blog</a>
+          <a href="/map/" class="hover:text-white transition">Map</a>
+          <a href="https://advising.northstareducationgroup.com/?preintake=1" class="hover:text-white transition">Intake Form</a>
+        </div>
+      </div>
+      <p class="mt-6 text-center md:text-left text-sm">&copy; Northstar Education Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.querySelectorAll('[data-share-url]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var original = btn.innerHTML;
+          var url = new URL(btn.getAttribute('data-share-url'), location.origin).toString();
+          var title = btn.getAttribute('data-share-title') || document.title;
+          function copied() {
+            btn.textContent = 'Copied';
+            window.setTimeout(function () { btn.innerHTML = original; }, 1600);
+          }
+          if (navigator.share) {
+            navigator.share({ title: title, url: url }).catch(function () {});
+            return;
+          }
+          if (navigator.clipboard) navigator.clipboard.writeText(url).then(copied).catch(function () { window.prompt('Copy this link', url); });
+          else window.prompt('Copy this link', url);
+        });
+      });
+      var mb = document.getElementById('menu-btn');
+      var mm = document.getElementById('mobile-menu');
+      if (mb && mm) mb.addEventListener('click', function () { mm.classList.toggle('hidden'); });
+    })();
+  </script>
+</body>
+</html>
