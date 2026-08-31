@@ -2,7 +2,7 @@
 
 If you're a Korean family thinking about hockey in Massachusetts — whether you're already here, considering a move, or trying to understand the pathway from Korea — this is the right place to start.
 
-This page is short on purpose. It tells you where to go next based on where you are. The detailed answers are in the articles linked below.
+This page is short on purpose. It tells you where to go next based on where you are. The detailed answers are in the guides linked below.
 
 ## What This Content Set Is For
 
@@ -18,7 +18,7 @@ Your child is 8 to 11 years old. You're trying to understand whether hockey can 
 
 **Start with:**
 - [The Massachusetts Hockey Landscape: An Overview](/pathway/ma-hockey-landscape/) — what the system actually looks like, including the youth clubs, prep schools, and college pathway
-- [What Tier Really Means at Each Age](/pathway/tier-meaning-by-age/) — the most important article for parents of young players, because it will save you from the most common mistake Korean families make
+- [What Tier Really Means at Each Age](/pathway/tier-meaning-by-age/) — the most important guide for parents of young players, because it will save you from the most common mistake Korean families make
 
 ### "We have a child in youth club hockey now and are thinking about prep"
 
@@ -68,7 +68,7 @@ You're trying to understand what's actually realistic for your child's college p
 **Start with:**
 - [The Academic Endgame: Four Tiers of College Outcomes](/pathway/academic-endgame/) — the four-tier framework that we use with families: Ivy hockey D1, elite D1 academic schools, hockey as the spike for non-hockey Ivies, and NESCAC D3 elite
 
-## The Foundational Articles
+## The Foundational Guides
 
 The full content set, in order:
 
@@ -78,7 +78,7 @@ The full content set, in order:
 
 3. **Club Hockey vs. Prep: When to Make the Transition** — when prep matters, the junior boarding reclass strategy that works for Korean families, and the F-1 visa reality that determines which schools are realistic targets.
 
-4. **Thinking About Rankings: A Different Way to Approach Your Child's Hockey Career** — the parenting culture article. Direct, sometimes uncomfortable, but the most important article in the set for many Korean families.
+4. **Thinking About Rankings: A Different Way to Approach Your Child's Hockey Career** — the parenting culture guide. Direct, sometimes uncomfortable, but the most important guide in the set for many Korean families.
 
 5. **The Academic Endgame: Four Tiers of College Outcomes** — what college outcomes are realistically available through this pathway, organized into a useful four-tier framework.
 
@@ -90,7 +90,7 @@ The full content set, in order:
 
 ## What This Content Doesn't Replace
 
-Reading articles isn't the same as making good decisions. The decisions in this pathway are genuinely complex. They involve six-figure financial commitments, multi-year time horizons, immigration status, athletic eligibility, military service planning, and your family's broader life choices.
+Reading guides isn't the same as making good decisions. The decisions in this pathway are genuinely complex. They involve six-figure financial commitments, multi-year time horizons, immigration status, athletic eligibility, military service planning, and your family's broader life choices.
 
 What we offer through Northstar Education Group:
 
@@ -105,7 +105,7 @@ If the content here resonates with how you want to think about your child's path
 
 This content set is direct because Korean families deserve direct information. Too much of what's available in Korean about Massachusetts hockey is either outdated, wrong, or designed to sell something. We've tried to write what we'd want to read if we were in your position.
 
-Some of the advice in these articles will push back on assumptions Korean families bring to this decision. That's intentional. The families who succeed in this system are the ones who let go of some of the cultural defaults — ranking obsession, status comparison, narrow definitions of success — and embrace what actually works.
+Some of the advice in these guides will push back on assumptions Korean families bring to this decision. That's intentional. The families who succeed in this system are the ones who let go of some of the cultural defaults — ranking obsession, status comparison, narrow definitions of success — and embrace what actually works.
 
 The pathway exists. Korean players have walked it before. Your child can too. But it works best when you understand what you're actually doing.
 

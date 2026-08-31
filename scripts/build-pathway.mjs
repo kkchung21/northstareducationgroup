@@ -228,8 +228,8 @@ function headerHtml ({ activePath }) {
             </button>
             <div class="invisible absolute left-0 top-full z-50 w-52 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
               <div class="rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
-                <a href="/pathway/start-here/" class="block rounded-lg px-3 py-2 text-sm font-medium transition ${guideActive ? 'bg-northstar-50 text-northstar-700' : 'text-gray-600 hover:bg-gray-50 hover:text-northstar-700'}">Guide</a>
-                <a href="/pathway/" class="block rounded-lg px-3 py-2 text-sm font-medium transition ${articleActive ? 'bg-northstar-50 text-northstar-700' : 'text-gray-600 hover:bg-gray-50 hover:text-northstar-700'}">Articles</a>
+                <a href="/pathway/start-here/" class="block rounded-lg px-3 py-2 text-sm font-medium transition ${guideActive ? 'bg-northstar-50 text-northstar-700' : 'text-gray-600 hover:bg-gray-50 hover:text-northstar-700'}">Start Here</a>
+                <a href="/pathway/" class="block rounded-lg px-3 py-2 text-sm font-medium transition ${articleActive ? 'bg-northstar-50 text-northstar-700' : 'text-gray-600 hover:bg-gray-50 hover:text-northstar-700'}">Guide Library</a>
               </div>
             </div>
           </div>
@@ -249,8 +249,8 @@ function headerHtml ({ activePath }) {
         <a href="/#services" class="block py-2 text-gray-600 hover:text-northstar-600">Services</a>
         <a href="/#about" class="block py-2 text-gray-600 hover:text-northstar-600">About</a>
         <span class="block pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400">Resources</span>
-        <a href="/pathway/start-here/" class="block py-2 pl-3 font-medium ${guideActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Guide</a>
-        <a href="/pathway/" class="block py-2 pl-3 font-medium ${articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Articles</a>
+        <a href="/pathway/start-here/" class="block py-2 pl-3 font-medium ${guideActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Start Here</a>
+        <a href="/pathway/" class="block py-2 pl-3 font-medium ${articleActive ? 'text-northstar-700' : 'text-gray-600 hover:text-northstar-600'}">Guide Library</a>
         <a href="/blog/" class="block py-2 text-gray-600 hover:text-northstar-600">Blog</a>
         <a href="/map/" class="block py-2 text-gray-600 hover:text-northstar-600">Map</a>
         <a href="/#contact" class="block py-2 text-gray-600 hover:text-northstar-600">Contact</a>
@@ -265,8 +265,8 @@ function footerHtml () {
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         <a href="/" class="font-display text-lg md:text-xl text-white hover:text-gray-200 transition">NORTHSTAR EDUCATION GROUP</a>
         <div class="flex gap-8">
-          <a href="/pathway/start-here/" class="hover:text-white transition">Guide</a>
-          <a href="/pathway/" class="hover:text-white transition">Articles</a>
+          <a href="/pathway/start-here/" class="hover:text-white transition">Start Here</a>
+          <a href="/pathway/" class="hover:text-white transition">Guide Library</a>
           <a href="/blog/" class="hover:text-white transition">Blog</a>
           <a href="/map/" class="hover:text-white transition">Map</a>
           <a href="/#services" class="hover:text-white transition">Services</a>
@@ -354,7 +354,7 @@ function resolveNav (ref) {
 }
 
 function buildArticlePage (titleEn, titleKo, bodyEn, bodyKo, prev, next, activePath = 'article') {
-  const sectionLabel = activePath === 'guide' ? 'Guide' : 'Articles'
+  const sectionLabel = activePath === 'guide' ? 'Start Here' : 'Guide Library'
   const prevLink = prev
     ? `<a href="/pathway/${prev.slug}/" class="text-northstar-700 font-medium hover:underline">← Previous: ${escapeHtml(prev.title)}</a>`
     : ''
@@ -409,7 +409,7 @@ function buildArticlePage (titleEn, titleKo, bodyEn, bodyKo, prev, next, activeP
   ${headerHtml({ activePath })}
   <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14 w-full">
     <nav class="flex flex-wrap items-center gap-3 justify-between mb-8 text-sm">
-      <a href="/pathway/" class="text-northstar-700 font-medium hover:underline">← Articles hub</a>
+      <a href="/pathway/" class="text-northstar-700 font-medium hover:underline">← Guide library</a>
       <div class="flex rounded-lg border border-gray-200 overflow-hidden shadow-sm">
         <button type="button" data-article-lang="en" class="article-lang-btn px-4 py-2 text-sm font-semibold transition-colors border-r border-gray-200 bg-northstar-600 text-white">EN</button>
         <button type="button" data-article-lang="ko" class="article-lang-btn px-4 py-2 text-sm font-semibold transition-colors bg-gray-50 text-gray-600">한국어</button>
@@ -445,7 +445,7 @@ function buildArticlePage (titleEn, titleKo, bodyEn, bodyKo, prev, next, activeP
         <a href="mailto:kenneth@northstareducationgroup.com" class="text-northstar-700 font-semibold hover:underline">reach out to us</a>.
       </p>
       <p class="text-sm text-gray-600 mb-4">You'll get specific guidance — no pressure and no generic sales pitch.</p>
-      <a href="/pathway/" class="inline-flex text-sm font-semibold text-northstar-700 hover:underline">← Articles hub</a>
+      <a href="/pathway/" class="inline-flex text-sm font-semibold text-northstar-700 hover:underline">← Guide library</a>
     </div>
     <div class="mt-12 rounded-2xl border border-gray-200 bg-ice p-6 md:p-8 pathway-talk-ko">
       <h2 class="font-display text-xl text-northstar-900 tracking-wide mb-3">문의하기</h2>

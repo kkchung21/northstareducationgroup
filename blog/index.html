@@ -40,6 +40,7 @@
     body.lang-ko [data-lang="en"] { display: none !important; }
     body.lang-ko [data-lang="ko"] { display: revert !important; }
     .lang-toggle button.active { color: #1a87f5; font-weight: 600; }
+    article[id] { scroll-margin-top: 6rem; }
   </style>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-white">
@@ -57,8 +58,8 @@
             </button>
             <div class="invisible absolute left-0 top-full z-50 w-52 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
               <div class="rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
-                <a href="/pathway/start-here/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700"><span data-lang="en">Guide</span><span data-lang="ko">가이드</span></a>
-                <a href="/pathway/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700"><span data-lang="en">Articles</span><span data-lang="ko">글</span></a>
+                <a href="/pathway/start-here/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700"><span data-lang="en">Start Here</span><span data-lang="ko">시작하기</span></a>
+                <a href="/pathway/" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition hover:bg-gray-50 hover:text-northstar-700"><span data-lang="en">Guide Library</span><span data-lang="ko">가이드 모음</span></a>
               </div>
             </div>
           </div>
@@ -83,8 +84,8 @@
         <a href="/#services" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Services</span><span data-lang="ko">서비스</span></a>
         <a href="/#about" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">About</span><span data-lang="ko">소개</span></a>
         <span class="block pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400"><span data-lang="en">Resources</span><span data-lang="ko">리소스</span></span>
-        <a href="/pathway/start-here/" class="block py-2 pl-3 text-gray-600 hover:text-northstar-600"><span data-lang="en">Guide</span><span data-lang="ko">가이드</span></a>
-        <a href="/pathway/" class="block py-2 pl-3 text-gray-600 hover:text-northstar-600"><span data-lang="en">Articles</span><span data-lang="ko">글</span></a>
+        <a href="/pathway/start-here/" class="block py-2 pl-3 text-gray-600 hover:text-northstar-600"><span data-lang="en">Start Here</span><span data-lang="ko">시작하기</span></a>
+        <a href="/pathway/" class="block py-2 pl-3 text-gray-600 hover:text-northstar-600"><span data-lang="en">Guide Library</span><span data-lang="ko">가이드 모음</span></a>
         <span class="block py-2 font-medium text-northstar-700"><span data-lang="en">Blog</span><span data-lang="ko">블로그</span></span>
         <a href="/map/" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Map</span><span data-lang="ko">지도</span></a>
         <a href="/#contact" class="block py-2 text-gray-600 hover:text-northstar-600"><span data-lang="en">Contact</span><span data-lang="ko">연락처</span></a>
@@ -117,13 +118,48 @@
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
       <div class="grid lg:grid-cols-[1fr_320px] gap-8 items-start">
         <div class="space-y-6">
-          <article class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
+          <article id="junior-camp-rules-check" class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
+            <p class="text-xs font-semibold uppercase tracking-widest text-northstar-700 mb-3"><span data-lang="en">Rules checklist</span><span data-lang="ko">규정 체크리스트</span></p>
+            <h2 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-tight mb-4">
+              <span data-lang="en">Before a Junior Camp: the rules check Korean hockey players cannot skip</span>
+              <span data-lang="ko">주니어 캠프 전: 한국 하키 선수가 절대 건너뛰면 안 되는 규정 확인</span>
+            </h2>
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+              <time class="text-sm text-gray-500" datetime="2026-08-30">Aug 30, 2026</time>
+              <div class="flex flex-wrap gap-2 text-sm">
+                <button type="button" data-share-url="/pathway/junior-camp-rules-check/" class="share-copy rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Copy link</span><span data-lang="ko">링크 복사</span></button>
+                <a href="mailto:?subject=Before%20a%20Junior%20Camp%3A%20the%20rules%20check%20Korean%20hockey%20players%20cannot%20skip&body=https%3A%2F%2Fnorthstareducationgroup.com%2Fpathway%2Fjunior-camp-rules-check%2F" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Email</span><span data-lang="ko">이메일</span></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnorthstareducationgroup.com%2Fpathway%2Fjunior-camp-rules-check%2F" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">LinkedIn</span><span data-lang="ko">LinkedIn</span></a>
+              </div>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-5">
+              <span data-lang="en">For Korean players, a junior camp invitation is not enough by itself. Before travel, families should confirm federation permission, insurance, transfer status, import classification, and the league's own clearance process.</span>
+              <span data-lang="ko">한국 선수에게 주니어 캠프 초청장만으로는 충분하지 않습니다. 출국 전에는 협회 허가, 보험, 이적 상태, 임포트 분류, 리그 승인 절차를 확인해야 합니다.</span>
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/pathway/junior-camp-rules-check/" class="inline-flex items-center rounded-lg bg-northstar-600 px-4 py-3 text-sm font-semibold text-white hover:bg-northstar-700 transition"><span data-lang="en">Read the full checklist</span><span data-lang="ko">전체 체크리스트 읽기</span></a>
+              <a href="/pathway/junior-hockey-decision/" class="inline-flex items-center rounded-lg border border-northstar-300 px-4 py-3 text-sm font-semibold text-northstar-800 hover:bg-white transition"><span data-lang="en">Junior hockey context</span><span data-lang="ko">주니어 하키 맥락</span></a>
+            </div>
+          </article>
+
+          <article id="korea-hockey-camp" class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
             <p class="text-xs font-semibold uppercase tracking-widest text-northstar-700 mb-3"><span data-lang="en">Camp reflection</span><span data-lang="ko">캠프 리뷰</span></p>
             <h2 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-tight mb-4">
               <span data-lang="en">What impressed us most at our Korea hockey camp</span>
               <span data-lang="ko">한국 하키 캠프에서 가장 인상 깊었던 점</span>
             </h2>
-            <time class="block text-sm text-gray-500 mb-5" datetime="2026-08-15">Aug 15, 2026</time>
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+              <time class="text-sm text-gray-500" datetime="2026-08-15">Aug 15, 2026</time>
+              <div class="flex flex-wrap gap-2 text-sm">
+                <button type="button" data-share-url="/blog/#korea-hockey-camp" class="share-copy rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Copy link</span><span data-lang="ko">링크 복사</span></button>
+                <a href="mailto:?subject=What%20impressed%20us%20most%20at%20our%20Korea%20hockey%20camp&body=https%3A%2F%2Fnorthstareducationgroup.com%2Fblog%2F%23korea-hockey-camp" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Email</span><span data-lang="ko">이메일</span></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnorthstareducationgroup.com%2Fblog%2F%23korea-hockey-camp" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">LinkedIn</span><span data-lang="ko">LinkedIn</span></a>
+              </div>
+            </div>
+            <figure class="mb-6 overflow-hidden rounded-2xl border border-northstar-100 bg-white">
+              <img src="/blog/assets/korea-hockey-camp.jpg" alt="Korean hockey athletes and coaches on the ice at the Golden Camp in Seoul" class="w-full aspect-[4/3] object-cover" loading="lazy" />
+              <figcaption class="px-4 py-3 text-sm text-gray-600"><span data-lang="en">Golden Camp in Seoul with Korean hockey athletes, Dream Big Hockey, and Northstar's coaching partners.</span><span data-lang="ko">서울 Golden Camp에서 한국 하키 선수들, Dream Big Hockey, Northstar 코칭 파트너들과 함께.</span></figcaption>
+            </figure>
             <p class="text-gray-700 leading-relaxed mb-5">
               <span data-lang="en">Freddy Meyer and I recently wrapped up a very successful clinic in Seoul, South Korea with our Korean partner, Coach Yuwon Lee. The camp was a success in many ways, but the biggest success was not simply that players worked hard or improved over the week. What mattered most was that Freddy was able to introduce a different kind of clinic: one focused less on isolated hockey mechanics and more on situational decision-making under pressure.</span>
               <span data-lang="ko">Freddy Meyer와 저는 최근 한국 파트너인 Coach Yuwon Lee와 함께 서울에서 매우 성공적인 클리닉을 마쳤습니다. 이번 캠프는 여러 면에서 성공적이었습니다. 하지만 가장 큰 성공은 단순히 선수들이 열심히 했고 캠프 기간 동안 발전했다는 점만은 아니었습니다. 가장 의미 있었던 것은 Freddy가 기존의 기술 중심 클리닉을 넘어, 압박 속에서의 상황 판단과 의사결정에 집중하는 새로운 접근을 소개했다는 점입니다.</span>
@@ -161,13 +197,20 @@
             </p>
           </article>
 
-          <article class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
+          <article id="ncaa-hockey-funding" class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
             <p class="text-xs font-semibold uppercase tracking-widest text-northstar-700 mb-3"><span data-lang="en">College funding</span><span data-lang="ko">대학 재정 지원</span></p>
             <h2 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-tight mb-4">
               <span data-lang="en">NCAA hockey funding: D1, D2, D3, and NIL in plain English</span>
               <span data-lang="ko">NCAA 하키 재정 지원: D1, D2, D3, NIL 쉽게 이해하기</span>
             </h2>
-            <time class="block text-sm text-gray-500 mb-5" datetime="2026-08-15">Aug 15, 2026</time>
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+              <time class="text-sm text-gray-500" datetime="2026-08-15">Aug 15, 2026</time>
+              <div class="flex flex-wrap gap-2 text-sm">
+                <button type="button" data-share-url="/blog/#ncaa-hockey-funding" class="share-copy rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Copy link</span><span data-lang="ko">링크 복사</span></button>
+                <a href="mailto:?subject=NCAA%20hockey%20funding%3A%20D1%2C%20D2%2C%20D3%2C%20and%20NIL&body=https%3A%2F%2Fnorthstareducationgroup.com%2Fblog%2F%23ncaa-hockey-funding" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Email</span><span data-lang="ko">이메일</span></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnorthstareducationgroup.com%2Fblog%2F%23ncaa-hockey-funding" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">LinkedIn</span><span data-lang="ko">LinkedIn</span></a>
+              </div>
+            </div>
             <p class="text-gray-700 leading-relaxed mb-5">
               <span data-lang="en">Korean families often ask the wrong first question: “Is Division 2 better than Division 3?” In hockey, the better question is: “How does this school fund athletes, and what will the real family cost be?”</span>
               <span data-lang="ko">한국 가정은 종종 첫 질문을 잘못 던집니다. “Division 2가 Division 3보다 더 좋은가요?” 하키에서는 더 중요한 질문이 있습니다. “이 학교는 선수에게 어떤 방식으로 재정 지원을 하고, 실제 가족 부담금은 얼마인가요?”</span>
@@ -207,13 +250,20 @@
             </div>
           </article>
 
-          <article class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
+          <article id="ncaa-di-junior-hockey-after-19" class="rounded-2xl border border-northstar-200 bg-northstar-50 p-6 md:p-8">
             <p class="text-xs font-semibold uppercase tracking-widest text-northstar-700 mb-3"><span data-lang="en">Rule update</span><span data-lang="ko">규정 업데이트</span></p>
             <h2 class="font-display text-3xl md:text-5xl text-northstar-950 tracking-wide leading-tight mb-4">
               <span data-lang="en">NCAA DI eligibility: junior hockey after 19 needs a tighter plan</span>
               <span data-lang="ko">NCAA D1 자격: 19세 이후 Junior Hockey는 더 신중한 계획이 필요합니다</span>
             </h2>
-            <time class="block text-sm text-gray-500 mb-5" datetime="2026-08-15">Aug 15, 2026</time>
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+              <time class="text-sm text-gray-500" datetime="2026-08-15">Aug 15, 2026</time>
+              <div class="flex flex-wrap gap-2 text-sm">
+                <button type="button" data-share-url="/blog/#ncaa-di-junior-hockey-after-19" class="share-copy rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Copy link</span><span data-lang="ko">링크 복사</span></button>
+                <a href="mailto:?subject=NCAA%20DI%20eligibility%3A%20junior%20hockey%20after%2019%20needs%20a%20tighter%20plan&body=https%3A%2F%2Fnorthstareducationgroup.com%2Fblog%2F%23ncaa-di-junior-hockey-after-19" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">Email</span><span data-lang="ko">이메일</span></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fnorthstareducationgroup.com%2Fblog%2F%23ncaa-di-junior-hockey-after-19" class="rounded-lg border border-northstar-200 bg-white px-3 py-2 font-semibold text-northstar-800 hover:border-northstar-400 transition"><span data-lang="en">LinkedIn</span><span data-lang="ko">LinkedIn</span></a>
+              </div>
+            </div>
             <p class="text-gray-700 leading-relaxed mb-5">
               <span data-lang="en">The NCAA Division I eligibility model is changing for athletes who first enroll full time in college in fall 2027 or later. The simple point: junior hockey is no longer something families should treat as an open-ended runway.</span>
               <span data-lang="ko">2027년 가을 이후 대학에 처음 풀타임 등록하는 선수부터 NCAA Division I 자격 모델이 바뀝니다. 핵심은 간단합니다. Junior Hockey를 무기한 준비 기간처럼 보면 안 됩니다.</span>
@@ -280,7 +330,7 @@
         <a href="/" class="font-display text-lg md:text-xl text-white hover:text-gray-200 transition">NORTHSTAR EDUCATION GROUP</a>
         <div class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2">
           <a href="/pathway/start-here/" class="hover:text-white transition"><span data-lang="en">Guide</span><span data-lang="ko">가이드</span></a>
-          <a href="/pathway/" class="hover:text-white transition"><span data-lang="en">Articles</span><span data-lang="ko">글</span></a>
+          <a href="/pathway/" class="hover:text-white transition"><span data-lang="en">Guide Library</span><span data-lang="ko">가이드 모음</span></a>
           <a href="/blog/" class="hover:text-white transition"><span data-lang="en">Blog</span><span data-lang="ko">블로그</span></a>
           <a href="/map/" class="hover:text-white transition"><span data-lang="en">Map</span><span data-lang="ko">지도</span></a>
           <a href="https://advising.northstareducationgroup.com/?preintake=1" class="hover:text-white transition"><span data-lang="en">Intake Form</span><span data-lang="ko">인테이크</span></a>
@@ -335,6 +385,19 @@
       });
 
       setLang(getLang());
+
+      document.querySelectorAll('[data-share-url]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var label = btn.innerText;
+          var url = new URL(btn.getAttribute('data-share-url'), location.origin).toString();
+          navigator.clipboard.writeText(url).then(function () {
+            btn.innerText = document.body.classList.contains('lang-ko') ? '복사 완료' : 'Copied';
+            window.setTimeout(function () { btn.innerText = label; }, 1600);
+          }).catch(function () {
+            window.prompt('Copy this link', url);
+          });
+        });
+      });
 
       var mb = document.getElementById('menu-btn');
       var mm = document.getElementById('mobile-menu');
